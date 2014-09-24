@@ -1,2 +1,3 @@
 //Install JDK and then issue the following line:
+//-gui option is a selector to avoid running "gui" tests, aka interactive tests.
 java -jar path\to\jtreg\lib\jtreg.jar -testjdk:"Path\to\Java\jdk1.7.0_65\bin" -gui "Path\to\folder\called\test"
