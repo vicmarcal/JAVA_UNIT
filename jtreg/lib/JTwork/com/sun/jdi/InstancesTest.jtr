@@ -1,0 +1,528 @@
+#Test Results (version 2)
+#Fri Sep 05 10:13:17 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InstancesTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=jjh
+keywords=bug5024119
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter\r\nUSER_SPECIFIED compile -g InstancesTest.java\r\nUSER_SPECIFIED main InstancesTest\r\n
+source=InstancesTest.java
+title=Add ReferenceType.getAllInstances () method to JDI.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/InstancesTest.java
+elapsed=5638 0\:00\:05.638
+end=Fri Sep 05 10\:13\:17 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build main
+start=Fri Sep 05 10\:13\:11 CEST 2014
+test=com/sun/jdi/InstancesTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/201)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter 
+elapsed time (seconds): 0.0020
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/195)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InstancesTest.java
+reason: User specified action: run compile -g InstancesTest.java 
+elapsed time (seconds): 2.106
+----------rerun:(19/2575)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InstancesTest.java'
+----------System.out:(0/0)----------
+----------System.err:(2/172)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InstancesTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/99)----------
+command: build InstancesTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/116)----------
+command: main InstancesTest
+reason: User specified action: run main InstancesTest 
+elapsed time (seconds): 3.527
+----------System.out:(410/23761)----------
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Howdy!
+395 classes from vm.allClasses() took 28 ms
+200000   class InstancesFiller (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398))
+1   array class InstancesFiller[] (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398))
+1001   class InstancesTarg (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398))
+1   array class InstancesTarg[] (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398))
+0   array class boolean[] (no class loader)
+8   array class byte[] (no class loader)
+853   array class char[] (no class loader)
+0   array class double[] (no class loader)
+0   array class float[] (no class loader)
+3   array class int[] (no class loader)
+1   class java.io.BufferedInputStream (no class loader)
+2   class java.io.BufferedOutputStream (no class loader)
+0   class java.io.BufferedReader (no class loader)
+2   class java.io.BufferedWriter (no class loader)
+0   interface java.io.Closeable (no class loader)
+2   class java.io.ExpiringCache (no class loader)
+2   class java.io.ExpiringCache$1 (no class loader)
+15   class java.io.ExpiringCache$Entry (no class loader)
+11   class java.io.File (no class loader)
+2   class java.io.File$PathStatus (no class loader)
+1   array class java.io.File$PathStatus[] (no class loader)
+3   class java.io.FileDescriptor (no class loader)
+1   class java.io.FileDescriptor$1 (no class loader)
+1   class java.io.FileInputStream (no class loader)
+2   class java.io.FileOutputStream (no class loader)
+1   class java.io.FilePermission (no class loader)
+0   class java.io.FilePermission$1 (no class loader)
+1   class java.io.FilePermissionCollection (no class loader)
+0   class java.io.FileReader (no class loader)
+0   class java.io.FileSystem (no class loader)
+0   array class java.io.File[] (no class loader)
+0   class java.io.FilterInputStream (no class loader)
+0   class java.io.FilterOutputStream (no class loader)
+0   interface java.io.Flushable (no class loader)
+0   class java.io.InputStream (no class loader)
+0   class java.io.InputStreamReader (no class loader)
+19   class java.io.ObjectStreamField (no class loader)
+9   array class java.io.ObjectStreamField[] (no class loader)
+0   class java.io.OutputStream (no class loader)
+2   class java.io.OutputStreamWriter (no class loader)
+2   class java.io.PrintStream (no class loader)
+0   class java.io.Reader (no class loader)
+0   interface java.io.Serializable (no class loader)
+0   array class java.io.Serializable[] (no class loader)
+0   class java.io.Win32FileSystem (no class loader)
+1   class java.io.WinNTFileSystem (no class loader)
+0   class java.io.Writer (no class loader)
+0   class java.lang.AbstractStringBuilder (no class loader)
+0   interface java.lang.Appendable (no class loader)
+1   class java.lang.ArithmeticException (no class loader)
+0   class java.lang.ArrayStoreException (no class loader)
+0   interface java.lang.AutoCloseable (no class loader)
+2   class java.lang.Boolean (no class loader)
+0   class java.lang.Byte (no class loader)
+0   interface java.lang.CharSequence (no class loader)
+0   array class java.lang.CharSequence[] (no class loader)
+0   class java.lang.Character (no class loader)
+0   class java.lang.CharacterData (no class loader)
+1   class java.lang.CharacterDataLatin1 (no class loader)
+435   class java.lang.Class (no class loader)
+0   class java.lang.Class$1 (no class loader)
+0   class java.lang.Class$3 (no class loader)
+0   class java.lang.ClassCastException (no class loader)
+0   class java.lang.ClassLoader (no class loader)
+0   class java.lang.ClassLoader$3 (no class loader)
+1   class java.lang.ClassLoader$NativeLibrary (no class loader)
+0   class java.lang.ClassLoader$ParallelLoaders (no class loader)
+0   class java.lang.ClassNotFoundException (no class loader)
+2   array class java.lang.Class[] (no class loader)
+0   interface java.lang.Cloneable (no class loader)
+0   interface java.lang.Comparable (no class loader)
+0   array class java.lang.Comparable[] (no class loader)
+0   class java.lang.Compiler (no class loader)
+0   class java.lang.Compiler$1 (no class loader)
+0   class java.lang.Double (no class loader)
+0   class java.lang.Enum (no class loader)
+0   array class java.lang.Enum[] (no class loader)
+0   class java.lang.Error (no class loader)
+0   array class java.lang.Error[] (no class loader)
+0   class java.lang.Exception (no class loader)
+0   class java.lang.Float (no class loader)
+0   class java.lang.IllegalArgumentException (no class loader)
+0   class java.lang.IllegalMonitorStateException (no class loader)
+0   class java.lang.IncompatibleClassChangeError (no class loader)
+2   class java.lang.Integer (no class loader)
+0   interface java.lang.Iterable (no class loader)
+0   class java.lang.LinkageError (no class loader)
+0   class java.lang.Long (no class loader)
+0   class java.lang.Math (no class loader)
+0   class java.lang.NoSuchMethodError (no class loader)
+1   class java.lang.NullPointerException (no class loader)
+0   class java.lang.Number (no class loader)
+43   class java.lang.Object (no class loader)
+307   array class java.lang.Object[] (no class loader)
+8   class java.lang.OutOfMemoryError (no class loader)
+1   array class java.lang.OutOfMemoryError[] (no class loader)
+0   interface java.lang.Readable (no class loader)
+0   class java.lang.ReflectiveOperationException (no class loader)
+0   interface java.lang.Runnable (no class loader)
+0   array class java.lang.Runnable[] (no class loader)
+1   class java.lang.Runtime (no class loader)
+0   class java.lang.RuntimeException (no class loader)
+3   class java.lang.RuntimePermission (no class loader)
+0   class java.lang.Short (no class loader)
+0   class java.lang.StackOverflowError (no class loader)
+2   array class java.lang.StackTraceElement[] (no class loader)
+831   class java.lang.String (no class loader)
+1   class java.lang.String$CaseInsensitiveComparator (no class loader)
+0   class java.lang.StringBuffer (no class loader)
+1   class java.lang.StringBuilder (no class loader)
+0   class java.lang.StringCoding (no class loader)
+1   class java.lang.StringCoding$StringDecoder (no class loader)
+58   array class java.lang.String[] (no class loader)
+0   class java.lang.System (no class loader)
+1   class java.lang.System$2 (no class loader)
+0   class java.lang.SystemClassLoaderAction (no class loader)
+0   class java.lang.Terminator (no class loader)
+1   class java.lang.Terminator$1 (no class loader)
+6   class java.lang.Thread (no class loader)
+0   interface java.lang.Thread$UncaughtExceptionHandler (no class loader)
+0   array class java.lang.Thread$UncaughtExceptionHandler[] (no class loader)
+2   class java.lang.ThreadGroup (no class loader)
+1   array class java.lang.ThreadGroup[] (no class loader)
+7   class java.lang.ThreadLocal (no class loader)
+2   class java.lang.ThreadLocal$ThreadLocalMap (no class loader)
+4   class java.lang.ThreadLocal$ThreadLocalMap$Entry (no class loader)
+2   array class java.lang.ThreadLocal$ThreadLocalMap$Entry[] (no class loader)
+2   array class java.lang.Thread[] (no class loader)
+0   class java.lang.Throwable (no class loader)
+1   array class java.lang.Throwable[] (no class loader)
+2   class java.lang.VirtualMachineError (no class loader)
+0   array class java.lang.VirtualMachineError[] (no class loader)
+0   class java.lang.Void (no class loader)
+0   class java.lang.ref.FinalReference (no class loader)
+4   class java.lang.ref.Finalizer (no class loader)
+1   class java.lang.ref.Finalizer$FinalizerThread (no class loader)
+0   class java.lang.ref.Reference (no class loader)
+1   class java.lang.ref.Reference$Lock (no class loader)
+1   class java.lang.ref.Reference$ReferenceHandler (no class loader)
+7   class java.lang.ref.ReferenceQueue (no class loader)
+9   class java.lang.ref.ReferenceQueue$Lock (no class loader)
+2   class java.lang.ref.ReferenceQueue$Null (no class loader)
+0   array class java.lang.ref.Reference[] (no class loader)
+1   class java.lang.ref.SoftReference (no class loader)
+0   class java.lang.ref.WeakReference (no class loader)
+0   array class java.lang.ref.WeakReference[] (no class loader)
+0   class java.lang.reflect.AccessibleObject (no class loader)
+0   array class java.lang.reflect.AccessibleObject[] (no class loader)
+0   interface java.lang.reflect.AnnotatedElement (no class loader)
+0   array class java.lang.reflect.AnnotatedElement[] (no class loader)
+0   class java.lang.reflect.Array (no class loader)
+0   class java.lang.reflect.Constructor (no class loader)
+0   array class java.lang.reflect.Constructor[] (no class loader)
+0   class java.lang.reflect.Field (no class loader)
+0   array class java.lang.reflect.Field[] (no class loader)
+0   interface java.lang.reflect.GenericDeclaration (no class loader)
+0   array class java.lang.reflect.GenericDeclaration[] (no class loader)
+0   interface java.lang.reflect.Member (no class loader)
+0   array class java.lang.reflect.Member[] (no class loader)
+0   class java.lang.reflect.Method (no class loader)
+0   array class java.lang.reflect.Method[] (no class loader)
+0   class java.lang.reflect.Modifier (no class loader)
+0   class java.lang.reflect.Proxy (no class loader)
+1   class java.lang.reflect.Proxy$KeyFactory (no class loader)
+1   class java.lang.reflect.Proxy$ProxyClassFactory (no class loader)
+1   class java.lang.reflect.ReflectAccess (no class loader)
+1   class java.lang.reflect.ReflectPermission (no class loader)
+0   interface java.lang.reflect.Type (no class loader)
+0   array class java.lang.reflect.Type[] (no class loader)
+1   class java.lang.reflect.WeakCache (no class loader)
+0   interface java.lang.reflect.WeakCache$BiFunction (no class loader)
+0   class java.net.Parts (no class loader)
+19   class java.net.URL (no class loader)
+0   class java.net.URL$1 (no class loader)
+0   class java.net.URLClassLoader (no class loader)
+0   class java.net.URLClassLoader$1 (no class loader)
+1   class java.net.URLClassLoader$7 (no class loader)
+0   class java.net.URLConnection (no class loader)
+0   class java.net.URLStreamHandler (no class loader)
+0   interface java.net.URLStreamHandlerFactory (no class loader)
+0   array class java.net.URL[] (no class loader)
+0   class java.nio.Bits (no class loader)
+1   class java.nio.Bits$1 (no class loader)
+0   class java.nio.Buffer (no class loader)
+0   class java.nio.ByteBuffer (no class loader)
+2   class java.nio.ByteOrder (no class loader)
+0   class java.nio.CharBuffer (no class loader)
+6   class java.nio.DirectByteBuffer (no class loader)
+6   class java.nio.DirectLongBufferU (no class loader)
+2   class java.nio.HeapByteBuffer (no class loader)
+0   class java.nio.HeapCharBuffer (no class loader)
+0   class java.nio.LongBuffer (no class loader)
+0   class java.nio.MappedByteBuffer (no class loader)
+0   class java.nio.charset.Charset (no class loader)
+0   class java.nio.charset.CharsetDecoder (no class loader)
+0   class java.nio.charset.CharsetEncoder (no class loader)
+2   class java.nio.charset.CoderResult (no class loader)
+1   class java.nio.charset.CoderResult$1 (no class loader)
+1   class java.nio.charset.CoderResult$2 (no class loader)
+0   class java.nio.charset.CoderResult$Cache (no class loader)
+3   class java.nio.charset.CodingErrorAction (no class loader)
+0   class java.nio.charset.spi.CharsetProvider (no class loader)
+10   class java.security.AccessControlContext (no class loader)
+0   class java.security.AccessController (no class loader)
+0   class java.security.BasicPermission (no class loader)
+1   class java.security.BasicPermissionCollection (no class loader)
+3   class java.security.CodeSource (no class loader)
+0   interface java.security.Guard (no class loader)
+0   class java.security.Permission (no class loader)
+0   class java.security.PermissionCollection (no class loader)
+1   class java.security.Permissions (no class loader)
+3   array class java.security.Principal[] (no class loader)
+0   interface java.security.PrivilegedAction (no class loader)
+0   class java.security.PrivilegedActionException (no class loader)
+0   interface java.security.PrivilegedExceptionAction (no class loader)
+3   class java.security.ProtectionDomain (no class loader)
+1   class java.security.ProtectionDomain$1 (no class loader)
+1   class java.security.ProtectionDomain$3 (no class loader)
+3   class java.security.ProtectionDomain$Key (no class loader)
+0   class java.security.SecureClassLoader (no class loader)
+1   array class java.security.cert.Certificate[] (no class loader)
+0   class java.util.AbstractCollection (no class loader)
+0   class java.util.AbstractList (no class loader)
+0   class java.util.AbstractMap (no class loader)
+0   class java.util.AbstractSet (no class loader)
+6   class java.util.ArrayList (no class loader)
+0   class java.util.Arrays (no class loader)
+1   class java.util.BitSet (no class loader)
+0   interface java.util.Collection (no class loader)
+0   class java.util.Collections (no class loader)
+1   class java.util.Collections$EmptyList (no class loader)
+1   class java.util.Collections$EmptyMap (no class loader)
+1   class java.util.Collections$EmptySet (no class loader)
+1   class java.util.Collections$SetFromMap (no class loader)
+0   class java.util.Collections$SynchronizedCollection (no class loader)
+3   class java.util.Collections$SynchronizedSet (no class loader)
+0   class java.util.Collections$UnmodifiableCollection (no class loader)
+0   class java.util.Collections$UnmodifiableList (no class loader)
+1   class java.util.Collections$UnmodifiableRandomAccessList (no class loader)
+0   interface java.util.Comparator (no class loader)
+0   class java.util.Dictionary (no class loader)
+0   interface java.util.Enumeration (no class loader)
+14   class java.util.HashMap (no class loader)
+28   class java.util.HashMap$Entry (no class loader)
+0   class java.util.HashMap$EntryIterator (no class loader)
+0   class java.util.HashMap$EntrySet (no class loader)
+12   array class java.util.HashMap$Entry[] (no class loader)
+0   class java.util.HashMap$HashIterator (no class loader)
+0   class java.util.HashMap$Holder (no class loader)
+2   class java.util.HashSet (no class loader)
+4   class java.util.Hashtable (no class loader)
+115   class java.util.Hashtable$Entry (no class loader)
+1   class java.util.Hashtable$EntrySet (no class loader)
+7   array class java.util.Hashtable$Entry[] (no class loader)
+0   class java.util.Hashtable$Enumerator (no class loader)
+0   class java.util.Hashtable$Holder (no class loader)
+0   interface java.util.Iterator (no class loader)
+0   class java.util.LinkedHashMap (no class loader)
+17   class java.util.LinkedHashMap$Entry (no class loader)
+0   interface java.util.List (no class loader)
+20   class java.util.Locale (no class loader)
+1   class java.util.Locale$Cache (no class loader)
+20   class java.util.Locale$LocaleKey (no class loader)
+0   interface java.util.Map (no class loader)
+0   interface java.util.Map$Entry (no class loader)
+0   array class java.util.Map$Entry[] (no class loader)
+0   class java.util.Objects (no class loader)
+3   class java.util.Properties (no class loader)
+0   class java.util.Random (no class loader)
+0   interface java.util.RandomAccess (no class loader)
+0   interface java.util.Set (no class loader)
+3   class java.util.Stack (no class loader)
+0   class java.util.StringTokenizer (no class loader)
+6   class java.util.Vector (no class loader)
+3   class java.util.WeakHashMap (no class loader)
+5   class java.util.WeakHashMap$Entry (no class loader)
+3   array class java.util.WeakHashMap$Entry[] (no class loader)
+0   class java.util.WeakHashMap$Holder (no class loader)
+1   class java.util.WeakHashMap$KeySet (no class loader)
+8   class java.util.concurrent.ConcurrentHashMap (no class loader)
+65   class java.util.concurrent.ConcurrentHashMap$HashEntry (no class loader)
+48   array class java.util.concurrent.ConcurrentHashMap$HashEntry[] (no class loader)
+0   class java.util.concurrent.ConcurrentHashMap$Holder (no class loader)
+48   class java.util.concurrent.ConcurrentHashMap$Segment (no class loader)
+8   array class java.util.concurrent.ConcurrentHashMap$Segment[] (no class loader)
+0   interface java.util.concurrent.ConcurrentMap (no class loader)
+1   class java.util.concurrent.ThreadLocalRandom (no class loader)
+1   class java.util.concurrent.ThreadLocalRandom$1 (no class loader)
+4   class java.util.concurrent.atomic.AtomicInteger (no class loader)
+3   class java.util.concurrent.atomic.AtomicLong (no class loader)
+0   class java.util.concurrent.atomic.AtomicReferenceFieldUpdater (no class loader)
+1   class java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl (no class loader)
+0   class java.util.concurrent.locks.AbstractOwnableSynchronizer (no class loader)
+0   class java.util.concurrent.locks.AbstractQueuedSynchronizer (no class loader)
+0   class java.util.concurrent.locks.AbstractQueuedSynchronizer$Node (no class loader)
+0   interface java.util.concurrent.locks.Lock (no class loader)
+0   array class java.util.concurrent.locks.Lock[] (no class loader)
+0   class java.util.concurrent.locks.ReentrantLock (no class loader)
+48   class java.util.concurrent.locks.ReentrantLock$NonfairSync (no class loader)
+0   class java.util.concurrent.locks.ReentrantLock$Sync (no class loader)
+0   array class java.util.concurrent.locks.ReentrantLock[] (no class loader)
+0   interface java.util.zip.ZipConstants (no class loader)
+0   class java.util.zip.ZipFile (no class loader)
+1   class java.util.zip.ZipFile$2 (no class loader)
+1   array class long[] (no class loader)
+1   array class short[] (no class loader)
+0   class sun.io.Win32ErrorMode (no class loader)
+1   class sun.launcher.LauncherHelper (no class loader)
+1   array class sun.launcher.LauncherHelper[] (no class loader)
+0   class sun.misc.Hashing (no class loader)
+0   class sun.misc.IoTrace (no class loader)
+0   interface sun.misc.JavaIOFileDescriptorAccess (no class loader)
+0   interface sun.misc.JavaLangAccess (no class loader)
+0   interface sun.misc.JavaNetAccess (no class loader)
+0   interface sun.misc.JavaNioAccess (no class loader)
+0   interface sun.misc.JavaSecurityAccess (no class loader)
+0   interface sun.misc.JavaSecurityProtectionDomainAccess (no class loader)
+0   interface sun.misc.JavaUtilZipFileAccess (no class loader)
+1   class sun.misc.Launcher (no class loader)
+1   class sun.misc.Launcher$AppClassLoader (no class loader)
+0   class sun.misc.Launcher$AppClassLoader$1 (no class loader)
+1   class sun.misc.Launcher$ExtClassLoader (no class loader)
+0   class sun.misc.Launcher$ExtClassLoader$1 (no class loader)
+1   class sun.misc.Launcher$Factory (no class loader)
+10   class sun.misc.MetaIndex (no class loader)
+2   class sun.misc.NativeSignalHandler (no class loader)
+0   class sun.misc.OSEnvironment (no class loader)
+1   class sun.misc.Perf (no class loader)
+0   class sun.misc.Perf$GetPerfAction (no class loader)
+6   class sun.misc.PerfCounter (no class loader)
+0   class sun.misc.PerfCounter$CoreCounters (no class loader)
+0   class sun.misc.PostVMInitHook (no class loader)
+0   class sun.misc.Resource (no class loader)
+0   class sun.misc.SharedSecrets (no class loader)
+2   class sun.misc.Signal (no class loader)
+0   interface sun.misc.SignalHandler (no class loader)
+2   class sun.misc.URLClassPath (no class loader)
+0   class sun.misc.URLClassPath$3 (no class loader)
+1   class sun.misc.URLClassPath$FileLoader (no class loader)
+0   class sun.misc.URLClassPath$FileLoader$1 (no class loader)
+9   class sun.misc.URLClassPath$JarLoader (no class loader)
+0   class sun.misc.URLClassPath$Loader (no class loader)
+1   class sun.misc.Unsafe (no class loader)
+0   class sun.misc.VM (no class loader)
+0   class sun.misc.VMSupport (no class loader)
+0   class sun.misc.Version (no class loader)
+0   class sun.net.util.URLUtil (no class loader)
+0   class sun.net.www.MessageHeader (no class loader)
+0   class sun.net.www.ParseUtil (no class loader)
+0   class sun.net.www.URLConnection (no class loader)
+0   class sun.net.www.protocol.file.FileURLConnection (no class loader)
+1   class sun.net.www.protocol.file.Handler (no class loader)
+2   class sun.net.www.protocol.jar.Handler (no class loader)
+0   interface sun.nio.ch.DirectBuffer (no class loader)
+0   interface sun.nio.cs.ArrayDecoder (no class loader)
+0   interface sun.nio.cs.ArrayEncoder (no class loader)
+0   class sun.nio.cs.FastCharsetProvider (no class loader)
+0   interface sun.nio.cs.HistoricallyNamedCharset (no class loader)
+1   class sun.nio.cs.MS1252 (no class loader)
+0   class sun.nio.cs.SingleByte (no class loader)
+1   class sun.nio.cs.SingleByte$Decoder (no class loader)
+2   class sun.nio.cs.SingleByte$Encoder (no class loader)
+1   class sun.nio.cs.StandardCharsets (no class loader)
+1   class sun.nio.cs.StandardCharsets$Aliases (no class loader)
+1   class sun.nio.cs.StandardCharsets$Cache (no class loader)
+1   class sun.nio.cs.StandardCharsets$Classes (no class loader)
+0   class sun.nio.cs.StreamDecoder (no class loader)
+2   class sun.nio.cs.StreamEncoder (no class loader)
+0   class sun.nio.cs.ThreadLocalCoders (no class loader)
+1   class sun.nio.cs.ThreadLocalCoders$1 (no class loader)
+1   class sun.nio.cs.ThreadLocalCoders$2 (no class loader)
+0   class sun.nio.cs.ThreadLocalCoders$Cache (no class loader)
+1   class sun.nio.cs.UTF_8 (no class loader)
+1   class sun.nio.cs.UTF_8$Decoder (no class loader)
+0   class sun.nio.cs.Unicode (no class loader)
+0   interface sun.reflect.ConstructorAccessor (no class loader)
+0   class sun.reflect.ConstructorAccessorImpl (no class loader)
+0   class sun.reflect.DelegatingConstructorAccessorImpl (no class loader)
+0   interface sun.reflect.LangReflectAccess (no class loader)
+0   class sun.reflect.MagicAccessorImpl (no class loader)
+0   class sun.reflect.NativeConstructorAccessorImpl (no class loader)
+0   class sun.reflect.Reflection (no class loader)
+1   class sun.reflect.ReflectionFactory (no class loader)
+0   class sun.reflect.ReflectionFactory$1 (no class loader)
+0   class sun.reflect.ReflectionFactory$GetReflectionFactoryAction (no class loader)
+0   class sun.reflect.misc.ReflectUtil (no class loader)
+0   class sun.security.action.GetPropertyAction (no class loader)
+0   class sun.security.util.Debug (no class loader)
+0   class sun.util.PreHashedMap (no class loader)
+20   class sun.util.locale.BaseLocale (no class loader)
+1   class sun.util.locale.BaseLocale$Cache (no class loader)
+20   class sun.util.locale.BaseLocale$Key (no class loader)
+0   class sun.util.locale.LocaleObjectCache (no class loader)
+40   class sun.util.locale.LocaleObjectCache$CacheEntry (no class loader)
+0   class sun.util.locale.LocaleUtils (no class loader)
+instance counts for 395 classes got 204439 instances and took 246 ms
+
+Getting instances for one class at a time (limited) in sorted order
+Expected 200000 instances, got 200000 instances for class InstancesFiller (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398)) in 1464 ms
+Expected 1001 instances, got 1001 instances for class InstancesTarg (loaded by instance of sun.misc.Launcher$AppClassLoader(id=1398)) in 39 ms
+201001 instances via making one vm.instances call for each of 2 classes took 1505 ms
+Per class = 0 ms
+----------System.err:(3/66)----------
+run args: [InstancesTarg]
+InstancesTest: passed
+STATUS:Passed.
+----------rerun:(20/2457)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\InstancesTest.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

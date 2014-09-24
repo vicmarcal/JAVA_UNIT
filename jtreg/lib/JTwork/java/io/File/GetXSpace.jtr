@@ -1,0 +1,49 @@
+#Test Results (version 2)
+#Fri Sep 05 09:49:21 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\io\\File\\GetXSpace.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug4057701 bug6286712 bug6364377 shell ignore
+run=USER_SPECIFIED ignore until 6492634 and 6501010 is fixed\r\nUSER_SPECIFIED build GetXSpace\r\nUSER_SPECIFIED shell GetXSpace.sh\r\n
+source=GetXSpace.java
+title=Basic functionality of File.get-X-Space methods.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/io/File/GetXSpace.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:49\:21 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: until 6492634 and 6501010 is fixed
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 09\:49\:21 CEST 2014
+test=java/io/File/GetXSpace.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\io\\File
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:ignore
+----------messages:(3/160)----------
+command: ignore until 6492634 and 6501010 is fixed
+reason: User specified action: run ignore until 6492634 and 6501010 is fixed 
+elapsed time (seconds): 0.0
+----------rerun:(2/55)----------
+# @ignore: until 6492634 and 6501010 is fixed
+exit 1
+result: Error. Test ignored: until 6492634 and 6501010 is fixed
+
+
+test result: Error. Test ignored: until 6492634 and 6501010 is fixed

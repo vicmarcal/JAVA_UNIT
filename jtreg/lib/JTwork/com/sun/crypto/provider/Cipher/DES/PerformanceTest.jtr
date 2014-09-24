@@ -1,0 +1,51 @@
+#Test Results (version 2)
+#Fri Sep 05 10:05:23 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\DES\\PerformanceTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Jan Luehe  ignore since this test exists for performance purpose and can be run separately if needed.
+keywords=bug0000000 ignore
+maxTimeout=900
+run=USER_SPECIFIED ignore run main/timeout\=900 PerformanceTest\r\n
+source=PerformanceTest.java
+title=PerformanceTest
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/crypto/provider/Cipher/DES/PerformanceTest.java
+elapsed=108 0\:00\:00.108
+end=Fri Sep 05 10\:05\:23 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: run main/timeout\=900 PerformanceTest
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 10\:05\:23 CEST 2014
+test=com/sun/crypto/provider/Cipher/DES/PerformanceTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\crypto\\provider\\Cipher\\DES
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:ignore
+----------messages:(3/167)----------
+command: ignore run main/timeout=900 PerformanceTest
+reason: User specified action: run ignore run main/timeout=900 PerformanceTest 
+elapsed time (seconds): 0.0020
+----------rerun:(2/57)----------
+# @ignore: run main/timeout=900 PerformanceTest
+exit 1
+result: Error. Test ignored: run main/timeout=900 PerformanceTest
+
+
+test result: Error. Test ignored: run main/timeout=900 PerformanceTest

@@ -1,0 +1,325 @@
+#Test Results (version 2)
+#Fri Sep 05 10:17:54 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\SuspendThreadTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=jjh
+keywords=bug6485605
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter\r\nUSER_SPECIFIED compile -g SuspendThreadTest.java\r\nUSER_SPECIFIED main SuspendThreadTest\r\n
+source=SuspendThreadTest.java
+title=com.sun.jdi.InternalException\: Inconsistent suspend policy in internal event handler
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/SuspendThreadTest.java
+elapsed=8114 0\:00\:08.114
+end=Fri Sep 05 10\:17\:54 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build main
+start=Fri Sep 05 10\:17\:46 CEST 2014
+test=com/sun/jdi/SuspendThreadTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/201)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter 
+elapsed time (seconds): 0.0020
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/203)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\SuspendThreadTest.java
+reason: User specified action: run compile -g SuspendThreadTest.java 
+elapsed time (seconds): 1.775
+----------rerun:(19/2579)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\SuspendThreadTest.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/103)----------
+command: build SuspendThreadTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/123)----------
+command: main SuspendThreadTest
+reason: User specified action: run main SuspendThreadTest 
+elapsed time (seconds): 6.33
+----------System.out:(208/10159)----------
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Howdy!
+Got BreakpointEvent: 0, debuggeeCount = 0
+Got BreakpointEvent: 1, debuggeeCount = 1278
+Got BreakpointEvent: 2, debuggeeCount = 2369
+Got BreakpointEvent: 3, debuggeeCount = 3332
+Got BreakpointEvent: 4, debuggeeCount = 4433
+Got BreakpointEvent: 5, debuggeeCount = 5588
+Got BreakpointEvent: 6, debuggeeCount = 7153
+Got BreakpointEvent: 7, debuggeeCount = 8234
+Got BreakpointEvent: 8, debuggeeCount = 9115
+Got BreakpointEvent: 9, debuggeeCount = 10377
+Got BreakpointEvent: 10, debuggeeCount = 11362
+Got BreakpointEvent: 11, debuggeeCount = 12479
+Got BreakpointEvent: 12, debuggeeCount = 13517
+Got BreakpointEvent: 13, debuggeeCount = 14562
+Got BreakpointEvent: 14, debuggeeCount = 16498
+Got BreakpointEvent: 15, debuggeeCount = 17645
+Got BreakpointEvent: 16, debuggeeCount = 18745
+Got BreakpointEvent: 17, debuggeeCount = 19967
+Got BreakpointEvent: 18, debuggeeCount = 21058
+Got BreakpointEvent: 19, debuggeeCount = 22039
+Got BreakpointEvent: 20, debuggeeCount = 22972
+Got BreakpointEvent: 21, debuggeeCount = 23974
+Got BreakpointEvent: 22, debuggeeCount = 24904
+Got BreakpointEvent: 23, debuggeeCount = 26345
+Got BreakpointEvent: 24, debuggeeCount = 28482
+Got BreakpointEvent: 25, debuggeeCount = 30629
+Got BreakpointEvent: 26, debuggeeCount = 31972
+Got BreakpointEvent: 27, debuggeeCount = 33683
+Got BreakpointEvent: 28, debuggeeCount = 35223
+Got BreakpointEvent: 29, debuggeeCount = 37579
+Got BreakpointEvent: 30, debuggeeCount = 39615
+Got BreakpointEvent: 31, debuggeeCount = 41287
+Got BreakpointEvent: 32, debuggeeCount = 43066
+Got BreakpointEvent: 33, debuggeeCount = 44697
+Got BreakpointEvent: 34, debuggeeCount = 46458
+Got BreakpointEvent: 35, debuggeeCount = 48536
+Got BreakpointEvent: 36, debuggeeCount = 50175
+Got BreakpointEvent: 37, debuggeeCount = 52120
+Got BreakpointEvent: 38, debuggeeCount = 53714
+Got BreakpointEvent: 39, debuggeeCount = 55370
+Got BreakpointEvent: 40, debuggeeCount = 56944
+Got BreakpointEvent: 41, debuggeeCount = 58525
+Got BreakpointEvent: 42, debuggeeCount = 59980
+Got BreakpointEvent: 43, debuggeeCount = 61607
+Got BreakpointEvent: 44, debuggeeCount = 63394
+Got BreakpointEvent: 45, debuggeeCount = 64991
+Got BreakpointEvent: 46, debuggeeCount = 66681
+Got BreakpointEvent: 47, debuggeeCount = 68271
+Got BreakpointEvent: 48, debuggeeCount = 69929
+Got BreakpointEvent: 49, debuggeeCount = 71531
+Got BreakpointEvent: 50, debuggeeCount = 73183
+Got BreakpointEvent: 51, debuggeeCount = 75115
+Got BreakpointEvent: 52, debuggeeCount = 76716
+Got BreakpointEvent: 53, debuggeeCount = 78292
+Got BreakpointEvent: 54, debuggeeCount = 79933
+Got BreakpointEvent: 55, debuggeeCount = 81254
+Got BreakpointEvent: 56, debuggeeCount = 82811
+Got BreakpointEvent: 57, debuggeeCount = 84484
+Got BreakpointEvent: 58, debuggeeCount = 86055
+Got BreakpointEvent: 59, debuggeeCount = 87757
+Got BreakpointEvent: 60, debuggeeCount = 89300
+Got BreakpointEvent: 61, debuggeeCount = 90904
+Got BreakpointEvent: 62, debuggeeCount = 92491
+Got BreakpointEvent: 63, debuggeeCount = 94040
+Got BreakpointEvent: 64, debuggeeCount = 95699
+Got BreakpointEvent: 65, debuggeeCount = 97793
+Got BreakpointEvent: 66, debuggeeCount = 100119
+Got BreakpointEvent: 67, debuggeeCount = 102071
+Got BreakpointEvent: 68, debuggeeCount = 103927
+Got BreakpointEvent: 69, debuggeeCount = 105982
+Got BreakpointEvent: 70, debuggeeCount = 107876
+Got BreakpointEvent: 71, debuggeeCount = 109213
+Got BreakpointEvent: 72, debuggeeCount = 110872
+Got BreakpointEvent: 73, debuggeeCount = 112370
+Got BreakpointEvent: 74, debuggeeCount = 114195
+Got BreakpointEvent: 75, debuggeeCount = 116115
+Got BreakpointEvent: 76, debuggeeCount = 117748
+Got BreakpointEvent: 77, debuggeeCount = 119657
+Got BreakpointEvent: 78, debuggeeCount = 121678
+Got BreakpointEvent: 79, debuggeeCount = 123605
+Got BreakpointEvent: 80, debuggeeCount = 125610
+Got BreakpointEvent: 81, debuggeeCount = 127215
+Got BreakpointEvent: 82, debuggeeCount = 128769
+Got BreakpointEvent: 83, debuggeeCount = 130489
+Got BreakpointEvent: 84, debuggeeCount = 132051
+Got BreakpointEvent: 85, debuggeeCount = 133979
+Got BreakpointEvent: 86, debuggeeCount = 135921
+Got BreakpointEvent: 87, debuggeeCount = 137468
+Got BreakpointEvent: 88, debuggeeCount = 139696
+Got BreakpointEvent: 89, debuggeeCount = 141256
+Got BreakpointEvent: 90, debuggeeCount = 142856
+Got BreakpointEvent: 91, debuggeeCount = 144418
+Got BreakpointEvent: 92, debuggeeCount = 146296
+Got BreakpointEvent: 93, debuggeeCount = 148654
+Got BreakpointEvent: 94, debuggeeCount = 150357
+Got BreakpointEvent: 95, debuggeeCount = 151954
+Got BreakpointEvent: 96, debuggeeCount = 154426
+Got BreakpointEvent: 97, debuggeeCount = 156835
+Got BreakpointEvent: 98, debuggeeCount = 158518
+Got BreakpointEvent: 99, debuggeeCount = 160865
+Got BreakpointEvent: 100, debuggeeCount = 162327
+Got BreakpointEvent: 101, debuggeeCount = 164704
+Got BreakpointEvent: 102, debuggeeCount = 167152
+Got BreakpointEvent: 103, debuggeeCount = 169521
+Got BreakpointEvent: 104, debuggeeCount = 171898
+Got BreakpointEvent: 105, debuggeeCount = 174325
+Got BreakpointEvent: 106, debuggeeCount = 175871
+Got BreakpointEvent: 107, debuggeeCount = 177501
+Got BreakpointEvent: 108, debuggeeCount = 179129
+Got BreakpointEvent: 109, debuggeeCount = 180711
+Got BreakpointEvent: 110, debuggeeCount = 182348
+Got BreakpointEvent: 111, debuggeeCount = 184747
+Got BreakpointEvent: 112, debuggeeCount = 187092
+Got BreakpointEvent: 113, debuggeeCount = 188707
+Got BreakpointEvent: 114, debuggeeCount = 191112
+Got BreakpointEvent: 115, debuggeeCount = 192960
+Got BreakpointEvent: 116, debuggeeCount = 194536
+Got BreakpointEvent: 117, debuggeeCount = 195878
+Got BreakpointEvent: 118, debuggeeCount = 197454
+Got BreakpointEvent: 119, debuggeeCount = 199005
+Got BreakpointEvent: 120, debuggeeCount = 200529
+Got BreakpointEvent: 121, debuggeeCount = 202109
+Got BreakpointEvent: 122, debuggeeCount = 203651
+Got BreakpointEvent: 123, debuggeeCount = 205995
+Got BreakpointEvent: 124, debuggeeCount = 208363
+Got BreakpointEvent: 125, debuggeeCount = 209953
+Got BreakpointEvent: 126, debuggeeCount = 211522
+Got BreakpointEvent: 127, debuggeeCount = 213903
+Got BreakpointEvent: 128, debuggeeCount = 216674
+Got BreakpointEvent: 129, debuggeeCount = 219376
+Got BreakpointEvent: 130, debuggeeCount = 220661
+Got BreakpointEvent: 131, debuggeeCount = 222201
+Got BreakpointEvent: 132, debuggeeCount = 223771
+Got BreakpointEvent: 133, debuggeeCount = 225469
+Got BreakpointEvent: 134, debuggeeCount = 227064
+Got BreakpointEvent: 135, debuggeeCount = 228606
+Got BreakpointEvent: 136, debuggeeCount = 231664
+Got BreakpointEvent: 137, debuggeeCount = 234905
+Got BreakpointEvent: 138, debuggeeCount = 236496
+Got BreakpointEvent: 139, debuggeeCount = 238030
+Got BreakpointEvent: 140, debuggeeCount = 240365
+Got BreakpointEvent: 141, debuggeeCount = 241947
+Got BreakpointEvent: 142, debuggeeCount = 244345
+Got BreakpointEvent: 143, debuggeeCount = 245873
+Got BreakpointEvent: 144, debuggeeCount = 247486
+Got BreakpointEvent: 145, debuggeeCount = 249127
+Got BreakpointEvent: 146, debuggeeCount = 250737
+Got BreakpointEvent: 147, debuggeeCount = 252433
+Got BreakpointEvent: 148, debuggeeCount = 254849
+Got BreakpointEvent: 149, debuggeeCount = 256390
+Got BreakpointEvent: 150, debuggeeCount = 258425
+Got BreakpointEvent: 151, debuggeeCount = 260014
+Got BreakpointEvent: 152, debuggeeCount = 261563
+Got BreakpointEvent: 153, debuggeeCount = 263141
+Got BreakpointEvent: 154, debuggeeCount = 264718
+Got BreakpointEvent: 155, debuggeeCount = 266283
+Got BreakpointEvent: 156, debuggeeCount = 267413
+Got BreakpointEvent: 157, debuggeeCount = 268829
+Got BreakpointEvent: 158, debuggeeCount = 270350
+Got BreakpointEvent: 159, debuggeeCount = 271793
+Got BreakpointEvent: 160, debuggeeCount = 273320
+Got BreakpointEvent: 161, debuggeeCount = 274855
+Got BreakpointEvent: 162, debuggeeCount = 276337
+Got BreakpointEvent: 163, debuggeeCount = 278620
+Got BreakpointEvent: 164, debuggeeCount = 281218
+Got BreakpointEvent: 165, debuggeeCount = 282758
+Got BreakpointEvent: 166, debuggeeCount = 284330
+Got BreakpointEvent: 167, debuggeeCount = 286649
+Got BreakpointEvent: 168, debuggeeCount = 289134
+Got BreakpointEvent: 169, debuggeeCount = 290632
+Got BreakpointEvent: 170, debuggeeCount = 292213
+Got BreakpointEvent: 171, debuggeeCount = 293748
+Got BreakpointEvent: 172, debuggeeCount = 295406
+Got BreakpointEvent: 173, debuggeeCount = 296920
+Got BreakpointEvent: 174, debuggeeCount = 298432
+Got BreakpointEvent: 175, debuggeeCount = 299937
+Got BreakpointEvent: 176, debuggeeCount = 301352
+Got BreakpointEvent: 177, debuggeeCount = 303646
+Got BreakpointEvent: 178, debuggeeCount = 305169
+Got BreakpointEvent: 179, debuggeeCount = 306807
+Got BreakpointEvent: 180, debuggeeCount = 308357
+Got BreakpointEvent: 181, debuggeeCount = 310645
+Got BreakpointEvent: 182, debuggeeCount = 311909
+Got BreakpointEvent: 183, debuggeeCount = 312937
+Got BreakpointEvent: 184, debuggeeCount = 315256
+Got BreakpointEvent: 185, debuggeeCount = 317555
+Got BreakpointEvent: 186, debuggeeCount = 319073
+Got BreakpointEvent: 187, debuggeeCount = 320592
+Got BreakpointEvent: 188, debuggeeCount = 322708
+Got BreakpointEvent: 189, debuggeeCount = 324224
+Got BreakpointEvent: 190, debuggeeCount = 325729
+Got BreakpointEvent: 191, debuggeeCount = 328401
+Got BreakpointEvent: 192, debuggeeCount = 331078
+Got BreakpointEvent: 193, debuggeeCount = 334074
+Got BreakpointEvent: 194, debuggeeCount = 336790
+Got BreakpointEvent: 195, debuggeeCount = 337934
+Got BreakpointEvent: 196, debuggeeCount = 340659
+Got BreakpointEvent: 197, debuggeeCount = 343442
+Got BreakpointEvent: 198, debuggeeCount = 344954
+Got BreakpointEvent: 199, debuggeeCount = 346448
+Got BreakpointEvent: 200, debuggeeCount = 347976
+----------System.err:(4/90)----------
+run args: [SuspendThreadTarg]
+done with loop
+SuspendThreadTest: passed
+STATUS:Passed.
+----------rerun:(20/2461)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\SuspendThreadTest.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

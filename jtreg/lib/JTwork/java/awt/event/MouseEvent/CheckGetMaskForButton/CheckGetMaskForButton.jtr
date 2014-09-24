@@ -1,0 +1,121 @@
+#Test Results (version 2)
+#Fri Sep 05 10:44:05 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton\\CheckGetMaskForButton.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Andrei Dmitriev \: area\=awt.event
+keywords=bug6315717
+run=USER_SPECIFIED main CheckGetMaskForButton\r\n
+source=CheckGetMaskForButton.java
+title=verifies that InputEvent.getMaskForButton() returns the same values as in InputEvent.BUTTON_DOWN_MASK
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/MouseEvent/CheckGetMaskForButton/CheckGetMaskForButton.java
+elapsed=3052 0\:00\:03.052
+end=Fri Sep 05 10\:44\:05 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:44\:02 CEST 2014
+test=java/awt/event/MouseEvent/CheckGetMaskForButton/CheckGetMaskForButton.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/109)----------
+command: build CheckGetMaskForButton
+reason: Named class compiled on demand
+elapsed time (seconds): 2.227
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/249)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton\\CheckGetMaskForButton.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.226
+----------rerun:(19/2949)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton\\CheckGetMaskForButton.java'
+----------System.out:(0/0)----------
+----------System.err:(2/218)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton\\CheckGetMaskForButton.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/131)----------
+command: main CheckGetMaskForButton
+reason: User specified action: run main CheckGetMaskForButton 
+elapsed time (seconds): 0.82
+----------System.out:(12/256)----------
+Number Of Buttons = 5
+Test (API): 1024
+Test (API): 2048
+Test (API): 4096
+Test (API): 16384
+Test (API): 32768
+Test (Reflection): 1024
+Test (Reflection): 2048
+Test (Reflection): 4096
+Test (Reflection): 16384
+Test (Reflection): 32768
+Test passed.
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2731)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\CheckGetMaskForButton\\CheckGetMaskForButton.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

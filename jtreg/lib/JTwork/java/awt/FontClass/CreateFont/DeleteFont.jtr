@@ -1,0 +1,64 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:47 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\FontClass\\CreateFont\\DeleteFont.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug6189812 bug6380357 bug6632886
+run=ASSUMED_ACTION shell DeleteFont.sh\r\n
+source=DeleteFont.sh
+title=Verify that temporary font files are deleted on exit.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/FontClass/CreateFont/DeleteFont.sh
+elapsed=4 0\:00\:00.004
+end=Fri Sep 05 10\:00\:47 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `sh'\: java.io.IOException\: Cannot run program "sh" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages shell
+start=Fri Sep 05 10\:00\:47 CEST 2014
+test=java/awt/FontClass/CreateFont/DeleteFont.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\FontClass\\CreateFont
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+#section:shell
+----------messages:(3/131)----------
+command: shell DeleteFont.sh
+reason: Assumed action based on file name: run shell DeleteFont.sh 
+elapsed time (seconds): 0.0020
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+----------rerun:(19/1773)*----------
+'PATH=C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/Common Files/Microsoft Shared/Windows Live;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/WIDCOMM/Bluetooth Software/;C:/Program Files/WIDCOMM/Bluetooth Software/syswow64;/;C:/Program Files (x86)/Sony/VAIO Startup Setting Tool;C:/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files/VDownloader;C:/RosBE/Bin;C:/Program Files/TortoiseSVN/bin;C:/Program Files/OpenVPN/bin;C:/Program Files/TortoiseGit/bin;C:/Program Files (x86)/QuickTime/QTSystem/;c:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/DTS/Binn/' \\
+SystemDrive=C: \\
+SystemRoot=C:/Windows \\
+TEMP=C:/Users/Victor/AppData/Local/Temp \\
+TMP=C:/Users/Victor/AppData/Local/Temp \\
+windir=C:/Windows \\
+TESTSRC=C:/Users/Victor/Downloads/Java/test/java/awt/FontClass/CreateFont \\
+TESTSRCPATH=C:/Users/Victor/Downloads/Java/test/java/awt/FontClass/CreateFont \\
+TESTCLASSES=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/java/awt/FontClass/CreateFont \\
+TESTCLASSPATH=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/java/awt/FontClass/CreateFont \\
+'COMPILEJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65/bin' \\
+'TESTJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65/bin' \\
+TESTVMOPTS= \\
+TESTTOOLVMOPTS= \\
+TESTJAVACOPTS= \\
+TESTJAVAOPTS= \\
+TESTTIMEOUTFACTOR=1.0 \\
+    sh \\
+        'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\FontClass\\CreateFont\\DeleteFont.sh'
+result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

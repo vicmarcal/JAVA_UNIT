@@ -1,0 +1,162 @@
+#Test Results (version 2)
+#Fri Sep 05 10:18:52 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\VMDeathRequestTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Robert Field
+keywords=bug4419314
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter\r\nUSER_SPECIFIED compile -g HelloWorld.java\r\nUSER_SPECIFIED build VMDeathRequestTest\r\nUSER_SPECIFIED main VMDeathRequestTest\r\n
+source=VMDeathRequestTest.java
+title=VMDeathRequestTest checks to see that VMDisconnectedException is never thrown before VMDisconnectEvent.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/VMDeathRequestTest.java
+elapsed=4830 0\:00\:04.830
+end=Fri Sep 05 10\:18\:52 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build compile build main
+start=Fri Sep 05 10\:18\:47 CEST 2014
+test=com/sun/jdi/VMDeathRequestTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/201)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter 
+elapsed time (seconds): 0.0030
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/189)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\HelloWorld.java
+reason: User specified action: run compile -g HelloWorld.java 
+elapsed time (seconds): 1.595
+----------rerun:(19/2572)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\HelloWorld.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/127)----------
+command: build VMDeathRequestTest
+reason: User specified action: run build VMDeathRequestTest 
+elapsed time (seconds): 1.81
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/208)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\VMDeathRequestTest.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.809
+----------rerun:(19/2604)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\VMDeathRequestTest.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/107)----------
+command: build VMDeathRequestTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/126)----------
+command: main VMDeathRequestTest
+reason: User specified action: run main VMDeathRequestTest 
+elapsed time (seconds): 1.417
+----------System.out:(7/304)----------
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Hello, world!
+----------System.err:(6/145)----------
+run args: [HelloWorld]
+Got requested VMDeathEvent
+Got default VMDeathEvent
+Got VMDisconnectEvent
+VMDeathRequestTest: passed
+STATUS:Passed.
+----------rerun:(20/2462)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\VMDeathRequestTest.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

@@ -1,0 +1,17 @@
+# Trace file started at Sat Sep 06 21:37:32 CEST 2014
+# JT Harness version 4.4.1
+# class directory: C:\Users\Victor\Downloads\Java\jtreg+tests\jtreg\lib\javatest.jar
+# using java: C:\Program Files\Java\jre6
+Starting tests.
+Test suite class: com.sun.javatest.regtest.RegressionTestSuite
+Test finder class: com.sun.javatest.regtest.RegressionTestFinder
+
+Test starting: com/sun/awt/SecurityWarning/GetSizeShouldNotReturnZero.java
+
+Test finished: com/sun/awt/SecurityWarning/GetSizeShouldNotReturnZero.java: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg+tests\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+Test starting: com/sun/awt/Translucency/WindowOpacity.java
+
+Test finished: com/sun/awt/Translucency/WindowOpacity.java: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\java': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\java" (in directory "C:\Users\Victor\Downloads\Java\jtreg+tests\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+Doing post-run cleanup
+Completed: Some tests did not pass

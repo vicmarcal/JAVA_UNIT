@@ -1,0 +1,72 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:54 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport\\Test4092905.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Graham Hamilton
+keywords=bug4092905
+run=ASSUMED_ACTION main Test4092905\r\n
+source=Test4092905.java
+title=Tests that hasListeners() is not failed across serialization
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/beans/PropertyChangeSupport/Test4092905.java
+elapsed=5 0\:00\:00.005
+end=Fri Sep 05 10\:00\:54 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `C\:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac'\: java.io.IOException\: Cannot run program "C\:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 10\:00\:54 CEST 2014
+test=java/beans/PropertyChangeSupport/Test4092905.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\beans\\PropertyChangeSupport
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+#section:build
+----------messages:(3/100)----------
+command: build Test4092905
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0030
+result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+#section:compile
+----------messages:(3/223)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport\\Test4092905.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 0.0020
+----------rerun:(19/2742)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\PropertyChangeSupport' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\PropertyChangeSupport' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\PropertyChangeSupport' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\PropertyChangeSupport;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\PropertyChangeSupport\\Test4092905.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

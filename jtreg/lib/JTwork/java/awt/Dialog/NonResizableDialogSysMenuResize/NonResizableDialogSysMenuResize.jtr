@@ -1,0 +1,158 @@
+#Test Results (version 2)
+#Fri Sep 05 10:38:50 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize\\NonResizableDialogSysMenuResize.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=anthony.petrov@...\: area\=awt.toplevel
+keywords=bug6494016
+library=../../regtesthelpers
+run=USER_SPECIFIED build Util\r\nUSER_SPECIFIED main NonResizableDialogSysMenuResize\r\n
+source=NonResizableDialogSysMenuResize.java
+title=Nonresizable dialogs should not be resized using the Size SystemMenu command
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/Dialog/NonResizableDialogSysMenuResize/NonResizableDialogSysMenuResize.java
+elapsed=9448 0\:00\:09.448
+end=Fri Sep 05 10\:38\:50 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build compile main
+start=Fri Sep 05 10\:38\:41 CEST 2014
+test=java/awt/Dialog/NonResizableDialogSysMenuResize/NonResizableDialogSysMenuResize.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/99)----------
+command: build Util
+reason: User specified action: run build Util 
+elapsed time (seconds): 2.53
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/206)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.528
+----------rerun:(19/3089)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java'
+----------System.out:(0/0)----------
+----------System.err:(4/351)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/119)----------
+command: build NonResizableDialogSysMenuResize
+reason: Named class compiled on demand
+elapsed time (seconds): 2.305
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/258)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize\\NonResizableDialogSysMenuResize.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.303
+----------rerun:(19/3166)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize\\NonResizableDialogSysMenuResize.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/152)----------
+command: main NonResizableDialogSysMenuResize
+reason: User specified action: run main NonResizableDialogSysMenuResize 
+elapsed time (seconds): 4.609
+----------System.out:(10/622)----------
+Any messages for the tester will display here.
+Any messages for the tester will display here.
+NOTE: The test is known to work correctly with English MS Windows only.
+NOTE: The test is known to work correctly with English MS Windows only.
+The initial position of the dialog is: java.awt.Point[x=200,y=200]; the size is: java.awt.Dimension[width=132,height=100]
+AFTER RESIZE: The position of the dialog is: java.awt.Point[x=200,y=200]; the size is: java.awt.Dimension[width=132,height=100]
+The test passed.
+The test passed.
+The test is over, hit  Ctl-C to stop Java VM
+The test is over, hit  Ctl-C to stop Java VM
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/3012)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\Dialog\\NonResizableDialogSysMenuResize\\NonResizableDialogSysMenuResize.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

@@ -1,0 +1,244 @@
+#Test Results (version 2)
+#Fri Sep 05 10:46:34 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel\\SmoothWheel.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=dmitry cherepanov\: area\=awt.event
+keywords=bug6524352 manual
+run=USER_SPECIFIED main/manual SmoothWheel\r\n
+source=SmoothWheel.java
+title=support for high-resolution mouse wheel
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/MouseEvent/SmoothWheel/SmoothWheel.java
+elapsed=82236 0\:01\:22.236
+end=Fri Sep 05 10\:46\:34 CEST 2014
+environment=regtest
+execStatus=Error. Program `C\:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' interrupted\! (timed out?)
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:45\:12 CEST 2014
+test=java/awt/event/MouseEvent/SmoothWheel/SmoothWheel.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\MouseEvent\\SmoothWheel
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/99)----------
+command: build SmoothWheel
+reason: Named class compiled on demand
+elapsed time (seconds): 2.285
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/229)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel\\SmoothWheel.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.283
+----------rerun:(19/2849)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel\\SmoothWheel.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/120)----------
+command: main SmoothWheel
+reason: User specified action: run main/manual SmoothWheel 
+elapsed time (seconds): 79.945
+----------System.out:(138/30138)----------
+Any messages for the tester will display here.
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(330,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(330,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-2,preciseWheelRotation=-2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-2,preciseWheelRotation=-2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(340,344),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=4,preciseWheelRotation=4.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-3,preciseWheelRotation=-3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=0,preciseWheelRotation=-0.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(574,291),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(144,109),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(146,119),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(146,119),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(146,119),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(146,119),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=11,preciseWheelRotation=11.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(160,152),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=7,preciseWheelRotation=7.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=10,preciseWheelRotation=10.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=7,preciseWheelRotation=7.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=4,preciseWheelRotation=4.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=4,preciseWheelRotation=4.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=8,preciseWheelRotation=8.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=10,preciseWheelRotation=10.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,157),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=7,preciseWheelRotation=7.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=2,preciseWheelRotation=2.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(164,161),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=-1,preciseWheelRotation=-1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=5,preciseWheelRotation=5.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(579,140),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=1,preciseWheelRotation=1.0] on frame0
+java.awt.event.MouseWheelEvent[MOUSE_WHEEL,(580,144),absolute(0,0),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0,scrollType=WHEEL_UNIT_SCROLL,scrollAmount=3,wheelRotation=3,preciseWheelRotation=3.0] on frame0
+----------System.err:(0/0)----------
+----------rerun:(20/2651)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\SmoothWheel\\SmoothWheel.jta'
+result: Error. Program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\java' interrupted! (timed out?)
+
+
+test result: Error. Program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\java' interrupted! (timed out?)

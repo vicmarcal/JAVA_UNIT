@@ -1,0 +1,334 @@
+#Test Results (version 2)
+#Fri Sep 05 10:41:32 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative\\ImageDecoratedDnDNegative.html
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Your Name\: Alexey Utkin area\=dnd
+keywords=bug4874070
+run=USER_SPECIFIED applet ImageDecoratedDnDNegative.html\r\n
+source=ImageDecoratedDnDNegative.html
+title=Tests basic DnD functionality
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/dnd/ImageDecoratedDnDNegative/ImageDecoratedDnDNegative.html
+elapsed=18849 0\:00\:18.849
+end=Fri Sep 05 10\:41\:32 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile applet
+start=Fri Sep 05 10\:41\:13 CEST 2014
+test=java/awt/dnd/ImageDecoratedDnDNegative/ImageDecoratedDnDNegative.html
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\dnd\\ImageDecoratedDnDNegative
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/113)----------
+command: build ImageDecoratedDnDNegative
+reason: Named class compiled on demand
+elapsed time (seconds): 2.865
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/243)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative\\ImageDecoratedDnDNegative.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.863
+----------rerun:(19/2863)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative\\ImageDecoratedDnDNegative.java'
+----------System.out:(0/0)----------
+----------System.err:(2/213)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative\\ImageDecoratedDnDNegative.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+result: Passed. Compilation successful
+
+#section:applet
+----------messages:(3/155)----------
+command: applet ImageDecoratedDnDNegative.html
+reason: User specified action: run applet ImageDecoratedDnDNegative.html 
+elapsed time (seconds): 15.975
+----------System.out:(235/4197)----------
+starting Drag
+starting Drag
+starting Drag
+[Target] dragEnter
+[Source] dragEnter
+[Source] dragEnter
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] dragExit
+[Source] dragExit
+[Source] dragExit
+[Target] dragEnter
+[Source] dragEnter
+[Source] dragEnter
+[Target] dragOver
+[Source] dragOver
+dropAction = 2
+[Source] dragOver
+dropAction = 2
+[Target] drop
+[Source] dragDropEnd
+[Source] dragDropEnd
+----------System.err:(3/149)----------
+good exception: drag image creation problem: drag image is not ready
+good exception: drag image creation problem: test exception 1
+STATUS:Passed.
+----------rerun:(8/2540)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -Dtest.vm.opts= '-Dcompile.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' '-Dtest.src.path=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative' '-Dtest.src=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\dnd\\ImageDecoratedDnDNegative' -Dtest.tool.vm.opts= '-Dtest.class.path=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative' -Dtest.timeout.factor=1.0 '-Dtest.classes=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative' '-Dtest.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' -Dtest.java.opts= -Dtest.compiler.opts= -mx128m com.sun.javatest.regtest.AppletWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\dnd\\ImageDecoratedDnDNegative\\ImageDecoratedDnDNegative.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

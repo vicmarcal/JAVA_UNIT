@@ -1,0 +1,206 @@
+#Test Results (version 2)
+#Fri Sep 05 10:34:54 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\MonitorTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug5012882
+run=USER_SPECIFIED compile -g ../Context.java ../DemoRun.java\r\nUSER_SPECIFIED build MonitorTest\r\nUSER_SPECIFIED main MonitorTest Context 25 200 1000\r\n
+source=MonitorTest.java
+title=Test jvmti hprof
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/demo/jvmti/hprof/MonitorTest.java
+elapsed=6007 0\:00\:06.007
+end=Fri Sep 05 10\:34\:54 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages compile build compile build main
+start=Fri Sep 05 10\:34\:48 CEST 2014
+test=demo/jvmti/hprof/MonitorTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\demo\\jvmti\\hprof
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:compile
+----------messages:(3/290)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\..\\Context.java C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\..\\DemoRun.java
+reason: User specified action: run compile -g ../Context.java ../DemoRun.java 
+elapsed time (seconds): 2.416
+----------rerun:(19/2699)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof;C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\..\\Context.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\..\\DemoRun.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/114)----------
+command: build MonitorTest
+reason: User specified action: run build MonitorTest 
+elapsed time (seconds): 2.087
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/206)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\MonitorTest.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.086
+----------rerun:(19/2642)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof;C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof\\MonitorTest.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/97)----------
+command: build MonitorTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/152)----------
+command: main MonitorTest Context 25 200 1000
+reason: User specified action: run main MonitorTest Context 25 200 1000 
+elapsed time (seconds): 1.484
+----------System.out:(64/4059)*----------
+Starting: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\jre\\bin\\java -cp C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof -Dtest.classes=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof -Xcheck:jni -Xverify:all -agentlib:hprof=monitor=y Context
+Context started with 5 threads and 10 turns per thread
+Context sleeping, so threads will start wait
+Context sleeping, so threads can run
+Turn #1 taken by thread 0, 1 turns taken by this thread
+Turn #2 taken by thread 1, 1 turns taken by this thread
+Turn #3 taken by thread 2, 1 turns taken by this thread
+Turn #4 taken by thread 3, 1 turns taken by this thread
+Turn #5 taken by thread 4, 1 turns taken by this thread
+Turn #6 taken by thread 0, 2 turns taken by this thread
+Turn #7 taken by thread 1, 2 turns taken by this thread
+Turn #8 taken by thread 2, 2 turns taken by this thread
+Context sleeping, so threads will complete
+Turn #9 taken by thread 3, 2 turns taken by this thread
+Turn #10 taken by thread 4, 2 turns taken by this thread
+Turn #11 taken by thread 0, 3 turns taken by this thread
+Turn #12 taken by thread 1, 3 turns taken by this thread
+Turn #13 taken by thread 2, 3 turns taken by this thread
+Turn #14 taken by thread 3, 3 turns taken by this thread
+Turn #15 taken by thread 4, 3 turns taken by this thread
+Turn #16 taken by thread 0, 4 turns taken by this thread
+Turn #17 taken by thread 1, 4 turns taken by this thread
+Turn #18 taken by thread 2, 4 turns taken by this thread
+Turn #19 taken by thread 3, 4 turns taken by this thread
+Turn #20 taken by thread 4, 4 turns taken by this thread
+Turn #21 taken by thread 0, 5 turns taken by this thread
+Turn #22 taken by thread 1, 5 turns taken by this thread
+Turn #23 taken by thread 2, 5 turns taken by this thread
+Context sleeping, so threads will complete
+Turn #24 taken by thread 3, 5 turns taken by this thread
+Turn #25 taken by thread 4, 5 turns taken by this thread
+Turn #26 taken by thread 0, 6 turns taken by this thread
+Turn #27 taken by thread 1, 6 turns taken by this thread
+Turn #28 taken by thread 2, 6 turns taken by this thread
+Turn #29 taken by thread 3, 6 turns taken by this thread
+Turn #30 taken by thread 4, 6 turns taken by this thread
+Turn #31 taken by thread 0, 7 turns taken by this thread
+Turn #32 taken by thread 1, 7 turns taken by this thread
+Turn #33 taken by thread 2, 7 turns taken by this thread
+Context sleeping, so threads will complete
+Turn #34 taken by thread 3, 7 turns taken by this thread
+Turn #35 taken by thread 4, 7 turns taken by this thread
+Turn #36 taken by thread 0, 8 turns taken by this thread
+Turn #37 taken by thread 1, 8 turns taken by this thread
+Turn #38 taken by thread 2, 8 turns taken by this thread
+Turn #39 taken by thread 3, 8 turns taken by this thread
+Turn #40 taken by thread 4, 8 turns taken by this thread
+Turn #41 taken by thread 0, 9 turns taken by this thread
+Turn #42 taken by thread 1, 9 turns taken by this thread
+Turn #43 taken by thread 2, 9 turns taken by this thread
+Turn #44 taken by thread 3, 9 turns taken by this thread
+Context sleeping, so threads will complete
+Turn #45 taken by thread 4, 9 turns taken by this thread
+Turn #46 taken by thread 0, 10 turns taken by this thread
+Turn #47 taken by thread 1, 10 turns taken by this thread
+Turn #48 taken by thread 2, 10 turns taken by this thread
+Turn #49 taken by thread 3, 10 turns taken by this thread
+Turn #50 taken by thread 4, 10 turns taken by this thread
+Total time (milliseconds): 68
+Milliseconds per thread: 13.6
+Context completed
+Dumping contended monitor usage ... done.
+Completed: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\jre\\bin\\java -cp C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof -Dtest.classes=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof -Xcheck:jni -Xverify:all -agentlib:hprof=monitor=y Context
+Test passed - cleanly terminated
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2510)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof;C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\demo\\jvmti\\hprof' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\demo\\jvmti\\hprof\\MonitorTest.jta' Context 25 200 1000
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

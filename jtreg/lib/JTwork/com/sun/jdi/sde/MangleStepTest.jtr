@@ -1,0 +1,606 @@
+#Test Results (version 2)
+#Fri Sep 05 10:08:37 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\MangleStepTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Robert Field
+keywords=bug4390869 bug4460328
+library=..
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE\r\nUSER_SPECIFIED compile MangleStepTest.java\r\nUSER_SPECIFIED compile -g  onion/pickle/Mangle.java\r\nUSER_SPECIFIED main MangleStepTest unset\r\nUSER_SPECIFIED main MangleStepTest Java\r\nUSER_SPECIFIED main MangleStepTest XYZ\r\nUSER_SPECIFIED main MangleStepTest Rats\r\nUSER_SPECIFIED main MangleStepTest bogus\r\n
+source=MangleStepTest.java
+title=Test Stepping in the new SourceDebugExtension facility
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/sde/MangleStepTest.java
+elapsed=10840 0\:00\:10.840
+end=Fri Sep 05 10\:08\:37 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile compile build main build main build main build main build main
+start=Fri Sep 05 10\:08\:27 CEST 2014
+test=com/sun/jdi/sde/MangleStepTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi\\sde
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/223)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE 
+elapsed time (seconds): 0.0030
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/196)*----------
+command: compile C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\MangleStepTest.java
+reason: User specified action: run compile MangleStepTest.java 
+elapsed time (seconds): 1.677
+----------rerun:(19/2916)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\MangleStepTest.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:compile
+----------messages:(3/214)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\onion\\pickle\\Mangle.java
+reason: User specified action: run compile -g onion/pickle/Mangle.java 
+elapsed time (seconds): 1.538
+----------rerun:(19/2926)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\onion\\pickle\\Mangle.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/100)----------
+command: build MangleStepTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/130)----------
+command: main MangleStepTest unset
+reason: User specified action: run main MangleStepTest unset 
+elapsed time (seconds): 1.558
+----------System.out:(52/1590)----------
+13 read class attr -- '<init>'
+14 read class attr -- '()V'
+15 read class attr -- 'Code'
+16 read class attr -- 'LineNumberTable'
+17 read class attr -- 'LocalVariableTable'
+18 read class attr -- 'this'
+19 read class attr -- 'Lonion/pickle/Mangle;'
+20 read class attr -- 'main'
+21 read class attr -- '([Ljava/lang/String;)V'
+22 read class attr -- 'args'
+23 read class attr -- '[Ljava/lang/String;'
+24 read class attr -- 'SourceFile'
+25 read class attr -- 'Mangle.java'
+29 read class attr -- 'four'
+32 read class attr -- 'five'
+33 read class attr -- 'six'
+34 read class attr -- 'seven'
+35 read class attr -- 'eight'
+36 read class attr -- 'nine'
+37 read class attr -- 'ten'
+38 read class attr -- 'onion/pickle/Mangle'
+39 read class attr -- 'java/lang/Object'
+40 read class attr -- 'java/lang/System'
+41 read class attr -- 'out'
+42 read class attr -- 'Ljava/io/PrintStream;'
+43 read class attr -- 'java/io/PrintStream'
+44 read class attr -- 'println'
+45 read class attr -- '(Ljava/lang/String;)V'
+SourceDebugExtension not found, installed at: 46
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 127
+class attrCount: 1
+attr len: 2
+class attrCount incremented
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+four
+five
+six
+seven
+eight
+nine
+ten
+----------System.err:(10/180)----------
+run args: [onion.pickle.Mangle]
+Press <enter> to continue
+running...
+Testing stratum: unset
+at: 200
+at: 210
+at: 217
+at: 218
+MangleStepTest (unset): passed
+STATUS:Passed.
+----------rerun:(20/2741)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\MangleStepTest.jta' unset
+result: Passed. Execution successful
+
+#section:build
+----------messages:(3/103)----------
+command: build MangleStepTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/128)----------
+command: main MangleStepTest Java
+reason: User specified action: run main MangleStepTest Java 
+elapsed time (seconds): 1.485
+----------System.out:(53/1608)----------
+13 read class attr -- '<init>'
+14 read class attr -- '()V'
+15 read class attr -- 'Code'
+16 read class attr -- 'LineNumberTable'
+17 read class attr -- 'LocalVariableTable'
+18 read class attr -- 'this'
+19 read class attr -- 'Lonion/pickle/Mangle;'
+20 read class attr -- 'main'
+21 read class attr -- '([Ljava/lang/String;)V'
+22 read class attr -- 'args'
+23 read class attr -- '[Ljava/lang/String;'
+24 read class attr -- 'SourceFile'
+25 read class attr -- 'Mangle.java'
+29 read class attr -- 'four'
+32 read class attr -- 'five'
+33 read class attr -- 'six'
+34 read class attr -- 'seven'
+35 read class attr -- 'eight'
+36 read class attr -- 'nine'
+37 read class attr -- 'ten'
+38 read class attr -- 'onion/pickle/Mangle'
+39 read class attr -- 'java/lang/Object'
+40 read class attr -- 'java/lang/System'
+41 read class attr -- 'out'
+42 read class attr -- 'Ljava/io/PrintStream;'
+43 read class attr -- 'java/io/PrintStream'
+44 read class attr -- 'println'
+45 read class attr -- '(Ljava/lang/String;)V'
+46 read class attr -- 'SourceDebugExtension'
+SourceDebugExtension found at: 46
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 127
+class attrCount: 2
+attr len: 2
+SDE attr found
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+four
+five
+six
+seven
+eight
+nine
+ten
+----------System.err:(12/184)----------
+run args: [onion.pickle.Mangle]
+Press <enter> to continue
+running...
+Testing stratum: Java
+at: 4
+at: 5
+at: 6
+at: 7
+at: 8
+at: 9
+MangleStepTest (Java): passed
+STATUS:Passed.
+----------rerun:(20/2740)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\MangleStepTest.jta' Java
+result: Passed. Execution successful
+
+#section:build
+----------messages:(3/103)----------
+command: build MangleStepTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/126)----------
+command: main MangleStepTest XYZ
+reason: User specified action: run main MangleStepTest XYZ 
+elapsed time (seconds): 1.402
+----------System.out:(53/1608)----------
+13 read class attr -- '<init>'
+14 read class attr -- '()V'
+15 read class attr -- 'Code'
+16 read class attr -- 'LineNumberTable'
+17 read class attr -- 'LocalVariableTable'
+18 read class attr -- 'this'
+19 read class attr -- 'Lonion/pickle/Mangle;'
+20 read class attr -- 'main'
+21 read class attr -- '([Ljava/lang/String;)V'
+22 read class attr -- 'args'
+23 read class attr -- '[Ljava/lang/String;'
+24 read class attr -- 'SourceFile'
+25 read class attr -- 'Mangle.java'
+29 read class attr -- 'four'
+32 read class attr -- 'five'
+33 read class attr -- 'six'
+34 read class attr -- 'seven'
+35 read class attr -- 'eight'
+36 read class attr -- 'nine'
+37 read class attr -- 'ten'
+38 read class attr -- 'onion/pickle/Mangle'
+39 read class attr -- 'java/lang/Object'
+40 read class attr -- 'java/lang/System'
+41 read class attr -- 'out'
+42 read class attr -- 'Ljava/io/PrintStream;'
+43 read class attr -- 'java/io/PrintStream'
+44 read class attr -- 'println'
+45 read class attr -- '(Ljava/lang/String;)V'
+46 read class attr -- 'SourceDebugExtension'
+SourceDebugExtension found at: 46
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 127
+class attrCount: 2
+attr len: 2
+SDE attr found
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+four
+five
+six
+seven
+eight
+nine
+ten
+----------System.err:(10/176)----------
+run args: [onion.pickle.Mangle]
+Press <enter> to continue
+running...
+Testing stratum: XYZ
+at: 200
+at: 210
+at: 217
+at: 218
+MangleStepTest (XYZ): passed
+STATUS:Passed.
+----------rerun:(20/2739)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\MangleStepTest.jta' XYZ
+result: Passed. Execution successful
+
+#section:build
+----------messages:(3/103)----------
+command: build MangleStepTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/128)----------
+command: main MangleStepTest Rats
+reason: User specified action: run main MangleStepTest Rats 
+elapsed time (seconds): 1.421
+----------System.out:(53/1608)----------
+13 read class attr -- '<init>'
+14 read class attr -- '()V'
+15 read class attr -- 'Code'
+16 read class attr -- 'LineNumberTable'
+17 read class attr -- 'LocalVariableTable'
+18 read class attr -- 'this'
+19 read class attr -- 'Lonion/pickle/Mangle;'
+20 read class attr -- 'main'
+21 read class attr -- '([Ljava/lang/String;)V'
+22 read class attr -- 'args'
+23 read class attr -- '[Ljava/lang/String;'
+24 read class attr -- 'SourceFile'
+25 read class attr -- 'Mangle.java'
+29 read class attr -- 'four'
+32 read class attr -- 'five'
+33 read class attr -- 'six'
+34 read class attr -- 'seven'
+35 read class attr -- 'eight'
+36 read class attr -- 'nine'
+37 read class attr -- 'ten'
+38 read class attr -- 'onion/pickle/Mangle'
+39 read class attr -- 'java/lang/Object'
+40 read class attr -- 'java/lang/System'
+41 read class attr -- 'out'
+42 read class attr -- 'Ljava/io/PrintStream;'
+43 read class attr -- 'java/io/PrintStream'
+44 read class attr -- 'println'
+45 read class attr -- '(Ljava/lang/String;)V'
+46 read class attr -- 'SourceDebugExtension'
+SourceDebugExtension found at: 46
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 127
+class attrCount: 2
+attr len: 2
+SDE attr found
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+four
+five
+six
+seven
+eight
+nine
+ten
+----------System.err:(9/172)----------
+run args: [onion.pickle.Mangle]
+Press <enter> to continue
+running...
+Testing stratum: Rats
+at: 1000
+at: 1111
+at: 1112
+MangleStepTest (Rats): passed
+STATUS:Passed.
+----------rerun:(20/2740)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\MangleStepTest.jta' Rats
+result: Passed. Execution successful
+
+#section:build
+----------messages:(3/103)----------
+command: build MangleStepTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0030
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/130)----------
+command: main MangleStepTest bogus
+reason: User specified action: run main MangleStepTest bogus 
+elapsed time (seconds): 1.744
+----------System.out:(53/1608)----------
+13 read class attr -- '<init>'
+14 read class attr -- '()V'
+15 read class attr -- 'Code'
+16 read class attr -- 'LineNumberTable'
+17 read class attr -- 'LocalVariableTable'
+18 read class attr -- 'this'
+19 read class attr -- 'Lonion/pickle/Mangle;'
+20 read class attr -- 'main'
+21 read class attr -- '([Ljava/lang/String;)V'
+22 read class attr -- 'args'
+23 read class attr -- '[Ljava/lang/String;'
+24 read class attr -- 'SourceFile'
+25 read class attr -- 'Mangle.java'
+29 read class attr -- 'four'
+32 read class attr -- 'five'
+33 read class attr -- 'six'
+34 read class attr -- 'seven'
+35 read class attr -- 'eight'
+36 read class attr -- 'nine'
+37 read class attr -- 'ten'
+38 read class attr -- 'onion/pickle/Mangle'
+39 read class attr -- 'java/lang/Object'
+40 read class attr -- 'java/lang/System'
+41 read class attr -- 'out'
+42 read class attr -- 'Ljava/io/PrintStream;'
+43 read class attr -- 'java/io/PrintStream'
+44 read class attr -- 'println'
+45 read class attr -- '(Ljava/lang/String;)V'
+46 read class attr -- 'SourceDebugExtension'
+SourceDebugExtension found at: 46
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 127
+class attrCount: 2
+attr len: 2
+SDE attr found
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+four
+five
+six
+seven
+eight
+nine
+ten
+----------System.err:(10/180)----------
+run args: [onion.pickle.Mangle]
+Press <enter> to continue
+running...
+Testing stratum: bogus
+at: 200
+at: 210
+at: 217
+at: 218
+MangleStepTest (bogus): passed
+STATUS:Passed.
+----------rerun:(20/2741)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\MangleStepTest.jta' bogus
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

@@ -1,0 +1,35 @@
+#Test Results (version 2)
+#Fri Sep 05 09:49:25 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\io\\Serializable\\accessConstants\\AccessConstants.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+error=No action after @build
+keywords=bug4067964
+run=USER_SPECIFIED clean AccessConstants\r\nUSER_SPECIFIED build AccessConstants\r\n
+source=AccessConstants.java
+title=Verify that ObjectStreamConstants is public accessible.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/io/Serializable/accessConstants/AccessConstants.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:49\:25 CEST 2014
+environment=regtest
+execStatus=Error. No action after @build
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:49\:25 CEST 2014
+test=java/io/Serializable/accessConstants/AccessConstants.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\io\\Serializable\\accessConstants
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. No action after @build

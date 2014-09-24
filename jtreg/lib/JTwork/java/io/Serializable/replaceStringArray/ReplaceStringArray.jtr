@@ -1,0 +1,50 @@
+#Test Results (version 2)
+#Fri Sep 05 09:49:30 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\io\\Serializable\\replaceStringArray\\ReplaceStringArray.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug4099013
+run=USER_SPECIFIED clean A SubstituteObjectOutputStream SubstituteObjectInputStream\r\n
+source=ReplaceStringArray.java
+title=Enable substitution of String and Array by ObjectStreams.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/io/Serializable/replaceStringArray/ReplaceStringArray.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:49\:30 CEST 2014
+environment=regtest
+execStatus=Passed. Clean successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages clean
+start=Fri Sep 05 09\:49\:30 CEST 2014
+test=java/io/Serializable/replaceStringArray/ReplaceStringArray.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\io\\Serializable\\replaceStringArray
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:clean
+----------messages:(3/206)----------
+command: clean A SubstituteObjectOutputStream SubstituteObjectInputStream
+reason: User specified action: run clean A SubstituteObjectOutputStream SubstituteObjectInputStream 
+elapsed time (seconds): 0.0
+----------rerun:(3/467)*----------
+rm -f C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\io\\Serializable\\replaceStringArray\\A.class
+rm -f C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\io\\Serializable\\replaceStringArray\\SubstituteObjectOutputStream.class
+rm -f C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\io\\Serializable\\replaceStringArray\\SubstituteObjectInputStream.class
+result: Passed. Clean successful
+
+
+test result: Passed. Clean successful

@@ -1,0 +1,51 @@
+#Test Results (version 2)
+#Fri Sep 05 09:49:41 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\lang\\management\\MemoryMXBean\\CollectionUsageThresholdConcMarkSweepGC.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Mandy Chung
+keywords=bug4959889 shell ignore
+maxTimeout=300
+run=USER_SPECIFIED ignore 6982965\r\nUSER_SPECIFIED build CollectionUsageThreshold\r\nUSER_SPECIFIED shell/timeout\=300 CollectionUsageThresholdConcMarkSweepGC.sh\r\n
+source=CollectionUsageThresholdConcMarkSweepGC.sh
+title=Test CollectionUsageThreshold with concurrent marksweep collector
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/lang/management/MemoryMXBean/CollectionUsageThresholdConcMarkSweepGC.sh
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:49\:41 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: 6982965
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 09\:49\:41 CEST 2014
+test=java/lang/management/MemoryMXBean/CollectionUsageThresholdConcMarkSweepGC.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\lang\\management\\MemoryMXBean
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:ignore
+----------messages:(3/106)----------
+command: ignore 6982965
+reason: User specified action: run ignore 6982965 
+elapsed time (seconds): 0.0
+----------rerun:(2/28)----------
+# @ignore: 6982965
+exit 1
+result: Error. Test ignored: 6982965
+
+
+test result: Error. Test ignored: 6982965

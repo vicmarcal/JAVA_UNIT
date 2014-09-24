@@ -1,0 +1,45 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:47 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\font\\TextLayout\\TestTibetan.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug6886358 ignore
+run=USER_SPECIFIED ignore Requires a special font installed\r\n
+source=TestTibetan.java
+title=verify tibetan output
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/font/TextLayout/TestTibetan.java
+elapsed=2 0\:00\:00.002
+end=Fri Sep 05 10\:00\:47 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: Requires a special font installed
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 10\:00\:47 CEST 2014
+test=java/awt/font/TextLayout/TestTibetan.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\font\\TextLayout
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+#section:ignore
+----------messages:(3/158)----------
+command: ignore Requires a special font installed
+reason: User specified action: run ignore Requires a special font installed 
+elapsed time (seconds): 0.0
+----------rerun:(2/54)----------
+# @ignore: Requires a special font installed
+exit 1
+result: Error. Test ignored: Requires a special font installed
+
+
+test result: Error. Test ignored: Requires a special font installed

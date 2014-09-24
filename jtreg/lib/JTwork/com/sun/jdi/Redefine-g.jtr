@@ -1,0 +1,69 @@
+#Test Results (version 2)
+#Fri Sep 05 10:16:40 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\Redefine-g.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Jim Holmlund
+keywords=bug4777868 shell
+run=USER_SPECIFIED shell Redefine-g.sh  pkg\=untitled7\r\n
+source=Redefine-g.sh
+title=Compile with java -g, do a RedefineClasses, and you don't get local vars
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/Redefine-g.sh
+elapsed=9 0\:00\:00.009
+end=Fri Sep 05 10\:16\:40 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `sh'\: java.io.IOException\: Cannot run program "sh" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages shell
+start=Fri Sep 05 10\:16\:40 CEST 2014
+test=com/sun/jdi/Redefine-g.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:shell
+----------messages:(3/147)----------
+command: shell Redefine-g.sh pkg=untitled7
+reason: User specified action: run shell Redefine-g.sh pkg=untitled7 
+elapsed time (seconds): 0.0050
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+----------rerun:(19/1688)*----------
+'PATH=C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/Common Files/Microsoft Shared/Windows Live;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/WIDCOMM/Bluetooth Software/;C:/Program Files/WIDCOMM/Bluetooth Software/syswow64;/;C:/Program Files (x86)/Sony/VAIO Startup Setting Tool;C:/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files/VDownloader;C:/RosBE/Bin;C:/Program Files/TortoiseSVN/bin;C:/Program Files/OpenVPN/bin;C:/Program Files/TortoiseGit/bin;C:/Program Files (x86)/QuickTime/QTSystem/;c:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/DTS/Binn/' \\
+SystemDrive=C: \\
+SystemRoot=C:/Windows \\
+TEMP=C:/Users/Victor/AppData/Local/Temp \\
+TMP=C:/Users/Victor/AppData/Local/Temp \\
+windir=C:/Windows \\
+TESTSRC=C:/Users/Victor/Downloads/Java/test/com/sun/jdi \\
+TESTSRCPATH=C:/Users/Victor/Downloads/Java/test/com/sun/jdi \\
+TESTCLASSES=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/com/sun/jdi \\
+TESTCLASSPATH=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/com/sun/jdi \\
+'COMPILEJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+'TESTJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+TESTVMOPTS= \\
+TESTTOOLVMOPTS= \\
+TESTJAVACOPTS= \\
+TESTJAVAOPTS= \\
+TESTTIMEOUTFACTOR=1.0 \\
+    sh \\
+        'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\Redefine-g.sh' pkg=untitled7
+result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

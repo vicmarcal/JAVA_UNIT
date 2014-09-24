@@ -1,0 +1,78 @@
+#Test Results (version 2)
+#Fri Sep 05 09:50:26 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency\\FiniteGCLatency.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Peter Jones
+keywords=bug4164696 othervm
+library=../../../testlibrary
+maxTimeout=120
+run=USER_SPECIFIED build FiniteGCLatency\r\nUSER_SPECIFIED build FiniteGCLatency_Stub\r\nUSER_SPECIFIED main/othervm/timeout\=120 FiniteGCLatency\r\n
+source=FiniteGCLatency.java
+title=The local garbage collector needs to inspect a client VM's heap often enough (even if the VM is idle) to detect unreachable live remote references, so that their server VMs can be informed that the client VM is no longer holding a reference; this facilitates the server VM invoking the remote object's unreferenced() method (if present), garbage collecting the remote object, and allowing the server VM to exit.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/rmi/server/Unreferenced/finiteGCLatency/FiniteGCLatency.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:50\:26 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `C\:\\Program Files\\Java\\jre6\\bin\\javac'\: java.io.IOException\: Cannot run program "C\:\\Program Files\\Java\\jre6\\bin\\javac" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 09\:50\:26 CEST 2014
+test=java/rmi/server/Unreferenced/finiteGCLatency/FiniteGCLatency.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\rmi\\server\\Unreferenced\\finiteGCLatency
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:build
+----------messages:(3/120)----------
+command: build FiniteGCLatency
+reason: User specified action: run build FiniteGCLatency 
+elapsed time (seconds): 0.0
+result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+#section:compile
+----------messages:(3/238)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency\\FiniteGCLatency.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 0.0
+----------rerun:(19/3152)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files\\Java\\jre6\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\testlibrary' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\server\\Unreferenced\\finiteGCLatency;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\testlibrary' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\server\\Unreferenced\\finiteGCLatency' \\
+        -J-Dtest.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\server\\Unreferenced\\finiteGCLatency' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\server\\Unreferenced\\finiteGCLatency;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\testlibrary' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\testlibrary' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\server\\Unreferenced\\finiteGCLatency\\FiniteGCLatency.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

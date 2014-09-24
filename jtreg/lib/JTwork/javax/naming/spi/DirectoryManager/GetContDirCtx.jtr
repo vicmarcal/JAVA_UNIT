@@ -1,0 +1,35 @@
+#Test Results (version 2)
+#Fri Sep 05 09:50:55 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\javax\\naming\\spi\\DirectoryManager\\GetContDirCtx.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+error=No action after @build
+keywords=bug4241676
+run=USER_SPECIFIED build DummyObjectFactory DummyContext\r\n
+source=GetContDirCtx.java
+title=getContinuationDirContext() should set CPE environment property.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/javax/naming/spi/DirectoryManager/GetContDirCtx.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:50\:55 CEST 2014
+environment=regtest
+execStatus=Error. No action after @build
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:50\:55 CEST 2014
+test=javax/naming/spi/DirectoryManager/GetContDirCtx.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\javax\\naming\\spi\\DirectoryManager
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. No action after @build

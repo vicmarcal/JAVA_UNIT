@@ -1,0 +1,145 @@
+#Test Results (version 2)
+#Fri Sep 05 10:35:48 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Dmitry Cherepanov\: area\=appletviewer
+keywords=bug6193279 bug6619458 shell
+run=USER_SPECIFIED compile IOExceptionIfEncodedURLTest.java\r\nUSER_SPECIFIED main IOExceptionIfEncodedURLTest\r\nUSER_SPECIFIED shell IOExceptionIfEncodedURLTest.sh\r\n
+source=IOExceptionIfEncodedURLTest.sh
+title=REGRESSION\: AppletViewer throws IOException when path is encoded URL
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/appletviewer/IOExceptionIfEncodedURLTest/IOExceptionIfEncodedURLTest.sh
+elapsed=2747 0\:00\:02.747
+end=Fri Sep 05 10\:35\:48 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `sh'\: java.io.IOException\: Cannot run program "sh" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages compile build main shell
+start=Fri Sep 05 10\:35\:45 CEST 2014
+test=java/awt/appletviewer/IOExceptionIfEncodedURLTest/IOExceptionIfEncodedURLTest.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:compile
+----------messages:(3/256)*----------
+command: compile C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.java
+reason: User specified action: run compile IOExceptionIfEncodedURLTest.java 
+elapsed time (seconds): 2.219
+----------rerun:(19/2937)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.java'
+----------System.out:(0/0)----------
+----------System.err:(7/632)*----------
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.java:35: warning: ParseUtil is internal proprietary API and may be removed in a future release
+import sun.net.www.ParseUtil;
+                  ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.java:55: warning: ParseUtil is internal proprietary API and may be removed in a future release
+        String path = ParseUtil.fileToEncodedURL(new File(System.getProperty("user.dir"))).getPath();
+                      ^
+2 warnings
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/116)----------
+command: build IOExceptionIfEncodedURLTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/144)----------
+command: main IOExceptionIfEncodedURLTest
+reason: User specified action: run main IOExceptionIfEncodedURLTest 
+elapsed time (seconds): 0.517
+----------System.out:(0/0)----------
+----------System.err:(3/199)----------
+prior checking...
+url=file:IOExceptionIfEncodedURLTest.java -> path=/C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/scratch/,filename=IOExceptionIfEncodedURLTest.java
+STATUS:Passed.
+----------rerun:(20/2744)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.jta'
+result: Passed. Execution successful
+
+#section:shell
+----------messages:(3/153)----------
+command: shell IOExceptionIfEncodedURLTest.sh
+reason: User specified action: run shell IOExceptionIfEncodedURLTest.sh 
+elapsed time (seconds): 0.0050
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+----------rerun:(19/1882)*----------
+'PATH=C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/Common Files/Microsoft Shared/Windows Live;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/WIDCOMM/Bluetooth Software/;C:/Program Files/WIDCOMM/Bluetooth Software/syswow64;/;C:/Program Files (x86)/Sony/VAIO Startup Setting Tool;C:/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files/VDownloader;C:/RosBE/Bin;C:/Program Files/TortoiseSVN/bin;C:/Program Files/OpenVPN/bin;C:/Program Files/TortoiseGit/bin;C:/Program Files (x86)/QuickTime/QTSystem/;c:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/DTS/Binn/' \\
+SystemDrive=C: \\
+SystemRoot=C:/Windows \\
+TEMP=C:/Users/Victor/AppData/Local/Temp \\
+TMP=C:/Users/Victor/AppData/Local/Temp \\
+windir=C:/Windows \\
+TESTSRC=C:/Users/Victor/Downloads/Java/test/java/awt/appletviewer/IOExceptionIfEncodedURLTest \\
+TESTSRCPATH=C:/Users/Victor/Downloads/Java/test/java/awt/appletviewer/IOExceptionIfEncodedURLTest \\
+TESTCLASSES=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/java/awt/appletviewer/IOExceptionIfEncodedURLTest \\
+TESTCLASSPATH=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/java/awt/appletviewer/IOExceptionIfEncodedURLTest \\
+'COMPILEJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+'TESTJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+TESTVMOPTS= \\
+TESTTOOLVMOPTS= \\
+TESTJAVACOPTS= \\
+TESTJAVAOPTS= \\
+TESTTIMEOUTFACTOR=1.0 \\
+    sh \\
+        'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\appletviewer\\IOExceptionIfEncodedURLTest\\IOExceptionIfEncodedURLTest.sh'
+result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

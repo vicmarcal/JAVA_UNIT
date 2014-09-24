@@ -1,0 +1,151 @@
+#Test Results (version 2)
+#Fri Sep 05 10:45:12 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\RobotLWTest.html
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug4350402
+run=USER_SPECIFIED compile ../../../regtesthelpers/Util.java\r\nUSER_SPECIFIED applet RobotLWTest.html\r\n
+source=RobotLWTest.html
+title=Tests that mouse behavior on LW component
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/MouseEvent/RobotLWTest/RobotLWTest.html
+elapsed=8819 0\:00\:08.819
+end=Fri Sep 05 10\:45\:12 CEST 2014
+environment=regtest
+execStatus=Failed. Execution failed\: Applet thread threw exception\: java.lang.RuntimeException\: The test was not completed.
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages compile build compile applet
+start=Fri Sep 05 10\:45\:03 CEST 2014
+test=java/awt/event/MouseEvent/RobotLWTest/RobotLWTest.html
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\MouseEvent\\RobotLWTest
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:compile
+----------messages:(3/251)*----------
+command: compile C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java
+reason: User specified action: run compile ../../../regtesthelpers/Util.java 
+elapsed time (seconds): 3.522
+----------rerun:(19/2843)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java'
+----------System.out:(0/0)----------
+----------System.err:(17/1630)*----------
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java:65: warning: FramePeer is internal proprietary API and may be removed in a future release
+import java.awt.peer.FramePeer;
+                    ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java:96: warning: FramePeer is internal proprietary API and may be removed in a future release
+        FramePeer frame_peer = (FramePeer) embedder.getPeer();
+        ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java:96: warning: FramePeer is internal proprietary API and may be removed in a future release
+        FramePeer frame_peer = (FramePeer) embedder.getPeer();
+                                ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java:184: warning: SunToolkit is internal proprietary API and may be removed in a future release
+        ((sun.awt.SunToolkit)Toolkit.getDefaultToolkit()).realSync();
+                 ^
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\..\\..\\..\\regtesthelpers\\Util.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 warnings
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/99)----------
+command: build RobotLWTest
+reason: Named class compiled on demand
+elapsed time (seconds): 2.366
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/229)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\RobotLWTest.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.366
+----------rerun:(19/2849)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\RobotLWTest.java'
+----------System.out:(0/0)----------
+----------System.err:(2/199)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest\\RobotLWTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+result: Passed. Compilation successful
+
+#section:applet
+----------messages:(3/126)----------
+command: applet RobotLWTest.html
+reason: User specified action: run applet RobotLWTest.html 
+elapsed time (seconds): 2.915
+----------System.out:(2/298)----------
+java.awt.event.MouseEvent[MOUSE_ENTERED,(25,15),absolute(33,45),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on MyLWComponent[,0,0,50x30]
+java.awt.event.MouseEvent[MOUSE_EXITED,(-7,21),absolute(1,51),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on MyLWComponent[,0,0,50x30]
+----------System.err:(8/472)----------
+java.lang.RuntimeException: The test was not completed.
+	at RobotLWTest.start(RobotLWTest.java:108)
+	at com.sun.javatest.regtest.AppletWrapper$AppletRunnable.run(AppletWrapper.java:158)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: RobotLWTest failed. Mouse Capture failed
+	at RobotLWTest.start(RobotLWTest.java:87)
+	... 2 more
+STATUS:Failed.Applet thread threw exception: java.lang.RuntimeException: The test was not completed.
+----------rerun:(8/2526)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -Dtest.vm.opts= '-Dcompile.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' '-Dtest.src.path=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' '-Dtest.src=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\RobotLWTest' -Dtest.tool.vm.opts= '-Dtest.class.path=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' -Dtest.timeout.factor=1.0 '-Dtest.classes=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest' '-Dtest.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' -Dtest.java.opts= -Dtest.compiler.opts= -mx128m com.sun.javatest.regtest.AppletWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\RobotLWTest\\RobotLWTest.jta'
+result: Failed. Execution failed: Applet thread threw exception: java.lang.RuntimeException: The test was not completed.
+
+
+test result: Failed. Execution failed: Applet thread threw exception: java.lang.RuntimeException: The test was not completed.

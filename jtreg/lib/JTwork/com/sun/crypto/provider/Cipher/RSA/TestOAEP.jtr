@@ -1,0 +1,133 @@
+#Test Results (version 2)
+#Fri Sep 05 10:06:10 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Andreas Sterbenz
+keywords=bug4894151
+run=ASSUMED_ACTION main TestOAEP\r\n
+source=TestOAEP.java
+title=encryption/decryption test for OAEP
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/crypto/provider/Cipher/RSA/TestOAEP.java
+elapsed=4428 0\:00\:04.428
+end=Fri Sep 05 10\:06\:10 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:06\:06 CEST 2014
+test=com/sun/crypto/provider/Cipher/RSA/TestOAEP.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\crypto\\provider\\Cipher\\RSA
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/96)----------
+command: build TestOAEP
+reason: Named class compiled on demand
+elapsed time (seconds): 1.862
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/224)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.862
+----------rerun:(19/2828)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/118)----------
+command: main TestOAEP
+reason: Assumed action based on file name: run main TestOAEP 
+elapsed time (seconds): 2.563
+----------System.out:(26/1362)----------
+Testing provider SunJCE...
+Testing OAEP with hash MD5, 0 bytes
+Testing OAEP with hash MD5, 16 bytes
+Testing OAEP with hash MD5, 62 bytes
+Testing OAEP with hash MD5, 63 bytes
+javax.crypto.IllegalBlockSizeException: Data must not be longer than 62 bytes
+Testing OAEP with hash SHA1, 0 bytes
+Testing OAEP with hash SHA1, 16 bytes
+Testing OAEP with hash SHA1, 54 bytes
+Testing OAEP with hash SHA1, 55 bytes
+javax.crypto.IllegalBlockSizeException: Data must not be longer than 54 bytes
+Testing OAEP with hash SHA-1, 16 bytes
+Testing OAEP with hash SHA-256, 0 bytes
+Testing OAEP with hash SHA-256, 16 bytes
+Testing OAEP with hash SHA-256, 30 bytes
+Testing OAEP with hash SHA-256, 31 bytes
+javax.crypto.IllegalBlockSizeException: Data must not be longer than 30 bytes
+Testing OAEP with hash SHA-512, 1 bytes
+java.security.InvalidKeyException: Key is too short for encryption using OAEPPadding with SHA-512 and MGF1SHA-1
+javax.crypto.NoSuchPaddingException: Padding not supported: OAEPwithFOOandMGF1Padding
+java.security.InvalidKeyException: OAEP cannot be used to sign or verify signatures
+java.security.InvalidKeyException: OAEP cannot be used to sign or verify signatures
+javax.crypto.BadPaddingException: Decryption error
+javax.crypto.BadPaddingException: Decryption error
+javax.crypto.BadPaddingException: Decryption error
+Done (2152 ms).
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2634)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

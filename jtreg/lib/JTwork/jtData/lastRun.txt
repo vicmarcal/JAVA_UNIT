@@ -1,0 +1,6 @@
+#Last test run info
+#Sat Sep 06 21:37:33 CEST 2014
+finishTime=1410032253205
+testURLs=com/sun/awt/SecurityWarning/GetSizeShouldNotReturnZero.java com/sun/awt/Translucency/WindowOpacity.java
+startTime=1410032252792
+configName=regtest

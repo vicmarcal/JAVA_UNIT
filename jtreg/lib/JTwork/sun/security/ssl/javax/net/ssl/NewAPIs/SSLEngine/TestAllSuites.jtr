@@ -1,0 +1,51 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:49 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\security\\ssl\\javax\\net\\ssl\\NewAPIs\\SSLEngine\\TestAllSuites.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Brad Wetmore
+keywords=bug4495742 ignore
+maxTimeout=180
+run=USER_SPECIFIED ignore JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon\r\nUSER_SPECIFIED main/timeout\=180 TestAllSuites\r\n
+source=TestAllSuites.java
+title=Add non-blocking SSL/TLS functionality, usable with any I/O abstraction  Iterate through all the suites using both TLS and SSLv3, and turn SSLv2Hello off and on.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/security/ssl/javax/net/ssl/NewAPIs/SSLEngine/TestAllSuites.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:51\:49 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 09\:51\:49 CEST 2014
+test=sun/security/ssl/javax/net/ssl/NewAPIs/SSLEngine/TestAllSuites.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\security\\ssl\\javax\\net\\ssl\\NewAPIs\\SSLEngine
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:ignore
+----------messages:(3/294)----------
+command: ignore JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon
+reason: User specified action: run ignore JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon 
+elapsed time (seconds): 0.0
+----------rerun:(2/122)----------
+# @ignore: JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon
+exit 1
+result: Error. Test ignored: JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon
+
+
+test result: Error. Test ignored: JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon

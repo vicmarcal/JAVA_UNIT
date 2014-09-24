@@ -1,0 +1,50 @@
+#Test Results (version 2)
+#Fri Sep 05 09:50:55 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\javax\\management\\remote\\mandatory\\URLTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Eamonn McManus
+keywords=bug5057532 ignore
+run=USER_SPECIFIED ignore Test will fail until 6338951 is resolved (java.net.URI now accepts "http\://-a").\r\nUSER_SPECIFIED clean URLTest\r\nUSER_SPECIFIED build URLTest\r\nUSER_SPECIFIED main URLTest\r\n
+source=URLTest.java
+title=Tests that host names are parsed correctly in URLs
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/javax/management/remote/mandatory/URLTest.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:50\:55 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: Test will fail until 6338951 is resolved (java.net.URI now accepts "http\://-a").
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 09\:50\:55 CEST 2014
+test=javax/management/remote/mandatory/URLTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\javax\\management\\remote\\mandatory
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:ignore
+----------messages:(3/252)----------
+command: ignore Test will fail until 6338951 is resolved (java.net.URI now accepts "http://-a").
+reason: User specified action: run ignore Test will fail until 6338951 is resolved (java.net.URI now accepts "http://-a"). 
+elapsed time (seconds): 0.0
+----------rerun:(2/101)----------
+# @ignore: Test will fail until 6338951 is resolved (java.net.URI now accepts "http://-a").
+exit 1
+result: Error. Test ignored: Test will fail until 6338951 is resolved (java.net.URI now accepts "http://-a").
+
+
+test result: Error. Test ignored: Test will fail until 6338951 is resolved (java.net.URI now accepts "http://-a").

@@ -1,0 +1,84 @@
+#Test Results (version 2)
+#Fri Sep 05 10:30:49 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\ClassLoaderTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Sean Mullan
+keywords=bug6461674
+run=USER_SPECIFIED compile -XDignore.symbol.file ClassLoaderTest.java MyTransform.java\r\nUSER_SPECIFIED main ClassLoaderTest\r\n
+source=ClassLoaderTest.java
+title=Ensure Transform.register works with transform implementations loaded by class loader other than system/boot class loader
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/org/apache/xml/internal/security/transforms/ClassLoaderTest.java
+elapsed=2745 0\:00\:02.745
+end=Fri Sep 05 10\:30\:49 CEST 2014
+environment=regtest
+execStatus=Failed. Compilation failed\: Compilation failed
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages compile
+start=Fri Sep 05 10\:30\:46 CEST 2014
+test=com/sun/org/apache/xml/internal/security/transforms/ClassLoaderTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:compile
+----------messages:(3/418)*----------
+command: compile -XDignore.symbol.file C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\ClassLoaderTest.java C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\MyTransform.java
+reason: User specified action: run compile -XDignore.symbol.file ClassLoaderTest.java MyTransform.java 
+elapsed time (seconds): 2.738
+----------rerun:(19/3122)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms' -XDignore.symbol.file 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\ClassLoaderTest.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\MyTransform.java'
+----------System.out:(0/0)----------
+----------System.err:(15/963)*----------
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\ClassLoaderTest.java:46: error: cannot find symbol
+        Transform.init();
+                 ^
+  symbol:   method init()
+  location: class Transform
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\MyTransform.java:40: error: cannot find symbol
+            Transform.init();
+                     ^
+  symbol:   method init()
+  location: class Transform
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\MyTransform.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\org\\apache\\xml\\internal\\security\\transforms\\ClassLoaderTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors
+result: Failed. Compilation failed: Compilation failed
+
+
+test result: Failed. Compilation failed: Compilation failed

@@ -1,0 +1,551 @@
+#Test Results (version 2)
+#Fri Sep 05 10:08:53 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Robert Field
+keywords=bug4390869 bug4460328
+library=..
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE\r\nUSER_SPECIFIED compile TemperatureTableTest.java\r\nUSER_SPECIFIED compile -g TemperatureTableServlet.java\r\nUSER_SPECIFIED main TemperatureTableTest\r\n
+source=TemperatureTableTest.java
+title=Test the new SourceDebugExtension facility
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/sde/TemperatureTableTest.java
+elapsed=5687 0\:00\:05.687
+end=Fri Sep 05 10\:08\:53 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile compile build main
+start=Fri Sep 05 10\:08\:47 CEST 2014
+test=com/sun/jdi/sde/TemperatureTableTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi\\sde
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/223)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter InstallSDE 
+elapsed time (seconds): 0.0050
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/208)*----------
+command: compile C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableTest.java
+reason: User specified action: run compile TemperatureTableTest.java 
+elapsed time (seconds): 2.054
+----------rerun:(19/2922)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableTest.java'
+----------System.out:(0/0)----------
+----------System.err:(2/184)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:compile
+----------messages:(3/220)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableServlet.java
+reason: User specified action: run compile -g TemperatureTableServlet.java 
+elapsed time (seconds): 1.696
+----------rerun:(19/2928)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde\\TemperatureTableServlet.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/109)----------
+command: build TemperatureTableTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/130)----------
+command: main TemperatureTableTest
+reason: User specified action: run main TemperatureTableTest 
+elapsed time (seconds): 1.901
+----------System.out:(141/4085)----------
+38 read class attr -- '<init>'
+39 read class attr -- '()V'
+40 read class attr -- 'Code'
+41 read class attr -- 'LineNumberTable'
+42 read class attr -- 'LocalVariableTable'
+43 read class attr -- 'this'
+44 read class attr -- 'LTemperatureTableServlet;'
+45 read class attr -- 'main'
+46 read class attr -- '([Ljava/lang/String;)V'
+47 read class attr -- 'i'
+48 read class attr -- 'I'
+49 read class attr -- 'args'
+50 read class attr -- '[Ljava/lang/String;'
+51 read class attr -- 'out'
+52 read class attr -- 'Ljava/io/PrintStream;'
+53 read class attr -- 'StackMapTable'
+55 read class attr -- 'SourceFile'
+56 read class attr -- 'TemperatureTableServlet.java'
+62 read class attr -- '<html>'
+65 read class attr -- '<head>'
+66 read class attr -- '   <title>Temperature Table</title>'
+67 read class attr -- '</head>'
+68 read class attr -- '<body>'
+69 read class attr -- ''
+70 read class attr -- '<h1>Temperature Table</h1>'
+71 read class attr -- '<p>American tourists visiting Canada can use this handy temperature'
+72 read class attr -- 'table which converts from Fahrenheit to Celsius:'
+73 read class attr -- '<br><br>'
+74 read class attr -- '<table BORDER COLS=2 WIDTH="20%" >'
+75 read class attr -- '<tr BGCOLOR="#FFFF00">'
+76 read class attr -- '<th>Fahrenheit</th>'
+77 read class attr -- '<th>Celsius</th>'
+78 read class attr -- '</tr>'
+79 read class attr -- '<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">'
+80 read class attr -- 'java/lang/StringBuilder'
+81 read class attr -- '<td>'
+84 read class attr -- '</td>'
+86 read class attr -- '</table>'
+87 read class attr -- '<p><i>Created '
+88 read class attr -- 'java/util/Date'
+90 read class attr -- '</i></p>'
+91 read class attr -- '</body>'
+92 read class attr -- '</html>'
+93 read class attr -- 'TemperatureTableServlet'
+94 read class attr -- 'java/lang/Object'
+95 read class attr -- 'java/io/PrintStream'
+96 read class attr -- 'HelloWorld'
+97 read class attr -- 'java/lang/System'
+98 read class attr -- 'println'
+99 read class attr -- '(Ljava/lang/String;)V'
+100 read class attr -- 'append'
+101 read class attr -- '(Ljava/lang/String;)Ljava/lang/StringBuilder;'
+102 read class attr -- '(I)Ljava/lang/StringBuilder;'
+103 read class attr -- 'toString'
+104 read class attr -- '()Ljava/lang/String;'
+105 read class attr -- '(Ljava/lang/Object;)Ljava/lang/StringBuilder;'
+SourceDebugExtension not found, installed at: 106
+interfaceCount: 0
+members count: 0
+members count: 2
+member attr count: 1
+attr len: 47
+member attr count: 1
+attr len: 469
+class attrCount: 1
+attr len: 2
+class attrCount incremented
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Hello, world!
+<html>
+<head>
+   <title>Temperature Table</title>
+</head>
+<body>
+
+<h1>Temperature Table</h1>
+<p>American tourists visiting Canada can use this handy temperature
+table which converts from Fahrenheit to Celsius:
+<br><br>
+
+<table BORDER COLS=2 WIDTH="20%" >
+<tr BGCOLOR="#FFFF00">
+<th>Fahrenheit</th>
+<th>Celsius</th>
+</tr>
+
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>0</td>
+<td>-17</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>10</td>
+<td>-12</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>20</td>
+<td>-6</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>30</td>
+<td>-1</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>40</td>
+<td>4</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>50</td>
+<td>10</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>60</td>
+<td>15</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>70</td>
+<td>21</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>80</td>
+<td>26</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>90</td>
+<td>32</td>
+</tr>
+<tr ALIGN=RIGHT BGCOLOR="#CCCCCC">
+<td>100</td>
+<td>37</td>
+</tr>
+
+</table>
+<p><i>Created Fri Sep 05 10:08:52 CEST 2014</i></p>
+
+</body>
+</html>
+----------System.err:(265/10653)*----------
+run args: [TemperatureTableServlet]
+canGetSourceDebugExtension() is true
+main BP sourceName: TemperatureTable.jsp
+main BP sourcePath: tst\\TemperatureTable.jsp
+main BP line number: 1
+main BP(JSP) sourceName: TemperatureTable.jsp
+main BP(JSP) sourcePath: tst\\TemperatureTable.jsp
+main BP(JSP) line number: 1
+main BP(bogus) sourceName: TemperatureTable.jsp
+main BP(bogus) sourcePath: tst\\TemperatureTable.jsp
+main BP(bogus) line number: 1
+main BP(null) sourceName: TemperatureTable.jsp
+main BP(null) sourcePath: tst\\TemperatureTable.jsp
+main BP(null) line number: 1
+main BP(Java) sourceName: TemperatureTableServlet.java
+main BP(Java) sourcePath: TemperatureTableServlet.java
+main BP(Java) line number: 11
+ref type sourceName: TemperatureTable.jsp
+Location: TemperatureTableServlet:1
+Location: TemperatureTableServlet:2
+Location: TemperatureTableServlet:3
+Location: TemperatureTableServlet:4
+Location: TemperatureTableServlet:5
+Location: TemperatureTableServlet:6
+Location: TemperatureTableServlet:7
+Location: TemperatureTableServlet:8
+Location: TemperatureTableServlet:9
+Location: TemperatureTableServlet:10
+Location: TemperatureTableServlet:11
+Location: TemperatureTableServlet:12
+Location: TemperatureTableServlet:13
+Location: TemperatureTableServlet:14
+Location: TemperatureTableServlet:15
+Location: TemperatureTableServlet:16
+Location: TemperatureTableServlet:17
+Location: TemperatureTableServlet:18
+Location: TemperatureTableServlet:19
+Location: TemperatureTableServlet:20
+Location: TemperatureTableServlet:21
+Location: TemperatureTableServlet:22
+Location: TemperatureTableServlet:18
+Location: TemperatureTableServlet:24
+Location: TemperatureTableServlet:25
+Location: TemperatureTableServlet:26
+Location: TemperatureTableServlet:27
+Location: TemperatureTableServlet:28
+Location: TemperatureTableServlet:29
+line7 sourceName: TemperatureTable.jsp
+line7 sourcePath: tst\\TemperatureTable.jsp
+line7 line number: 7
+line7(JSP) sourceName: TemperatureTable.jsp
+line7(JSP) sourcePath: tst\\TemperatureTable.jsp
+line7(JSP) line number: 7
+line7(bogus) sourceName: TemperatureTable.jsp
+line7(bogus) sourcePath: tst\\TemperatureTable.jsp
+line7(bogus) line number: 7
+line7(null) sourceName: TemperatureTable.jsp
+line7(null) sourcePath: tst\\TemperatureTable.jsp
+line7(null) line number: 7
+line7(Java) sourceName: TemperatureTableServlet.java
+line7(Java) sourcePath: TemperatureTableServlet.java
+line7(Java) line number: 28
+availableStrata: [Java, JSP]
+defaultStratum: JSP
+hello BP sourceName: HelloWorld.java
+hello BP sourcePath: HelloWorld.java
+hello BP line number: 3
+hello BP(JSP) sourceName: HelloWorld.java
+hello BP(JSP) sourcePath: HelloWorld.java
+hello BP(JSP) line number: 3
+hello BP(bogus) sourceName: HelloWorld.java
+hello BP(bogus) sourcePath: HelloWorld.java
+hello BP(bogus) line number: 3
+hello BP(null) sourceName: HelloWorld.java
+hello BP(null) sourcePath: HelloWorld.java
+hello BP(null) line number: 3
+hello BP(Java) sourceName: HelloWorld.java
+hello BP(Java) sourcePath: HelloWorld.java
+hello BP(Java) line number: 3
+VM default set to Java
+main BP sourceName: TemperatureTableServlet.java
+main BP sourcePath: TemperatureTableServlet.java
+main BP line number: 11
+main BP(JSP) sourceName: TemperatureTable.jsp
+main BP(JSP) sourcePath: tst\\TemperatureTable.jsp
+main BP(JSP) line number: 1
+main BP(bogus) sourceName: TemperatureTable.jsp
+main BP(bogus) sourcePath: tst\\TemperatureTable.jsp
+main BP(bogus) line number: 1
+main BP(null) sourceName: TemperatureTable.jsp
+main BP(null) sourcePath: tst\\TemperatureTable.jsp
+main BP(null) line number: 1
+main BP(Java) sourceName: TemperatureTableServlet.java
+main BP(Java) sourcePath: TemperatureTableServlet.java
+main BP(Java) line number: 11
+line7 sourceName: TemperatureTableServlet.java
+line7 sourcePath: TemperatureTableServlet.java
+line7 line number: 28
+line7(JSP) sourceName: TemperatureTable.jsp
+line7(JSP) sourcePath: tst\\TemperatureTable.jsp
+line7(JSP) line number: 7
+line7(bogus) sourceName: TemperatureTable.jsp
+line7(bogus) sourcePath: tst\\TemperatureTable.jsp
+line7(bogus) line number: 7
+line7(null) sourceName: TemperatureTable.jsp
+line7(null) sourcePath: tst\\TemperatureTable.jsp
+line7(null) line number: 7
+line7(Java) sourceName: TemperatureTableServlet.java
+line7(Java) sourcePath: TemperatureTableServlet.java
+line7(Java) line number: 28
+hello BP sourceName: HelloWorld.java
+hello BP sourcePath: HelloWorld.java
+hello BP line number: 3
+hello BP(JSP) sourceName: HelloWorld.java
+hello BP(JSP) sourcePath: HelloWorld.java
+hello BP(JSP) line number: 3
+hello BP(bogus) sourceName: HelloWorld.java
+hello BP(bogus) sourcePath: HelloWorld.java
+hello BP(bogus) line number: 3
+hello BP(null) sourceName: HelloWorld.java
+hello BP(null) sourcePath: HelloWorld.java
+hello BP(null) line number: 3
+hello BP(Java) sourceName: HelloWorld.java
+hello BP(Java) sourcePath: HelloWorld.java
+hello BP(Java) line number: 3
+VM default set to null
+main BP sourceName: TemperatureTable.jsp
+main BP sourcePath: tst\\TemperatureTable.jsp
+main BP line number: 1
+main BP(JSP) sourceName: TemperatureTable.jsp
+main BP(JSP) sourcePath: tst\\TemperatureTable.jsp
+main BP(JSP) line number: 1
+main BP(bogus) sourceName: TemperatureTable.jsp
+main BP(bogus) sourcePath: tst\\TemperatureTable.jsp
+main BP(bogus) line number: 1
+main BP(null) sourceName: TemperatureTable.jsp
+main BP(null) sourcePath: tst\\TemperatureTable.jsp
+main BP(null) line number: 1
+main BP(Java) sourceName: TemperatureTableServlet.java
+main BP(Java) sourcePath: TemperatureTableServlet.java
+main BP(Java) line number: 11
+line7 sourceName: TemperatureTable.jsp
+line7 sourcePath: tst\\TemperatureTable.jsp
+line7 line number: 7
+line7(JSP) sourceName: TemperatureTable.jsp
+line7(JSP) sourcePath: tst\\TemperatureTable.jsp
+line7(JSP) line number: 7
+line7(bogus) sourceName: TemperatureTable.jsp
+line7(bogus) sourcePath: tst\\TemperatureTable.jsp
+line7(bogus) line number: 7
+line7(null) sourceName: TemperatureTable.jsp
+line7(null) sourcePath: tst\\TemperatureTable.jsp
+line7(null) line number: 7
+line7(Java) sourceName: TemperatureTableServlet.java
+line7(Java) sourcePath: TemperatureTableServlet.java
+line7(Java) line number: 28
+hello BP sourceName: HelloWorld.java
+hello BP sourcePath: HelloWorld.java
+hello BP line number: 3
+hello BP(JSP) sourceName: HelloWorld.java
+hello BP(JSP) sourcePath: HelloWorld.java
+hello BP(JSP) line number: 3
+hello BP(bogus) sourceName: HelloWorld.java
+hello BP(bogus) sourcePath: HelloWorld.java
+hello BP(bogus) line number: 3
+hello BP(null) sourceName: HelloWorld.java
+hello BP(null) sourcePath: HelloWorld.java
+hello BP(null) line number: 3
+hello BP(Java) sourceName: HelloWorld.java
+hello BP(Java) sourcePath: HelloWorld.java
+hello BP(Java) line number: 3
+VM default set to bogus
+main BP sourceName: TemperatureTable.jsp
+main BP sourcePath: tst\\TemperatureTable.jsp
+main BP line number: 1
+main BP(JSP) sourceName: TemperatureTable.jsp
+main BP(JSP) sourcePath: tst\\TemperatureTable.jsp
+main BP(JSP) line number: 1
+main BP(bogus) sourceName: TemperatureTable.jsp
+main BP(bogus) sourcePath: tst\\TemperatureTable.jsp
+main BP(bogus) line number: 1
+main BP(null) sourceName: TemperatureTable.jsp
+main BP(null) sourcePath: tst\\TemperatureTable.jsp
+main BP(null) line number: 1
+main BP(Java) sourceName: TemperatureTableServlet.java
+main BP(Java) sourcePath: TemperatureTableServlet.java
+main BP(Java) line number: 11
+line7 sourceName: TemperatureTable.jsp
+line7 sourcePath: tst\\TemperatureTable.jsp
+line7 line number: 7
+line7(JSP) sourceName: TemperatureTable.jsp
+line7(JSP) sourcePath: tst\\TemperatureTable.jsp
+line7(JSP) line number: 7
+line7(bogus) sourceName: TemperatureTable.jsp
+line7(bogus) sourcePath: tst\\TemperatureTable.jsp
+line7(bogus) line number: 7
+line7(null) sourceName: TemperatureTable.jsp
+line7(null) sourcePath: tst\\TemperatureTable.jsp
+line7(null) line number: 7
+line7(Java) sourceName: TemperatureTableServlet.java
+line7(Java) sourcePath: TemperatureTableServlet.java
+line7(Java) line number: 28
+hello BP sourceName: HelloWorld.java
+hello BP sourcePath: HelloWorld.java
+hello BP line number: 3
+hello BP(JSP) sourceName: HelloWorld.java
+hello BP(JSP) sourcePath: HelloWorld.java
+hello BP(JSP) line number: 3
+hello BP(bogus) sourceName: HelloWorld.java
+hello BP(bogus) sourcePath: HelloWorld.java
+hello BP(bogus) line number: 3
+hello BP(null) sourceName: HelloWorld.java
+hello BP(null) sourcePath: HelloWorld.java
+hello BP(null) line number: 3
+hello BP(Java) sourceName: HelloWorld.java
+hello BP(Java) sourcePath: HelloWorld.java
+hello BP(Java) line number: 3
+VM default set to JSP
+main BP sourceName: TemperatureTable.jsp
+main BP sourcePath: tst\\TemperatureTable.jsp
+main BP line number: 1
+main BP(JSP) sourceName: TemperatureTable.jsp
+main BP(JSP) sourcePath: tst\\TemperatureTable.jsp
+main BP(JSP) line number: 1
+main BP(bogus) sourceName: TemperatureTable.jsp
+main BP(bogus) sourcePath: tst\\TemperatureTable.jsp
+main BP(bogus) line number: 1
+main BP(null) sourceName: TemperatureTable.jsp
+main BP(null) sourcePath: tst\\TemperatureTable.jsp
+main BP(null) line number: 1
+main BP(Java) sourceName: TemperatureTableServlet.java
+main BP(Java) sourcePath: TemperatureTableServlet.java
+main BP(Java) line number: 11
+line7 sourceName: TemperatureTable.jsp
+line7 sourcePath: tst\\TemperatureTable.jsp
+line7 line number: 7
+line7(JSP) sourceName: TemperatureTable.jsp
+line7(JSP) sourcePath: tst\\TemperatureTable.jsp
+line7(JSP) line number: 7
+line7(bogus) sourceName: TemperatureTable.jsp
+line7(bogus) sourcePath: tst\\TemperatureTable.jsp
+line7(bogus) line number: 7
+line7(null) sourceName: TemperatureTable.jsp
+line7(null) sourcePath: tst\\TemperatureTable.jsp
+line7(null) line number: 7
+line7(Java) sourceName: TemperatureTableServlet.java
+line7(Java) sourcePath: TemperatureTableServlet.java
+line7(Java) line number: 28
+hello BP sourceName: HelloWorld.java
+hello BP sourcePath: HelloWorld.java
+hello BP line number: 3
+hello BP(JSP) sourceName: HelloWorld.java
+hello BP(JSP) sourcePath: HelloWorld.java
+hello BP(JSP) line number: 3
+hello BP(bogus) sourceName: HelloWorld.java
+hello BP(bogus) sourcePath: HelloWorld.java
+hello BP(bogus) line number: 3
+hello BP(null) sourceName: HelloWorld.java
+hello BP(null) sourcePath: HelloWorld.java
+hello BP(null) line number: 3
+hello BP(Java) sourceName: HelloWorld.java
+hello BP(Java) sourcePath: HelloWorld.java
+hello BP(Java) line number: 3
+TemperatureTableTest: passed
+STATUS:Passed.
+----------rerun:(20/2741)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\sde' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\sde\\TemperatureTableTest.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

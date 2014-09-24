@@ -1,0 +1,501 @@
+#Test Results (version 2)
+#Fri Sep 05 10:09:41 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\ClassesByName.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Robert Field
+keywords=bug4287992
+library=scaffold
+run=USER_SPECIFIED build JDIScaffold VMConnection\r\nUSER_SPECIFIED compile -g HelloWorld.java\r\nUSER_SPECIFIED build ClassesByName\r\nUSER_SPECIFIED main ClassesByName HelloWorld\r\n
+source=ClassesByName.java
+title=ClassesByName verifies that all the classes in the loaded class list can be found with classesByName..
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/ClassesByName.java
+elapsed=5092 0\:00\:05.092
+end=Fri Sep 05 10\:09\:41 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build compile build main
+start=Fri Sep 05 10\:09\:36 CEST 2014
+test=com/sun/jdi/ClassesByName.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/141)----------
+command: build JDIScaffold VMConnection
+reason: User specified action: run build JDIScaffold VMConnection 
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/189)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\HelloWorld.java
+reason: User specified action: run compile -g HelloWorld.java 
+elapsed time (seconds): 1.509
+----------rerun:(19/2741)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\scaffold' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\scaffold' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\HelloWorld.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/118)----------
+command: build ClassesByName
+reason: User specified action: run build ClassesByName 
+elapsed time (seconds): 1.742
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/203)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\ClassesByName.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.742
+----------rerun:(19/2768)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\scaffold' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\scaffold' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\ClassesByName.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/102)----------
+command: build ClassesByName
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/138)----------
+command: main ClassesByName HelloWorld
+reason: User specified action: run main ClassesByName HelloWorld 
+elapsed time (seconds): 1.835
+----------System.out:(350/14408)----------
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Found class: boolean[]
+Found class: byte[]
+Found class: char[]
+Found class: double[]
+Found class: float[]
+Found class: int[]
+Found class: java.io.BufferedInputStream
+Found class: java.io.BufferedOutputStream
+Found class: java.io.BufferedReader
+Found class: java.io.BufferedWriter
+Found class: java.io.Closeable
+Found class: java.io.ExpiringCache
+Found class: java.io.ExpiringCache$1
+Found class: java.io.ExpiringCache$Entry
+Found class: java.io.File
+Found class: java.io.File$PathStatus
+Found class: java.io.File$PathStatus[]
+Found class: java.io.FileDescriptor
+Found class: java.io.FileDescriptor$1
+Found class: java.io.FileInputStream
+Found class: java.io.FileOutputStream
+Found class: java.io.FileReader
+Found class: java.io.FileSystem
+Found class: java.io.File[]
+Found class: java.io.FilterInputStream
+Found class: java.io.FilterOutputStream
+Found class: java.io.Flushable
+Found class: java.io.InputStream
+Found class: java.io.InputStreamReader
+Found class: java.io.ObjectStreamField
+Found class: java.io.ObjectStreamField[]
+Found class: java.io.OutputStream
+Found class: java.io.OutputStreamWriter
+Found class: java.io.PrintStream
+Found class: java.io.Reader
+Found class: java.io.Serializable
+Found class: java.io.Serializable[]
+Found class: java.io.Win32FileSystem
+Found class: java.io.WinNTFileSystem
+Found class: java.io.Writer
+Found class: java.lang.AbstractStringBuilder
+Found class: java.lang.Appendable
+Found class: java.lang.ArithmeticException
+Found class: java.lang.ArrayStoreException
+Found class: java.lang.AutoCloseable
+Found class: java.lang.Boolean
+Found class: java.lang.Byte
+Found class: java.lang.CharSequence
+Found class: java.lang.CharSequence[]
+Found class: java.lang.Character
+Found class: java.lang.CharacterData
+Found class: java.lang.CharacterDataLatin1
+Found class: java.lang.Class
+Found class: java.lang.Class$1
+Found class: java.lang.Class$3
+Found class: java.lang.ClassCastException
+Found class: java.lang.ClassLoader
+Found class: java.lang.ClassLoader$3
+Found class: java.lang.ClassLoader$NativeLibrary
+Found class: java.lang.ClassLoader$ParallelLoaders
+Found class: java.lang.Class[]
+Found class: java.lang.Cloneable
+Found class: java.lang.Comparable
+Found class: java.lang.Comparable[]
+Found class: java.lang.Compiler
+Found class: java.lang.Compiler$1
+Found class: java.lang.Double
+Found class: java.lang.Enum
+Found class: java.lang.Enum[]
+Found class: java.lang.Error
+Found class: java.lang.Error[]
+Found class: java.lang.Exception
+Found class: java.lang.Float
+Found class: java.lang.IllegalArgumentException
+Found class: java.lang.IllegalMonitorStateException
+Found class: java.lang.IncompatibleClassChangeError
+Found class: java.lang.Integer
+Found class: java.lang.Iterable
+Found class: java.lang.LinkageError
+Found class: java.lang.Long
+Found class: java.lang.Math
+Found class: java.lang.NoSuchMethodError
+Found class: java.lang.NullPointerException
+Found class: java.lang.Number
+Found class: java.lang.Object
+Found class: java.lang.Object[]
+Found class: java.lang.OutOfMemoryError
+Found class: java.lang.OutOfMemoryError[]
+Found class: java.lang.Readable
+Found class: java.lang.Runnable
+Found class: java.lang.Runnable[]
+Found class: java.lang.Runtime
+Found class: java.lang.RuntimeException
+Found class: java.lang.RuntimePermission
+Found class: java.lang.Short
+Found class: java.lang.StackOverflowError
+Found class: java.lang.StackTraceElement[]
+Found class: java.lang.String
+Found class: java.lang.String$CaseInsensitiveComparator
+Found class: java.lang.StringBuffer
+Found class: java.lang.StringBuilder
+Found class: java.lang.String[]
+Found class: java.lang.System
+Found class: java.lang.System$2
+Found class: java.lang.SystemClassLoaderAction
+Found class: java.lang.Terminator
+Found class: java.lang.Terminator$1
+Found class: java.lang.Thread
+Found class: java.lang.Thread$UncaughtExceptionHandler
+Found class: java.lang.Thread$UncaughtExceptionHandler[]
+Found class: java.lang.ThreadGroup
+Found class: java.lang.ThreadGroup[]
+Found class: java.lang.ThreadLocal
+Found class: java.lang.ThreadLocal$ThreadLocalMap
+Found class: java.lang.ThreadLocal$ThreadLocalMap$Entry
+Found class: java.lang.ThreadLocal$ThreadLocalMap$Entry[]
+Found class: java.lang.Thread[]
+Found class: java.lang.Throwable
+Found class: java.lang.Throwable[]
+Found class: java.lang.VirtualMachineError
+Found class: java.lang.VirtualMachineError[]
+Found class: java.lang.ref.FinalReference
+Found class: java.lang.ref.Finalizer
+Found class: java.lang.ref.Finalizer$FinalizerThread
+Found class: java.lang.ref.Reference
+Found class: java.lang.ref.Reference$Lock
+Found class: java.lang.ref.Reference$ReferenceHandler
+Found class: java.lang.ref.ReferenceQueue
+Found class: java.lang.ref.ReferenceQueue$Lock
+Found class: java.lang.ref.ReferenceQueue$Null
+Found class: java.lang.ref.Reference[]
+Found class: java.lang.ref.SoftReference
+Found class: java.lang.ref.WeakReference
+Found class: java.lang.ref.WeakReference[]
+Found class: java.lang.reflect.AccessibleObject
+Found class: java.lang.reflect.AccessibleObject[]
+Found class: java.lang.reflect.AnnotatedElement
+Found class: java.lang.reflect.AnnotatedElement[]
+Found class: java.lang.reflect.Array
+Found class: java.lang.reflect.Constructor
+Found class: java.lang.reflect.Constructor[]
+Found class: java.lang.reflect.Field
+Found class: java.lang.reflect.Field[]
+Found class: java.lang.reflect.GenericDeclaration
+Found class: java.lang.reflect.GenericDeclaration[]
+Found class: java.lang.reflect.Member
+Found class: java.lang.reflect.Member[]
+Found class: java.lang.reflect.Method
+Found class: java.lang.reflect.Modifier
+Found class: java.lang.reflect.Proxy
+Found class: java.lang.reflect.Proxy$KeyFactory
+Found class: java.lang.reflect.Proxy$ProxyClassFactory
+Found class: java.lang.reflect.ReflectAccess
+Found class: java.lang.reflect.ReflectPermission
+Found class: java.lang.reflect.Type
+Found class: java.lang.reflect.Type[]
+Found class: java.lang.reflect.WeakCache
+Found class: java.lang.reflect.WeakCache$BiFunction
+Found class: java.net.Parts
+Found class: java.net.URL
+Found class: java.net.URL$1
+Found class: java.net.URLClassLoader
+Found class: java.net.URLClassLoader$7
+Found class: java.net.URLStreamHandler
+Found class: java.net.URLStreamHandlerFactory
+Found class: java.net.URL[]
+Found class: java.nio.Bits
+Found class: java.nio.Bits$1
+Found class: java.nio.Buffer
+Found class: java.nio.ByteBuffer
+Found class: java.nio.ByteOrder
+Found class: java.nio.CharBuffer
+Found class: java.nio.HeapByteBuffer
+Found class: java.nio.HeapCharBuffer
+Found class: java.nio.charset.Charset
+Found class: java.nio.charset.CharsetDecoder
+Found class: java.nio.charset.CharsetEncoder
+Found class: java.nio.charset.CoderResult
+Found class: java.nio.charset.CoderResult$1
+Found class: java.nio.charset.CoderResult$2
+Found class: java.nio.charset.CoderResult$Cache
+Found class: java.nio.charset.CodingErrorAction
+Found class: java.nio.charset.spi.CharsetProvider
+Found class: java.security.AccessControlContext
+Found class: java.security.AccessController
+Found class: java.security.BasicPermission
+Found class: java.security.CodeSource
+Found class: java.security.Guard
+Found class: java.security.Permission
+Found class: java.security.Principal[]
+Found class: java.security.PrivilegedAction
+Found class: java.security.PrivilegedExceptionAction
+Found class: java.security.ProtectionDomain
+Found class: java.security.ProtectionDomain$1
+Found class: java.security.ProtectionDomain$3
+Found class: java.security.ProtectionDomain$Key
+Found class: java.security.SecureClassLoader
+Found class: java.security.cert.Certificate[]
+Found class: java.util.AbstractCollection
+Found class: java.util.AbstractList
+Found class: java.util.AbstractMap
+Found class: java.util.AbstractSet
+Found class: java.util.ArrayList
+Found class: java.util.Arrays
+Found class: java.util.BitSet
+Found class: java.util.Collection
+Found class: java.util.Collections
+Found class: java.util.Collections$EmptyList
+Found class: java.util.Collections$EmptyMap
+Found class: java.util.Collections$EmptySet
+Found class: java.util.Collections$SetFromMap
+Found class: java.util.Collections$SynchronizedCollection
+Found class: java.util.Collections$SynchronizedSet
+Found class: java.util.Collections$UnmodifiableCollection
+Found class: java.util.Collections$UnmodifiableList
+Found class: java.util.Collections$UnmodifiableRandomAccessList
+Found class: java.util.Comparator
+Found class: java.util.Dictionary
+Found class: java.util.Enumeration
+Found class: java.util.HashMap
+Found class: java.util.HashMap$Entry
+Found class: java.util.HashMap$EntryIterator
+Found class: java.util.HashMap$EntrySet
+Found class: java.util.HashMap$Entry[]
+Found class: java.util.HashMap$HashIterator
+Found class: java.util.HashMap$Holder
+Found class: java.util.HashSet
+Found class: java.util.Hashtable
+Found class: java.util.Hashtable$Entry
+Found class: java.util.Hashtable$EntrySet
+Found class: java.util.Hashtable$Entry[]
+Found class: java.util.Hashtable$Enumerator
+Found class: java.util.Hashtable$Holder
+Found class: java.util.Iterator
+Found class: java.util.LinkedHashMap
+Found class: java.util.LinkedHashMap$Entry
+Found class: java.util.List
+Found class: java.util.Locale
+Found class: java.util.Locale$Cache
+Found class: java.util.Locale$LocaleKey
+Found class: java.util.Map
+Found class: java.util.Map$Entry
+Found class: java.util.Map$Entry[]
+Found class: java.util.Objects
+Found class: java.util.Properties
+Found class: java.util.Random
+Found class: java.util.RandomAccess
+Found class: java.util.Set
+Found class: java.util.Stack
+Found class: java.util.StringTokenizer
+Found class: java.util.Vector
+Found class: java.util.WeakHashMap
+Found class: java.util.WeakHashMap$Entry
+Found class: java.util.WeakHashMap$Entry[]
+Found class: java.util.WeakHashMap$Holder
+Found class: java.util.WeakHashMap$KeySet
+Found class: java.util.concurrent.ConcurrentHashMap
+Found class: java.util.concurrent.ConcurrentHashMap$HashEntry
+Found class: java.util.concurrent.ConcurrentHashMap$HashEntry[]
+Found class: java.util.concurrent.ConcurrentHashMap$Holder
+Found class: java.util.concurrent.ConcurrentHashMap$Segment
+Found class: java.util.concurrent.ConcurrentHashMap$Segment[]
+Found class: java.util.concurrent.ConcurrentMap
+Found class: java.util.concurrent.ThreadLocalRandom
+Found class: java.util.concurrent.ThreadLocalRandom$1
+Found class: java.util.concurrent.atomic.AtomicInteger
+Found class: java.util.concurrent.atomic.AtomicLong
+Found class: java.util.concurrent.atomic.AtomicReferenceFieldUpdater
+Found class: java.util.concurrent.atomic.AtomicReferenceFieldUpdater$AtomicReferenceFieldUpdaterImpl
+Found class: java.util.concurrent.locks.AbstractOwnableSynchronizer
+Found class: java.util.concurrent.locks.AbstractQueuedSynchronizer
+Found class: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node
+Found class: java.util.concurrent.locks.Lock
+Found class: java.util.concurrent.locks.Lock[]
+Found class: java.util.concurrent.locks.ReentrantLock
+Found class: java.util.concurrent.locks.ReentrantLock$NonfairSync
+Found class: java.util.concurrent.locks.ReentrantLock$Sync
+Found class: java.util.concurrent.locks.ReentrantLock[]
+Found class: long[]
+Found class: short[]
+Found class: sun.io.Win32ErrorMode
+Found class: sun.misc.Hashing
+Found class: sun.misc.IoTrace
+Found class: sun.misc.JavaIOFileDescriptorAccess
+Found class: sun.misc.JavaLangAccess
+Found class: sun.misc.JavaNetAccess
+Found class: sun.misc.JavaNioAccess
+Found class: sun.misc.JavaSecurityAccess
+Found class: sun.misc.JavaSecurityProtectionDomainAccess
+Found class: sun.misc.Launcher
+Found class: sun.misc.Launcher$AppClassLoader
+Found class: sun.misc.Launcher$AppClassLoader$1
+Found class: sun.misc.Launcher$ExtClassLoader
+Found class: sun.misc.Launcher$ExtClassLoader$1
+Found class: sun.misc.Launcher$Factory
+Found class: sun.misc.MetaIndex
+Found class: sun.misc.NativeSignalHandler
+Found class: sun.misc.OSEnvironment
+Found class: sun.misc.SharedSecrets
+Found class: sun.misc.Signal
+Found class: sun.misc.SignalHandler
+Found class: sun.misc.URLClassPath
+Found class: sun.misc.Unsafe
+Found class: sun.misc.VM
+Found class: sun.misc.VMSupport
+Found class: sun.misc.Version
+Found class: sun.net.www.ParseUtil
+Found class: sun.net.www.protocol.file.Handler
+Found class: sun.net.www.protocol.jar.Handler
+Found class: sun.nio.cs.ArrayDecoder
+Found class: sun.nio.cs.ArrayEncoder
+Found class: sun.nio.cs.FastCharsetProvider
+Found class: sun.nio.cs.HistoricallyNamedCharset
+Found class: sun.nio.cs.MS1252
+Found class: sun.nio.cs.SingleByte
+Found class: sun.nio.cs.SingleByte$Decoder
+Found class: sun.nio.cs.SingleByte$Encoder
+Found class: sun.nio.cs.StandardCharsets
+Found class: sun.nio.cs.StandardCharsets$Aliases
+Found class: sun.nio.cs.StandardCharsets$Cache
+Found class: sun.nio.cs.StandardCharsets$Classes
+Found class: sun.nio.cs.StreamDecoder
+Found class: sun.nio.cs.StreamEncoder
+Found class: sun.reflect.ConstructorAccessor
+Found class: sun.reflect.ConstructorAccessorImpl
+Found class: sun.reflect.DelegatingConstructorAccessorImpl
+Found class: sun.reflect.LangReflectAccess
+Found class: sun.reflect.MagicAccessorImpl
+Found class: sun.reflect.NativeConstructorAccessorImpl
+Found class: sun.reflect.Reflection
+Found class: sun.reflect.ReflectionFactory
+Found class: sun.reflect.ReflectionFactory$1
+Found class: sun.reflect.ReflectionFactory$GetReflectionFactoryAction
+Found class: sun.reflect.misc.ReflectUtil
+Found class: sun.security.action.GetPropertyAction
+Found class: sun.security.util.Debug
+Found class: sun.util.PreHashedMap
+Found class: sun.util.locale.BaseLocale
+Found class: sun.util.locale.BaseLocale$Cache
+Found class: sun.util.locale.BaseLocale$Key
+Found class: sun.util.locale.LocaleObjectCache
+Found class: sun.util.locale.LocaleObjectCache$CacheEntry
+Found class: sun.util.locale.LocaleUtils
+Hello, world!
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2637)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\scaffold' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\scaffold' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\ClassesByName.jta' HelloWorld
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

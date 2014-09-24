@@ -1,0 +1,69 @@
+#Test Results (version 2)
+#Fri Sep 05 10:33:17 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\tools\\extcheck\\TestExtcheckArgs.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Dave Bristor
+keywords=bug6356642 shell
+run=USER_SPECIFIED shell TestExtcheckArgs.sh\r\n
+source=TestExtcheckArgs.java
+title=Verify that extcheck exits appropriately when invalid args are given.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/tools/extcheck/TestExtcheckArgs.java
+elapsed=11 0\:00\:00.011
+end=Fri Sep 05 10\:33\:17 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `sh'\: java.io.IOException\: Cannot run program "sh" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages shell
+start=Fri Sep 05 10\:33\:17 CEST 2014
+test=com/sun/tools/extcheck/TestExtcheckArgs.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\tools\\extcheck
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:shell
+----------messages:(3/131)----------
+command: shell TestExtcheckArgs.sh
+reason: User specified action: run shell TestExtcheckArgs.sh 
+elapsed time (seconds): 0.0070
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+----------rerun:(19/1736)*----------
+'PATH=C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Common Files/Microsoft Shared/Windows Live;C:/Program Files (x86)/Common Files/Microsoft Shared/Windows Live;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/WIDCOMM/Bluetooth Software/;C:/Program Files/WIDCOMM/Bluetooth Software/syswow64;/;C:/Program Files (x86)/Sony/VAIO Startup Setting Tool;C:/Program Files (x86)/ATI Technologies/ATI.ACE/Core-Static;C:/Program Files (x86)/Windows Live/Shared;C:/Program Files/VDownloader;C:/RosBE/Bin;C:/Program Files/TortoiseSVN/bin;C:/Program Files/OpenVPN/bin;C:/Program Files/TortoiseGit/bin;C:/Program Files (x86)/QuickTime/QTSystem/;c:/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/Tools/Binn/;c:/Program Files/Microsoft SQL Server/100/DTS/Binn/' \\
+SystemDrive=C: \\
+SystemRoot=C:/Windows \\
+TEMP=C:/Users/Victor/AppData/Local/Temp \\
+TMP=C:/Users/Victor/AppData/Local/Temp \\
+windir=C:/Windows \\
+TESTSRC=C:/Users/Victor/Downloads/Java/test/com/sun/tools/extcheck \\
+TESTSRCPATH=C:/Users/Victor/Downloads/Java/test/com/sun/tools/extcheck \\
+TESTCLASSES=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/com/sun/tools/extcheck \\
+TESTCLASSPATH=C:/Users/Victor/Downloads/Java/jtreg4.1-b09/jtreg/lib/JTwork/classes/com/sun/tools/extcheck \\
+'COMPILEJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+'TESTJAVA=C:/Program Files (x86)/Java/jdk1.7.0_65' \\
+TESTVMOPTS= \\
+TESTTOOLVMOPTS= \\
+TESTJAVACOPTS= \\
+TESTJAVAOPTS= \\
+TESTTIMEOUTFACTOR=1.0 \\
+    sh \\
+        'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\tools\\extcheck\\TestExtcheckArgs.sh'
+result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `sh': java.io.IOException: Cannot run program "sh" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

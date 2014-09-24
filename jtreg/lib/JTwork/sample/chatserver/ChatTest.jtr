@@ -1,0 +1,45 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:18 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sample\\chatserver\\ChatTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+library=../../../src/share/sample/nio/chatserver
+run=USER_SPECIFIED build ChatTest ChatServer Client ClientReader DataReader MessageReader NameReader\r\nUSER_SPECIFIED main ChatTest\r\n
+source=ChatTest.java
+title=Test chat server chatserver test
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sample/chatserver/ChatTest.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:51\:18 CEST 2014
+environment=regtest
+execStatus=Error. Can't find source file\: ChatServer.java in directory-list\: C\:\\Users\\Victor\\Downloads\\Java\\test\\sample\\chatserver C\:\\Users\\Victor\\Downloads\\Java\\src\\share\\sample\\nio\\chatserver
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build
+start=Fri Sep 05 09\:51\:18 CEST 2014
+test=sample/chatserver/ChatTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sample\\chatserver
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:build
+----------messages:(2/211)----------
+command: build ChatTest ChatServer Client ClientReader DataReader MessageReader NameReader
+reason: User specified action: run build ChatTest ChatServer Client ClientReader DataReader MessageReader NameReader 
+result: Not run. Test running...
+
+
+test result: Error. Can't find source file: ChatServer.java in directory-list: C:\Users\Victor\Downloads\Java\test\sample\chatserver C:\Users\Victor\Downloads\Java\src\share\sample\nio\chatserver

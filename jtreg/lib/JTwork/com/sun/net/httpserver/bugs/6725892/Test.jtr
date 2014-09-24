@@ -1,0 +1,173 @@
+#Test Results (version 2)
+#Fri Sep 05 10:23:46 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892\\Test.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug6725892 othervm
+run=USER_SPECIFIED main/othervm -Dsun.net.httpserver.maxReqTime\=2 Test\r\n
+source=Test.java
+title=
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/net/httpserver/bugs/6725892/Test.java
+elapsed=22307 0\:00\:22.307
+end=Fri Sep 05 10\:23\:46 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:23\:23 CEST 2014
+test=com/sun/net/httpserver/bugs/6725892/Test.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\net\\httpserver\\bugs\\6725892
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/92)----------
+command: build Test
+reason: Named class compiled on demand
+elapsed time (seconds): 2.192
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/221)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892\\Test.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.191
+----------rerun:(19/2833)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892\\Test.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/175)----------
+command: main -Dsun.net.httpserver.maxReqTime=2 Test
+reason: User specified action: run main/othervm -Dsun.net.httpserver.maxReqTime=2 Test 
+elapsed time (seconds): 20.112
+----------System.out:(66/2023)----------
+Server on port 16266
+test1: OK
+Request from: /127.0.0.1:16274
+test2: OK
+Request from: /127.0.0.1:16274
+Request from: /127.0.0.1:16297
+Request from: /127.0.0.1:16274
+Request from: /127.0.0.1:16300
+Request from: /127.0.0.1:16299
+Request from: /127.0.0.1:16301
+Request from: /127.0.0.1:16302
+Request from: /127.0.0.1:16303
+Request from: /127.0.0.1:16304
+Request from: /127.0.0.1:16307
+Request from: /127.0.0.1:16308
+Request from: /127.0.0.1:16310
+Request from: /127.0.0.1:16312
+Request from: /127.0.0.1:16311
+Request from: /127.0.0.1:16313
+Request from: /127.0.0.1:16315
+Request from: /127.0.0.1:16316
+Request from: /127.0.0.1:16317
+Request from: /127.0.0.1:16321
+Request from: /127.0.0.1:16322
+Request from: /127.0.0.1:16323
+Request from: /127.0.0.1:16324
+Request from: /127.0.0.1:16325
+Request from: /127.0.0.1:16326
+Request from: /127.0.0.1:16330
+Request from: /127.0.0.1:16331
+Request from: /127.0.0.1:16332
+Request from: /127.0.0.1:16335
+Request from: /127.0.0.1:16337
+Request from: /127.0.0.1:16336
+Request from: /127.0.0.1:16338
+Request from: /127.0.0.1:16339
+Request from: /127.0.0.1:16340
+Request from: /127.0.0.1:16344
+Request from: /127.0.0.1:16346
+Request from: /127.0.0.1:16347
+Request from: /127.0.0.1:16348
+Request from: /127.0.0.1:16351
+Request from: /127.0.0.1:16349
+Request from: /127.0.0.1:16350
+Request from: /127.0.0.1:16358
+Request from: /127.0.0.1:16357
+Request from: /127.0.0.1:16359
+Request from: /127.0.0.1:16360
+Request from: /127.0.0.1:16361
+Request from: /127.0.0.1:16362
+Request from: /127.0.0.1:16363
+Request from: /127.0.0.1:16365
+Request from: /127.0.0.1:16364
+Request from: /127.0.0.1:16366
+Request from: /127.0.0.1:16368
+Request from: /127.0.0.1:16367
+Request from: /127.0.0.1:16369
+Request from: /127.0.0.1:16370
+Request from: /127.0.0.1:16274
+Request from: /127.0.0.1:16371
+Request from: /127.0.0.1:16372
+Request from: /127.0.0.1:16373
+Request from: /127.0.0.1:16374
+Request from: /127.0.0.1:16297
+test3: OK
+After Shutdown
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(21/2683)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        -Dsun.net.httpserver.maxReqTime=2 \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\net\\httpserver\\bugs\\6725892\\Test.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

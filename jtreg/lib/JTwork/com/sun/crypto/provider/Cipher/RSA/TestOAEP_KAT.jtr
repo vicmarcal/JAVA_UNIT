@@ -1,0 +1,253 @@
+#Test Results (version 2)
+#Fri Sep 05 10:06:06 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP_KAT.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Andreas Sterbenz
+keywords=bug4894151
+run=ASSUMED_ACTION main TestOAEP_KAT\r\n
+source=TestOAEP_KAT.java
+title=known answer test for OAEP encryption
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/crypto/provider/Cipher/RSA/TestOAEP_KAT.java
+elapsed=6038 0\:00\:06.038
+end=Fri Sep 05 10\:06\:06 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:06\:00 CEST 2014
+test=com/sun/crypto/provider/Cipher/RSA/TestOAEP_KAT.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\crypto\\provider\\Cipher\\RSA
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/100)----------
+command: build TestOAEP_KAT
+reason: Named class compiled on demand
+elapsed time (seconds): 1.905
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/228)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP_KAT.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.904
+----------rerun:(19/2832)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP_KAT.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/126)----------
+command: main TestOAEP_KAT
+reason: Assumed action based on file name: run main TestOAEP_KAT 
+elapsed time (seconds): 4.129
+----------System.out:(146/5500)----------
+Testing provider SunJCE...
+: =========================
+: TEST VECTORS FOR RSA-OAEP
+: =========================
+: # This file contains test vectors for the
+: # RSAES-OAEP encryption scheme as defined in
+: # PKCS #1 v2.1. 10 RSA keys of different sizes
+: # have been generated. For each key, 6 random
+: # messages of length between 1 and 64 octets
+: # have been RSAES-OAEP encrypted via a random
+: # seed of length 20 octets.
+: #
+: # The underlying hash function is SHA-1; the
+: # mask generation function is MGF1 with SHA-1
+: # as specified in PKCS #1 v2.1.
+: #
+: # Integers are represented by strings of octets
+: # with the leftmost octet being the most
+: # significant octet. For example,
+: #
+: #           9,202,000 = (0x)8c 69 50.
+: #
+: # Key lengths:
+: #
+: # Key  1: 1024 bits
+: # Key  2: 1025 bits
+: # Key  3: 1026 bits
+: # Key  4: 1027 bits
+: # Key  5: 1028 bits
+: # Key  6: 1029 bits
+: # Key  7: 1030 bits
+: # Key  8: 1031 bits
+: # Key  9: 1536 bits
+: # Key 10: 2048 bits
+: # =============================================
+: # ==================================
+: # Example 1: A 1024-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 1.1
+: # RSAES-OAEP Encryption Example 1.2
+: # RSAES-OAEP Encryption Example 1.3
+: # RSAES-OAEP Encryption Example 1.4
+: # RSAES-OAEP Encryption Example 1.5
+: # RSAES-OAEP Encryption Example 1.6
+: # =============================================
+: # ==================================
+: # Example 2: A 1025-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 2.1
+: # RSAES-OAEP Encryption Example 2.2
+: # RSAES-OAEP Encryption Example 2.3
+: # RSAES-OAEP Encryption Example 2.4
+: # RSAES-OAEP Encryption Example 2.5
+: # RSAES-OAEP Encryption Example 2.6
+: # =============================================
+: # ==================================
+: # Example 3: A 1026-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 3.1
+: # RSAES-OAEP Encryption Example 3.2
+: # RSAES-OAEP Encryption Example 3.3
+: # RSAES-OAEP Encryption Example 3.4
+: # RSAES-OAEP Encryption Example 3.5
+: # RSAES-OAEP Encryption Example 3.6
+: # =============================================
+: # ==================================
+: # Example 4: A 1027-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 4.1
+: # RSAES-OAEP Encryption Example 4.2
+: # RSAES-OAEP Encryption Example 4.3
+: # RSAES-OAEP Encryption Example 4.4
+: # RSAES-OAEP Encryption Example 4.5
+: # RSAES-OAEP Encryption Example 4.6
+: # =============================================
+: # ==================================
+: # Example 5: A 1028-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 5.1
+: # RSAES-OAEP Encryption Example 5.2
+: # RSAES-OAEP Encryption Example 5.3
+: # RSAES-OAEP Encryption Example 5.4
+: # RSAES-OAEP Encryption Example 5.5
+: # RSAES-OAEP Encryption Example 5.6
+: # =============================================
+: # ==================================
+: # Example 6: A 1029-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 6.1
+: # RSAES-OAEP Encryption Example 6.2
+: # RSAES-OAEP Encryption Example 6.3
+: # RSAES-OAEP Encryption Example 6.4
+: # RSAES-OAEP Encryption Example 6.5
+: # RSAES-OAEP Encryption Example 6.6
+: # =============================================
+: # ==================================
+: # Example 7: A 1030-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 7.1
+: # RSAES-OAEP Encryption Example 7.2
+: # RSAES-OAEP Encryption Example 7.3
+: # RSAES-OAEP Encryption Example 7.4
+: # RSAES-OAEP Encryption Example 7.5
+: # RSAES-OAEP Encryption Example 7.6
+: # =============================================
+: # ==================================
+: # Example 8: A 1031-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 8.1
+: # RSAES-OAEP Encryption Example 8.2
+: # RSAES-OAEP Encryption Example 8.3
+: # RSAES-OAEP Encryption Example 8.4
+: # RSAES-OAEP Encryption Example 8.5
+: # RSAES-OAEP Encryption Example 8.6
+: # =============================================
+: # ==================================
+: # Example 9: A 1536-bit RSA Key Pair
+: # ==================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 9.1
+: # RSAES-OAEP Encryption Example 9.2
+: # RSAES-OAEP Encryption Example 9.3
+: # RSAES-OAEP Encryption Example 9.4
+: # RSAES-OAEP Encryption Example 9.5
+: # RSAES-OAEP Encryption Example 9.6
+: # =============================================
+: # ===================================
+: # Example 10: A 2048-bit RSA Key Pair
+: # ===================================
+: # Components of the RSA Key Pair
+: # RSAES-OAEP Encryption Example 10.1
+: # RSAES-OAEP Encryption Example 10.2
+: # RSAES-OAEP Encryption Example 10.3
+: # RSAES-OAEP Encryption Example 10.4
+: # RSAES-OAEP Encryption Example 10.5
+: # RSAES-OAEP Encryption Example 10.6
+: # =============================================
+Done (3730 ms).
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2638)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\Cipher\\RSA\\TestOAEP_KAT.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

@@ -1,0 +1,35 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:21 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\jvmstat\\monitor\\MonitoredVm\\MonitorVmStartTerminate.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+error=Parse Exception\: `@library' must appear before first `@run'
+keywords=bug4990825 shell ignore
+run=USER_SPECIFIED ignore until 6543856 is fixed\r\nUSER_SPECIFIED build Sleeper\r\nUSER_SPECIFIED build JavaProcess\r\nUSER_SPECIFIED build MonitorVmStartTerminate\r\nUSER_SPECIFIED shell MonitorVmStartTerminate.sh\r\n
+source=MonitorVmStartTerminate.sh
+title=attach to external but local JVM processes
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/jvmstat/monitor/MonitoredVm/MonitorVmStartTerminate.sh
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:51\:21 CEST 2014
+environment=regtest
+execStatus=Error. Parse Exception\: `@library' must appear before first `@run'
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:51\:21 CEST 2014
+test=sun/jvmstat/monitor/MonitoredVm/MonitorVmStartTerminate.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\jvmstat\\monitor\\MonitoredVm
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. Parse Exception: `@library' must appear before first `@run'

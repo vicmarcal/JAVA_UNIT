@@ -1,0 +1,77 @@
+#Test Results (version 2)
+#Fri Sep 05 09:50:24 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\runSerialBench.sh
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Mike Warres, Nigel Daley
+keywords=shell
+maxTimeout=1800
+run=USER_SPECIFIED build bench.BenchInfo bench.HtmlReporter bench.Util bench.Benchmark\r\nUSER_SPECIFIED build bench.Reporter bench.XmlReporter bench.ConfigFormatException\r\nUSER_SPECIFIED build bench.Harness bench.TextReporter\r\nUSER_SPECIFIED build bench.serial.BooleanArrays bench.serial.Booleans\r\nUSER_SPECIFIED build bench.serial.ByteArrays bench.serial.Bytes bench.serial.CharArrays\r\nUSER_SPECIFIED build bench.serial.Chars bench.serial.ClassDesc bench.serial.Cons\r\nUSER_SPECIFIED build bench.serial.CustomDefaultObjTrees bench.serial.CustomObjTrees\r\nUSER_SPECIFIED build bench.serial.DoubleArrays bench.serial.Doubles\r\nUSER_SPECIFIED build bench.serial.ExternObjTrees bench.serial.FloatArrays\r\nUSER_SPECIFIED build bench.serial.Floats bench.serial.GetPutFieldTrees\r\nUSER_SPECIFIED build bench.serial.IntArrays bench.serial.Ints bench.serial.LongArrays\r\nUSER_SPECIFIED build bench.serial.Longs bench.serial.Main bench.serial.ObjArrays\r\nUSER_SPECIFIED build bench.serial.ObjTrees bench.serial.ProxyArrays\r\nUSER_SPECIFIED build bench.serial.ProxyClassDesc bench.serial.RepeatObjs\r\nUSER_SPECIFIED build bench.serial.ReplaceTrees bench.serial.ShortArrays\r\nUSER_SPECIFIED build bench.serial.Shorts bench.serial.SmallObjTrees\r\nUSER_SPECIFIED build bench.serial.StreamBuffer bench.serial.Strings\r\nUSER_SPECIFIED shell/timeout\=1800 runSerialBench.sh\r\n
+source=runSerialBench.sh
+title=The Serialization benchmark test.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/rmi/reliability/benchmark/runSerialBench.sh
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:50\:24 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `C\:\\Program Files\\Java\\jre6\\bin\\javac'\: java.io.IOException\: Cannot run program "C\:\\Program Files\\Java\\jre6\\bin\\javac" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 09\:50\:24 CEST 2014
+test=java/rmi/reliability/benchmark/runSerialBench.sh
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\rmi\\reliability\\benchmark
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:build
+----------messages:(3/212)----------
+command: build bench.BenchInfo bench.HtmlReporter bench.Util bench.Benchmark
+reason: User specified action: run build bench.BenchInfo bench.HtmlReporter bench.Util bench.Benchmark 
+elapsed time (seconds): 0.0
+result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+#section:compile
+----------messages:(3/519)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\BenchInfo.java C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\HtmlReporter.java C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\Util.java C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\Benchmark.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 0.0
+----------rerun:(19/2985)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files\\Java\\jre6\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\reliability\\benchmark' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\reliability\\benchmark' \\
+        -J-Dtest.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\reliability\\benchmark' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\rmi\\reliability\\benchmark;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\BenchInfo.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\HtmlReporter.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\Util.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\rmi\\reliability\\benchmark\\bench\\Benchmark.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

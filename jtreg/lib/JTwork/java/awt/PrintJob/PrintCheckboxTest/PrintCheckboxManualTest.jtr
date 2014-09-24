@@ -1,0 +1,36 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:51 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\PrintJob\\PrintCheckboxTest\\PrintCheckboxManualTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=art@sparc.spb.su
+keywords=bug5045936 bug5055171 manual
+run=USER_SPECIFIED applet/manual\=yesno PrintCheckboxManualTest.html\r\n
+source=PrintCheckboxManualTest.java
+title=Tests that there is no ClassCastException thrown in printing checkbox and scrollbar with XAWT
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/PrintJob/PrintCheckboxTest/PrintCheckboxManualTest.java
+elapsed=1 0\:00\:00.001
+end=Fri Sep 05 10\:00\:51 CEST 2014
+environment=regtest
+execStatus=Error. Can't find HTML file\: C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\PrintJob\\PrintCheckboxTest\\PrintCheckboxManualTest.html
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 10\:00\:51 CEST 2014
+test=java/awt/PrintJob/PrintCheckboxTest/PrintCheckboxManualTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\PrintJob\\PrintCheckboxTest
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+
+test result: Error. Can't find HTML file: C:\Users\Victor\Downloads\Java\test\java\awt\PrintJob\PrintCheckboxTest\PrintCheckboxManualTest.html

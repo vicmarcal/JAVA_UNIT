@@ -1,0 +1,36 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:36 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\security\\pkcs11\\fips\\ClientJSSEServerJSSE.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Andreas Sterbenz
+error=Parse Exception\: `@library' must appear before first `@run'
+keywords=bug6313675 bug6323647 ignore
+run=USER_SPECIFIED ignore JSSE supported cipher suites are changed with CR 6916074, need to update this test case in JDK 7 soon\r\n
+source=ClientJSSEServerJSSE.java
+title=Verify that all ciphersuites work in FIPS mode
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/security/pkcs11/fips/ClientJSSEServerJSSE.java
+elapsed=2 0\:00\:00.002
+end=Fri Sep 05 09\:51\:36 CEST 2014
+environment=regtest
+execStatus=Error. Parse Exception\: `@library' must appear before first `@run'
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:51\:36 CEST 2014
+test=sun/security/pkcs11/fips/ClientJSSEServerJSSE.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\security\\pkcs11\\fips
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. Parse Exception: `@library' must appear before first `@run'

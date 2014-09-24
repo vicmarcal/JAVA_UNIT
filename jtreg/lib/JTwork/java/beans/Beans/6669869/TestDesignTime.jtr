@@ -1,0 +1,72 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:53 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869\\TestDesignTime.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Sergey Malenkov
+keywords=bug6669869
+run=ASSUMED_ACTION main TestDesignTime\r\n
+source=TestDesignTime.java
+title=Tests DesignTime property in different application contexts
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/beans/Beans/6669869/TestDesignTime.java
+elapsed=3 0\:00\:00.003
+end=Fri Sep 05 10\:00\:53 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `C\:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac'\: java.io.IOException\: Cannot run program "C\:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 10\:00\:53 CEST 2014
+test=java/beans/Beans/6669869/TestDesignTime.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\beans\\Beans\\6669869
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+#section:build
+----------messages:(3/103)----------
+command: build TestDesignTime
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+#section:compile
+----------messages:(3/219)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869\\TestDesignTime.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 0.0010
+----------rerun:(19/2682)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\Beans\\6669869' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\Beans\\6669869' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\Beans\\6669869' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\beans\\Beans\\6669869;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\beans\\Beans\\6669869\\TestDesignTime.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac': java.io.IOException: Cannot run program "C:\Program Files (x86)\Java\jdk1.7.0_65\bin\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

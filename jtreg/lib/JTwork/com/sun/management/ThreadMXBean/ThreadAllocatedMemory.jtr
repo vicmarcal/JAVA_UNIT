@@ -1,0 +1,150 @@
+#Test Results (version 2)
+#Fri Sep 05 10:23:18 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean\\ThreadAllocatedMemory.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Paul Hohensee
+keywords=bug6173675
+run=ASSUMED_ACTION main ThreadAllocatedMemory\r\n
+source=ThreadAllocatedMemory.java
+title=Basic test of ThreadMXBean.getThreadAllocatedBytes
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/management/ThreadMXBean/ThreadAllocatedMemory.java
+elapsed=2900 0\:00\:02.900
+end=Fri Sep 05 10\:23\:18 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:23\:15 CEST 2014
+test=com/sun/management/ThreadMXBean/ThreadAllocatedMemory.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\management\\ThreadMXBean
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/109)----------
+command: build ThreadAllocatedMemory
+reason: Named class compiled on demand
+elapsed time (seconds): 1.833
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/232)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean\\ThreadAllocatedMemory.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.831
+----------rerun:(19/2796)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean\\ThreadAllocatedMemory.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/144)----------
+command: main ThreadAllocatedMemory
+reason: Assumed action based on file name: run main ThreadAllocatedMemory 
+elapsed time (seconds): 1.063
+----------System.out:(43/2425)----------
+MainThread hashcode: -1603650502
+MainThread Current thread allocated bytes = 36584 allocated bytes = 11326912
+MyThread-0 hashcode: -1603650502
+MyThread-7 hashcode: -1603650502
+MyThread-3 hashcode: -1603650502
+MyThread-4 hashcode: -1603650502
+MyThread-8 hashcode: -1603650502
+MyThread-5 hashcode: -1603650502
+MyThread-2 hashcode: -1603650502
+MyThread-1 hashcode: -1603650502
+MyThread-9 hashcode: -1603650502
+MyThread-6 hashcode: -1603650502
+MyThread-9 hashcode: -1603650502
+MyThread-9: ThreadAllocatedBytes  = 11441720 ThreadAllocatedBytes  = 22801152
+MyThread-2 hashcode: -1603650502
+MyThread-2: ThreadAllocatedBytes  = 11341384 ThreadAllocatedBytes  = 22682832
+MyThread-5 hashcode: -1603650502
+MyThread-5: ThreadAllocatedBytes  = 11363296 ThreadAllocatedBytes  = 22700152
+MyThread-0 hashcode: -1603650502
+MyThread-0: ThreadAllocatedBytes  = 11378952 ThreadAllocatedBytes  = 22729616
+MyThread-8 hashcode: -1603650502
+MyThread-8: ThreadAllocatedBytes  = 11372176 ThreadAllocatedBytes  = 22723184
+MyThread-1 hashcode: -1603650502
+MyThread-1: ThreadAllocatedBytes  = 11414664 ThreadAllocatedBytes  = 22756368
+MyThread-4 hashcode: -1603650502
+MyThread-4: ThreadAllocatedBytes  = 11408424 ThreadAllocatedBytes  = 22750920
+MyThread-6 hashcode: -1603650502
+MyThread-6: ThreadAllocatedBytes  = 11399528 ThreadAllocatedBytes  = 22757280
+MyThread-7 hashcode: -1603650502
+MyThread-3 hashcode: -1603650502
+MyThread-3: ThreadAllocatedBytes  = 11405680 ThreadAllocatedBytes  = 22750440
+MyThread-7: ThreadAllocatedBytes  = 11393168 ThreadAllocatedBytes  = 22731072
+MyThread-0 Previous allocated bytes = 11378904 Current allocated bytes = 22730584
+MyThread-1 Previous allocated bytes = 11414616 Current allocated bytes = 22757336
+MyThread-2 Previous allocated bytes = 11341336 Current allocated bytes = 22683800
+MyThread-3 Previous allocated bytes = 11405632 Current allocated bytes = 22751408
+MyThread-4 Previous allocated bytes = 11408376 Current allocated bytes = 22751888
+MyThread-5 Previous allocated bytes = 11363248 Current allocated bytes = 22701120
+MyThread-6 Previous allocated bytes = 11399480 Current allocated bytes = 22758248
+MyThread-7 Previous allocated bytes = 11393120 Current allocated bytes = 22732040
+MyThread-8 Previous allocated bytes = 11372128 Current allocated bytes = 22724152
+MyThread-9 Previous allocated bytes = 11441672 Current allocated bytes = 22802296
+Test passed
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2612)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\management\\ThreadMXBean' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\management\\ThreadMXBean\\ThreadAllocatedMemory.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

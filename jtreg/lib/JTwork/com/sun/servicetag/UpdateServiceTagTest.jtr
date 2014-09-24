@@ -1,0 +1,239 @@
+#Test Results (version 2)
+#Fri Sep 05 10:33:08 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Mandy Chung
+keywords=bug6622366
+run=USER_SPECIFIED build UpdateServiceTagTest Util\r\nUSER_SPECIFIED main UpdateServiceTagTest\r\n
+source=UpdateServiceTagTest.java
+title=Basic Test for RegistrationData.updateServiceTag
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/servicetag/UpdateServiceTagTest.java
+elapsed=2468 0\:00\:02.468
+end=Fri Sep 05 10\:33\:08 CEST 2014
+environment=regtest
+execStatus=Failed. Compilation failed\: Compilation failed
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 10\:33\:06 CEST 2014
+test=com/sun/servicetag/UpdateServiceTagTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\servicetag
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/142)----------
+command: build UpdateServiceTagTest Util
+reason: User specified action: run build UpdateServiceTagTest Util 
+elapsed time (seconds): 2.455
+result: Failed. Compilation failed: Compilation failed
+
+#section:compile
+----------messages:(3/291)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.453
+----------rerun:(19/2745)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java'
+----------System.out:(0/0)----------
+----------System.err:(163/8787)*----------
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:36: error: package com.sun.servicetag does not exist
+import com.sun.servicetag.*;
+^
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:47: error: cannot find symbol
+    private static RegistrationData registration = new RegistrationData();
+                   ^
+  symbol:   class RegistrationData
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:48: error: cannot find symbol
+    private static Set<ServiceTag> set = new HashSet<ServiceTag>();
+                       ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:61: error: cannot find symbol
+    private static ServiceTag addServiceTag(String filename) throws Exception {
+                   ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:85: error: cannot find symbol
+    private static void updateServiceTag(ServiceTag svcTag) throws Exception {
+                                         ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:31: error: package com.sun.servicetag does not exist
+import com.sun.servicetag.RegistrationData;
+                         ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:32: error: package com.sun.servicetag does not exist
+import com.sun.servicetag.ServiceTag;
+                         ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:33: error: package com.sun.servicetag does not exist
+import com.sun.servicetag.Registry;
+                         ^
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:45: error: cannot find symbol
+    public static ServiceTag newServiceTag(File f)
+                  ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:50: error: cannot find symbol
+    public static ServiceTag newServiceTag(File f, boolean noInstanceURN)
+                  ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:87: error: cannot find symbol
+    public static boolean matches(ServiceTag st1, ServiceTag st2) {
+                                  ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:87: error: cannot find symbol
+    public static boolean matches(ServiceTag st1, ServiceTag st2) {
+                                                  ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:96: error: cannot find symbol
+    public static boolean matchesNoInstanceUrn(ServiceTag st1, ServiceTag st2) {
+                                               ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:96: error: cannot find symbol
+    public static boolean matchesNoInstanceUrn(ServiceTag st1, ServiceTag st2) {
+                                                               ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:153: error: cannot find symbol
+                                             Map<String, ServiceTag> stMap)
+                                                         ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:223: error: cannot find symbol
+    private static Registry registry = null;
+                   ^
+  symbol:   class Registry
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:229: error: cannot find symbol
+    static synchronized Registry getSvcTagClientRegistry() throws IOException {
+                        ^
+  symbol:   class Registry
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:47: error: cannot find symbol
+    private static RegistrationData registration = new RegistrationData();
+                                                       ^
+  symbol:   class RegistrationData
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:48: error: cannot find symbol
+    private static Set<ServiceTag> set = new HashSet<ServiceTag>();
+                                                     ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:52: error: cannot find symbol
+            ServiceTag st = addServiceTag(f);
+            ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:56: error: cannot find symbol
+        for (ServiceTag st : set) {
+             ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:63: error: cannot find symbol
+        ServiceTag svcTag = Util.newServiceTag(f, true /* no instance_urn */);
+        ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:64: error: cannot find symbol
+        ServiceTag st = registration.addServiceTag(svcTag);
+        ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\UpdateServiceTagTest.java:91: error: cannot find symbol
+        ServiceTag st = registration.getServiceTag(urn);
+        ^
+  symbol:   class ServiceTag
+  location: class UpdateServiceTagTest
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:60: error: cannot find symbol
+            return ServiceTag.newInstance(
+                   ^
+  symbol:   variable ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:72: error: cannot find symbol
+            return ServiceTag.newInstance(
+                   ^
+  symbol:   variable ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:156: error: cannot find symbol
+        RegistrationData registration = RegistrationData.loadFromXML(in);
+        ^
+  symbol:   class RegistrationData
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:156: error: cannot find symbol
+        RegistrationData registration = RegistrationData.loadFromXML(in);
+                                        ^
+  symbol:   variable RegistrationData
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:157: error: cannot find symbol
+        Set<ServiceTag> svcTags = registration.getServiceTags();
+            ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:162: error: cannot find symbol
+        for (ServiceTag st : svcTags) {
+             ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:163: error: cannot find symbol
+            ServiceTag st1 = stMap.get(st.getInstanceURN());
+            ^
+  symbol:   class ServiceTag
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:249: error: cannot find symbol
+        registry = Registry.getSystemRegistry();
+                   ^
+  symbol:   variable Registry
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:258: error: cannot find symbol
+                RegistrationData data = new RegistrationData();
+                ^
+  symbol:   class RegistrationData
+  location: class Util
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\Util.java:258: error: cannot find symbol
+                RegistrationData data = new RegistrationData();
+                                            ^
+  symbol:   class RegistrationData
+  location: class Util
+34 errors
+result: Failed. Compilation failed: Compilation failed
+
+
+test result: Failed. Compilation failed: Compilation failed

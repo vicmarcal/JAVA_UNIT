@@ -1,0 +1,36 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:21 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\management\\HotspotClassLoadingMBean\\GetClassLoadingTime.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Steve Bohne
+error=No action after @build
+keywords=bug4858522
+run=USER_SPECIFIED build ClassToLoad0\r\n
+source=GetClassLoadingTime.java
+title=Basic unit test of HotspotClassLoadingMBean.getClassLoadingTime()
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/management/HotspotClassLoadingMBean/GetClassLoadingTime.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:51\:21 CEST 2014
+environment=regtest
+execStatus=Error. No action after @build
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:51\:21 CEST 2014
+test=sun/management/HotspotClassLoadingMBean/GetClassLoadingTime.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\management\\HotspotClassLoadingMBean
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. No action after @build

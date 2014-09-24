@@ -1,0 +1,100 @@
+#Test Results (version 2)
+#Fri Sep 05 10:33:10 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Mandy Chung
+keywords=bug6622366
+run=USER_SPECIFIED build ValidRegistrationData\r\nUSER_SPECIFIED main ValidRegistrationData\r\n
+source=ValidRegistrationData.java
+title=Basic Test for reading a valid registration
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/servicetag/ValidRegistrationData.java
+elapsed=1954 0\:00\:01.954
+end=Fri Sep 05 10\:33\:10 CEST 2014
+environment=regtest
+execStatus=Failed. Compilation failed\: Compilation failed
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile
+start=Fri Sep 05 10\:33\:09 CEST 2014
+test=com/sun/servicetag/ValidRegistrationData.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\servicetag
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/134)----------
+command: build ValidRegistrationData
+reason: User specified action: run build ValidRegistrationData 
+elapsed time (seconds): 1.938
+result: Failed. Compilation failed: Compilation failed
+
+#section:compile
+----------messages:(3/218)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.937
+----------rerun:(19/2670)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\servicetag;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java'
+----------System.out:(0/0)----------
+----------System.err:(24/1305)*----------
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java:36: error: package com.sun.servicetag does not exist
+import com.sun.servicetag.*;
+^
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java:43: error: cannot find symbol
+    private static RegistrationData registration;
+                   ^
+  symbol:   class RegistrationData
+  location: class ValidRegistrationData
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java:44: error: cannot find symbol
+    private static Map<String, ServiceTag> stMap =
+                               ^
+  symbol:   class ServiceTag
+  location: class ValidRegistrationData
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java:45: error: cannot find symbol
+        new LinkedHashMap<String, ServiceTag>();
+                                  ^
+  symbol:   class ServiceTag
+  location: class ValidRegistrationData
+C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\servicetag\\ValidRegistrationData.java:58: error: cannot find symbol
+        registration = RegistrationData.loadFromXML(in);
+                       ^
+  symbol:   variable RegistrationData
+  location: class ValidRegistrationData
+5 errors
+result: Failed. Compilation failed: Compilation failed
+
+
+test result: Failed. Compilation failed: Compilation failed

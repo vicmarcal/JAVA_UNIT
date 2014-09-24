@@ -1,0 +1,46 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:49 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\im\\4490692\\bug4490692.html
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Naoto Sato
+keywords=bug4490692 manual ignore
+run=USER_SPECIFIED ignore The fix for this problem was backed out for 5057184.  Remove this "ignore" tag when it is fixed again.\r\nUSER_SPECIFIED applet/manual\=yesno bug4490692.html\r\n
+source=bug4490692.html
+title=\ 
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/im/4490692/bug4490692.html
+elapsed=2 0\:00\:00.002
+end=Fri Sep 05 10\:00\:49 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again.
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 10\:00\:49 CEST 2014
+test=java/awt/im/4490692/bug4490692.html
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\im\\4490692
+
+#section:script_messages
+----------messages:(1/65)*----------
+JDK under test: C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin
+
+#section:ignore
+----------messages:(3/294)----------
+command: ignore The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again.
+reason: User specified action: run ignore The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again. 
+elapsed time (seconds): 0.0
+----------rerun:(2/122)----------
+# @ignore: The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again.
+exit 1
+result: Error. Test ignored: The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again.
+
+
+test result: Error. Test ignored: The fix for this problem was backed out for 5057184. Remove this "ignore" tag when it is fixed again.

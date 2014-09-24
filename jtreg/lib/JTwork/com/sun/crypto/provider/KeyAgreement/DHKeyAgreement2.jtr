@@ -1,0 +1,168 @@
+#Test Results (version 2)
+#Fri Sep 05 10:06:34 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement\\DHKeyAgreement2.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Jan Luehe
+keywords=bug0000000
+run=ASSUMED_ACTION main DHKeyAgreement2\r\n
+source=DHKeyAgreement2.java
+title=DHKeyAgreement2
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/crypto/provider/KeyAgreement/DHKeyAgreement2.java
+elapsed=3836 0\:00\:03.836
+end=Fri Sep 05 10\:06\:34 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:06\:31 CEST 2014
+test=com/sun/crypto/provider/KeyAgreement/DHKeyAgreement2.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\crypto\\provider\\KeyAgreement
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/103)----------
+command: build DHKeyAgreement2
+reason: Named class compiled on demand
+elapsed time (seconds): 1.936
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/232)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement\\DHKeyAgreement2.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.935
+----------rerun:(19/2844)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement\\DHKeyAgreement2.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/132)----------
+command: main DHKeyAgreement2
+reason: Assumed action based on file name: run main DHKeyAgreement2 
+elapsed time (seconds): 1.897
+----------System.out:(52/2844)----------
+Alice DH public key:
+SunJCE Diffie-Hellman Public Key:
+y:
+    3b4b325e c120f334 39277020 1f6622dc bd67f0c1 a94ace12 cb13414b 9493f21c
+    093932f8 b01051a3 af2c9119 dac9af5f cadd38a5 38c3366a 117c0ffb 12fb4182
+    4ad1f6b5 fd851bf9 7b473fe8 eff1b616 8d3ce8b4 b482ad6e a0289f49 76b8d87a
+    f9b483f5 d1b6da7f ff98b0e2 4a55c068 5e27a774 046f45e9 7c0c5c8a e86db064
+p:
+    f488fd58 4e49dbcd 20b49de4 9107366b 336c380d 451d0f7c 88b31c7c 5b2d8ef6
+    f3c923c0 43f0a55b 188d8ebb 558cb85d 38d334fd 7c175743 a31d186c de33212c
+    b52aff3c e1b12940 18118d7c 84a70a72 d686c403 19c80729 7aca950c d9969fab
+    d00a509b 0246d308 3d66a45d 419f9c7c bd894b22 1926baab a25ec355 e92f78c7
+g:
+    02
+l:
+    512
+Alice DH private key:
+com.sun.crypto.provider.DHPrivateKey@fffe4485
+Alice DH parameters:
+SunJCE Diffie-Hellman Parameters:
+p:
+    f488fd58 4e49dbcd 20b49de4 9107366b 336c380d 451d0f7c 88b31c7c 5b2d8ef6
+    f3c923c0 43f0a55b 188d8ebb 558cb85d 38d334fd 7c175743 a31d186c de33212c
+    b52aff3c e1b12940 18118d7c 84a70a72 d686c403 19c80729 7aca950c d9969fab
+    d00a509b 0246d308 3d66a45d 419f9c7c bd894b22 1926baab a25ec355 e92f78c7
+g:
+    02
+l:
+    512
+Bob DH public key:
+SunJCE Diffie-Hellman Public Key:
+y:
+    d1cfb084 cc4c07b9 5ff7d7d1 65ccf125 b24cb96f eee2160f 729f3cef 735134c5
+    b44bfda2 d682511c 1bdf87ff 77232183 ededdda2 afdc18df af5cf1a8 83732535
+    d9daabb2 4b05de62 8dbc5668 08dad676 5c74f5b8 0b3a3c86 0b211c99 2ec94c5e
+    1fce88da d91218bf 9e50d0fb 1cf8a11d d54ff9a0 aff8ef88 5fb4ee5e 6d30974f
+p:
+    f488fd58 4e49dbcd 20b49de4 9107366b 336c380d 451d0f7c 88b31c7c 5b2d8ef6
+    f3c923c0 43f0a55b 188d8ebb 558cb85d 38d334fd 7c175743 a31d186c de33212c
+    b52aff3c e1b12940 18118d7c 84a70a72 d686c403 19c80729 7aca950c d9969fab
+    d00a509b 0246d308 3d66a45d 419f9c7c bd894b22 1926baab a25ec355 e92f78c7
+g:
+    02
+l:
+    512
+Bob DH private key:
+com.sun.crypto.provider.DHPrivateKey@fffd4587
+EXPECTED:  Buffer too short for shared secret
+Alice secret: CA:27:17:87:06:19:33:7C:7B:D2:90:EB:FF:F0:4E:28:2F:F8:E8:CE:37:A7:FD:1F:BE:37:5D:70:EA:54:1F:83:43:BD:B2:62:2A:7A:34:6C:F6:40:C9:8E:41:BA:8B:E6:83:C8:0A:E3:73:C4:7A:55:80:5D:E1:FC:3E:47:A3:61:B0:5F:B8:7E:15:14:8F:BE:59:A6:3E:D7:83:DC:91:40:A4:2F:61:51:1D:04:2B:AE:1C:5B:0F:6D:12:B6:57:63:2A:0D:73:C8:CD:82:09:5A:F3:34:88:EE:6F:DF:F7:3D:9B:DF:84:27:09:5E:F9:B0:39:C6:CD:6A:27:32:E5:D2
+Bob secret: CA:27:17:87:06:19:33:7C:7B:D2:90:EB:FF:F0:4E:28:2F:F8:E8:CE:37:A7:FD:1F:BE:37:5D:70:EA:54:1F:83:43:BD:B2:62:2A:7A:34:6C:F6:40:C9:8E:41:BA:8B:E6:83:C8:0A:E3:73:C4:7A:55:80:5D:E1:FC:3E:47:A3:61:B0:5F:B8:7E:15:14:8F:BE:59:A6:3E:D7:83:DC:91:40:A4:2F:61:51:1D:04:2B:AE:1C:5B:0F:6D:12:B6:57:63:2A:0D:73:C8:CD:82:09:5A:F3:34:88:EE:6F:DF:F7:3D:9B:DF:84:27:09:5E:F9:B0:39:C6:CD:6A:27:32:E5:D2
+Return shared secret as SecretKey object ...
+Test Passed
+----------System.err:(10/255)----------
+Using SKIP Diffie-Hellman parameters
+ALICE: Generate DH keypair ...
+ALICE: Execute PHASE1 ...
+BOB: Generate DH keypair ...
+BOB: Execute PHASE1 ...
+ALICE: Execute PHASE2 ...
+BOB: Execute PHASE2 ...
+Shared secrets are the same
+SAME
+STATUS:Passed.
+----------rerun:(20/2648)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\crypto\\provider\\KeyAgreement\\DHKeyAgreement2.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

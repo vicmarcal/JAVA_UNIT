@@ -1,0 +1,36 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:25 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\net\\www\\protocol\\jar\\B4957695.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+error=No action after @build
+keywords=bug4957695
+library=../../httptest/
+run=USER_SPECIFIED build HttpCallback HttpServer ClosedChannelList HttpTransaction AbstractCallback\r\n
+source=B4957695.java
+title=URLJarFile.retrieve does not delete tmpFile on IOException
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/net/www/protocol/jar/B4957695.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:51\:25 CEST 2014
+environment=regtest
+execStatus=Error. No action after @build
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:51\:25 CEST 2014
+test=sun/net/www/protocol/jar/B4957695.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\net\\www\\protocol\\jar
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. No action after @build

@@ -1,0 +1,96 @@
+#Test Results (version 2)
+#Fri Sep 05 10:43:04 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest\\AcceleratorTest.html
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=yuri.nesterenko \: area\=awt.keyboard
+keywords=bug6680988 manual
+run=USER_SPECIFIED applet/manual\=yesno AcceleratorTest.html\r\n
+source=AcceleratorTest.html
+title=verify that various shortcuts and accelerators work
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/KeyEvent/AcceleratorTest/AcceleratorTest.html
+elapsed=49615 0\:00\:49.615
+end=Fri Sep 05 10\:43\:04 CEST 2014
+environment=regtest
+execStatus=Passed. Manual test, user evaluated\: Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile applet
+start=Fri Sep 05 10\:42\:14 CEST 2014
+test=java/awt/event/KeyEvent/AcceleratorTest/AcceleratorTest.html
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\KeyEvent\\AcceleratorTest
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/103)----------
+command: build AcceleratorTest
+reason: Named class compiled on demand
+elapsed time (seconds): 3.019
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/235)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest\\AcceleratorTest.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 3.016
+----------rerun:(19/2871)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest\\AcceleratorTest.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:applet
+----------messages:(3/147)----------
+command: applet AcceleratorTest.html
+reason: User specified action: run applet/manual=yesno AcceleratorTest.html 
+elapsed time (seconds): 46.59
+----------System.out:(1/48)----------
+Any messages for the tester will display here.
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(8/2544)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -Dtest.vm.opts= '-Dcompile.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' '-Dtest.src.path=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest' '-Dtest.src=C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\KeyEvent\\AcceleratorTest' -Dtest.tool.vm.opts= '-Dtest.class.path=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest' -Dtest.timeout.factor=1.0 '-Dtest.classes=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest' '-Dtest.jdk=C:\\Program Files (x86)\\Java\\jdk1.7.0_65' -Dtest.java.opts= -Dtest.compiler.opts= -mx128m com.sun.javatest.regtest.AppletWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\KeyEvent\\AcceleratorTest\\AcceleratorTest.jta'
+result: Passed. Manual test, user evaluated: Execution successful
+
+
+test result: Passed. Manual test, user evaluated: Execution successful

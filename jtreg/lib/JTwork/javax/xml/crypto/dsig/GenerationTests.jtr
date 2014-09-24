@@ -1,0 +1,69 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:17 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\GenerationTests.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Sean Mullan
+keywords=bug4635230 bug6283345 bug6303830 bug6824440 bug6867348
+run=USER_SPECIFIED compile -XDignore.symbol.file KeySelectors.java SignatureValidator.java X509KeySelector.java GenerationTests.java\r\nUSER_SPECIFIED main GenerationTests\r\n
+source=GenerationTests.java
+title=Basic unit tests for generating XML Signatures with JSR 105
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/javax/xml/crypto/dsig/GenerationTests.java
+elapsed=10 0\:00\:00.010
+end=Fri Sep 05 09\:51\:17 CEST 2014
+environment=regtest
+execStatus=Error. Error invoking program `C\:\\Program Files\\Java\\jre6\\bin\\javac'\: java.io.IOException\: Cannot run program "C\:\\Program Files\\Java\\jre6\\bin\\javac" (in directory "C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\scratch")\: CreateProcess error\=2, El sistema no puede encontrar el archivo especificado
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages compile
+start=Fri Sep 05 09\:51\:17 CEST 2014
+test=javax/xml/crypto/dsig/GenerationTests.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\javax\\xml\\crypto\\dsig
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:compile
+----------messages:(3/576)*----------
+command: compile -XDignore.symbol.file C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\KeySelectors.java C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\SignatureValidator.java C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\X509KeySelector.java C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\GenerationTests.java
+reason: User specified action: run compile -XDignore.symbol.file KeySelectors.java SignatureValidator.java X509KeySelector.java GenerationTests.java 
+elapsed time (seconds): 0.0
+----------rerun:(19/2870)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files\\Java\\jre6\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\javax\\xml\\crypto\\dsig' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\javax\\xml\\crypto\\dsig' \\
+        -J-Dtest.jdk='C:\\Program Files\\Java\\jre6' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\javax\\xml\\crypto\\dsig' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\javax\\xml\\crypto\\dsig;C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig' -XDignore.symbol.file 'C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\KeySelectors.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\SignatureValidator.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\X509KeySelector.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\javax\\xml\\crypto\\dsig\\GenerationTests.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado
+
+
+test result: Error. Error invoking program `C:\Program Files\Java\jre6\bin\javac': java.io.IOException: Cannot run program "C:\Program Files\Java\jre6\bin\javac" (in directory "C:\Users\Victor\Downloads\Java\jtreg4.1-b09\jtreg\lib\JTwork\scratch"): CreateProcess error=2, El sistema no puede encontrar el archivo especificado

@@ -1,0 +1,143 @@
+#Test Results (version 2)
+#Fri Sep 05 10:43:27 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton\\AcceptExtraButton.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=Andrei Dmitriev \: area\=awt.event
+keywords=bug6315717
+run=USER_SPECIFIED main AcceptExtraButton\r\n
+source=AcceptExtraButton.java
+title=verifies that MouseEvent CTOR accepts extra mouse button numbers
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/MouseEvent/AcceptExtraButton/AcceptExtraButton.java
+elapsed=3518 0\:00\:03.518
+end=Fri Sep 05 10\:43\:27 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile main
+start=Fri Sep 05 10\:43\:24 CEST 2014
+test=java/awt/event/MouseEvent/AcceptExtraButton/AcceptExtraButton.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\MouseEvent\\AcceptExtraButton
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/104)----------
+command: build AcceptExtraButton
+reason: Named class compiled on demand
+elapsed time (seconds): 1.98
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/241)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton\\AcceptExtraButton.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 1.977
+----------rerun:(19/2909)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton\\AcceptExtraButton.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/124)----------
+command: main AcceptExtraButton
+reason: User specified action: run main AcceptExtraButton 
+elapsed time (seconds): 1.533
+----------System.out:(36/2535)----------
+button == 0
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=0,clickCount=1] on frame0
+button == 1
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=1,modifiers=Button1,clickCount=1] on frame0
+button == 2
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=2,modifiers=Alt+Button2,clickCount=1] on frame0
+button == 3
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=3,modifiers=Meta+Button3,clickCount=1] on frame0
+button == 4
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=4,clickCount=1] on frame0
+button == 5
+dispatching >>>java.awt.event.MouseEvent[MOUSE_PRESSED,(100,100),absolute(150,150),button=5,clickCount=1] on frame0
+button == 0
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=0,clickCount=1] on frame0
+button == 1
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=1,modifiers=Button1,clickCount=1] on frame0
+button == 2
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=2,modifiers=Alt+Button2,clickCount=1] on frame0
+button == 3
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=3,modifiers=Meta+Button3,clickCount=1] on frame0
+button == 4
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=4,clickCount=1] on frame0
+button == 5
+dispatching >>>java.awt.event.MouseEvent[MOUSE_RELEASED,(100,100),absolute(150,150),button=5,clickCount=1] on frame0
+button == 0
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=0,clickCount=1] on frame0
+button == 1
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=1,modifiers=Button1,clickCount=1] on frame0
+button == 2
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=2,modifiers=Alt+Button2,clickCount=1] on frame0
+button == 3
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=3,modifiers=Meta+Button3,clickCount=1] on frame0
+button == 4
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=4,clickCount=1] on frame0
+button == 5
+dispatching >>>java.awt.event.MouseEvent[MOUSE_CLICKED,(100,100),absolute(150,150),button=5,clickCount=1] on frame0
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2699)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\AcceptExtraButton\\AcceptExtraButton.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

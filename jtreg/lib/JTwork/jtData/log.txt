@@ -1,0 +1,13 @@
+[05sep2014 09:48CEST]  Starting test run
+[05sep2014 09:52CEST]  Completed test run: not ok
+[05sep2014 09:56CEST]  Starting test run
+[05sep2014 10:00CEST]  Starting test run
+[05sep2014 10:00CEST]  Completed test run: not ok
+[05sep2014 10:01CEST]  Starting test run
+[05sep2014 10:01CEST]  Completed test run: not ok
+[05sep2014 10:01CEST]  Starting test run
+[05sep2014 10:46CEST]  Completed test run: not ok
+[06sep2014 21:36CEST]  Starting test run
+[06sep2014 21:36CEST]  Completed test run: not ok
+[06sep2014 21:37CEST]  Starting test run
+[06sep2014 21:37CEST]  Completed test run: not ok

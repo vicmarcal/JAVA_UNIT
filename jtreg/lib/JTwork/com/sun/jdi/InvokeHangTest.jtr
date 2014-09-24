@@ -1,0 +1,1126 @@
+#Test Results (version 2)
+#Fri Sep 05 10:13:27 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InvokeHangTest.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=jjh
+keywords=bug6293795
+run=USER_SPECIFIED build TestScaffold VMConnection TargetListener TargetAdapter\r\nUSER_SPECIFIED compile -g InvokeHangTest.java\r\nUSER_SPECIFIED main InvokeHangTest\r\n
+source=InvokeHangTest.java
+title=Backend hangs when invokeMethod is called from a JDI eventHandler
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/jdi/InvokeHangTest.java
+elapsed=4900 0\:00\:04.900
+end=Fri Sep 05 10\:13\:27 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build main
+start=Fri Sep 05 10\:13\:22 CEST 2014
+test=com/sun/jdi/InvokeHangTest.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\jdi
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/199)----------
+command: build TestScaffold VMConnection TargetListener TargetAdapter
+reason: User specified action: run build TestScaffold VMConnection TargetListener TargetAdapter 
+elapsed time (seconds): 0.01
+result: Passed. All files up to date
+
+#section:compile
+----------messages:(3/197)*----------
+command: compile -g C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InvokeHangTest.java
+reason: User specified action: run compile -g InvokeHangTest.java 
+elapsed time (seconds): 2.108
+----------rerun:(19/2576)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' -g 'C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InvokeHangTest.java'
+----------System.out:(0/0)----------
+----------System.err:(2/173)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi\\InvokeHangTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/103)----------
+command: build InvokeHangTest
+reason: Named class compiled on demand
+elapsed time (seconds): 0.0010
+result: Passed. All files up to date
+
+#section:main
+----------messages:(3/118)----------
+command: main InvokeHangTest
+reason: User specified action: run main InvokeHangTest 
+elapsed time (seconds): 2.768
+----------System.out:(527/23361)----------
+JVM version:1.7.0_65
+JDI version: 1.6
+JVM description: Java Debug Interface (Reference Implementation) version 1.6 
+Java Debug Wire Protocol (Reference Implementation) version 1.6
+JVM Debug Interface version 1.2
+JVM version 1.7.0_65 (Java HotSpot(TM) Client VM, mixed mode, sharing)
+Howdy!
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: Thread[Thread 2,5,main] is running:1
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:1
+Debuggee: Thread[Thread 2,5,main] is running:2
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:2
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:3
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:3
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:4
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:4
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:5
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:5
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:6
+Debuggee: Thread[Thread 2,5,main] is running:6
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:7
+Debuggee: Thread[Thread 1,5,main] is running:7
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:8
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:8
+Debuggee: Thread[Thread 2,5,main] is running:9
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:9
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:10
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:11
+Debuggee: Thread[Thread 1,5,main] is running:10
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:11
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:12
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:12
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:13
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:13
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:14
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:14
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:15
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:15
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:16
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:16
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:17
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:17
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:18
+Debuggee: Thread[Thread 2,5,main] is running:19
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:18
+Debuggee: Thread[Thread 2,5,main] is running:20
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:19
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:21
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:20
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:22
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:21
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:23
+Debuggee: Thread[Thread 2,5,main] is running:24
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:22
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:25
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: Thread[Thread 2,5,main] is running:26
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:23
+Debuggee: Thread[Thread 1,5,main] is running:24
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:27
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:25
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:28
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:26
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:29
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:27
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:30
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:28
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:31
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:29
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:32
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:30
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:33
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:31
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:34
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:32
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:35
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:33
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:36
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:34
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:35
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:37
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:36
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:38
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:37
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:39
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:38
+Debuggee: Thread[Thread 1,5,main] is running:39
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:40
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:40
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:41
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:41
+Debuggee: Thread[Thread 1,5,main] is running:42
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:42
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:43
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:43
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:44
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:44
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:45
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:45
+Debuggee: Thread[Thread 2,5,main] is running:46
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:46
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:47
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:47
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:48
+Debuggee: Thread[Thread 2,5,main] is running:48
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: Thread[Thread 2,5,main] is running:49
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:49
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:50
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:50
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:51
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:51
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:52
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:52
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:53
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:53
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:54
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:54
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:55
+Debuggee: Thread[Thread 1,5,main] is running:56
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:55
+Debuggee: Thread[Thread 2,5,main] is running:56
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:57
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:57
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:58
+Debuggee: Thread[Thread 1,5,main] is running:58
+Debuggee: Thread[Thread 1,5,main] is running:59
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:59
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:60
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:60
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:61
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:61
+Debuggee: Thread[Thread 2,5,main] is running:62
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:62
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:63
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:63
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:64
+Debuggee: Thread[Thread 2,5,main] is running:65
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:64
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:66
+Debuggee: Thread[Thread 2,5,main] is running:67
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:65
+Debuggee: Thread[Thread 1,5,main] is running:66
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:68
+Debuggee: Thread[Thread 2,5,main] is running:69
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:67
+Debuggee: Thread[Thread 1,5,main] is running:68
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:70
+Debuggee: Thread[Thread 2,5,main] is running:71
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:69
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:70
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:72
+Debuggee: Thread[Thread 2,5,main] is running:73
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:71
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:74
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:72
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:75
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:73
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:76
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:74
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:77
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:75
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:78
+Debuggee: Thread[Thread 2,5,main] is running:79
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:76
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:80
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:77
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:78
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:81
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: Thread[Thread 1,5,main] is running:79
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:82
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: Thread[Thread 2,5,main] is running:83
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:80
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:84
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:81
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:85
+Debuggee: Thread[Thread 2,5,main] is running:86
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:82
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:87
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:83
+Debuggee: Thread[Thread 1,5,main] is running:84
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:88
+Debuggee: Thread[Thread 2,5,main] is running:89
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:85
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:90
+Debuggee: Thread[Thread 2,5,main] is running:91
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:86
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:92
+Debuggee: Thread[Thread 2,5,main] is running:93
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:87
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:94
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:88
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:95
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:89
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:96
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:90
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:97
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:91
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:98
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:92
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:99
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:93
+Debuggee: invokeee in thread Thread[Thread 2,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 2,5,main] is running:100
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:94
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:95
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:96
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:97
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:98
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:99
+Debuggee: invokeee in thread Thread[Thread 1,5,main]
+Debuggee: invokeee finished
+Debuggee: Thread[Thread 1,5,main] is running:100
+----------System.err:(484/25137)----------
+run args: [InvokeHangTarg]
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:110
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 2', id=53)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+  Debugger: Breakpoint hit at InvokeHangTarg:94
+  Debugger: Invoking in threadinstance of InvokeHangTarg(name='Thread 1', id=49)
+  Debugger: Invoke done
+InvokeHangTest: passed; bkpts = 160
+timer Interrupted
+STATUS:Passed.
+----------rerun:(20/2458)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi;C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\jdi' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\com\\sun\\jdi\\InvokeHangTest.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

@@ -1,0 +1,34 @@
+#Test Results (version 2)
+#Fri Sep 05 10:00:51 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\print\\Dialog\\DialogType.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug6568874 manual
+run=USER_SPECIFIED main/manual\=yesno DialogType\r\n
+source=DialogType.java
+title=Verify the native dialog works with attribute sets.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/print/Dialog/DialogType.java
+elapsed=2 0\:00\:00.002
+end=Fri Sep 05 10\:00\:51 CEST 2014
+environment=regtest
+execStatus=Error. Parse Exception\: Arguments to `manual' option not supported\: yesno
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 10\:00\:51 CEST 2014
+test=java/awt/print/Dialog/DialogType.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\print\\Dialog
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. Parse Exception: Arguments to `manual' option not supported: yesno

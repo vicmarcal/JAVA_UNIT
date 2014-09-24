@@ -1,0 +1,408 @@
+#Test Results (version 2)
+#Fri Sep 05 10:44:27 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture\\EventTimeInFuture.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+author=andrei dmitriev \: area\=awt.event
+keywords=bug6451578
+library=../../../regtesthelpers
+run=USER_SPECIFIED build Sysout AbstractTest Util\r\nUSER_SPECIFIED main EventTimeInFuture\r\n
+source=EventTimeInFuture.java
+title=A mouse listener method happens to process mouse events whose time is in the future.
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/awt/event/MouseEvent/EventTimeInFuture/EventTimeInFuture.java
+elapsed=22308 0\:00\:22.308
+end=Fri Sep 05 10\:44\:27 CEST 2014
+environment=regtest
+execStatus=Passed. Execution successful
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages build compile build compile main
+start=Fri Sep 05 10\:44\:05 CEST 2014
+test=java/awt/event/MouseEvent/EventTimeInFuture/EventTimeInFuture.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\awt\\event\\MouseEvent\\EventTimeInFuture
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:build
+----------messages:(3/140)----------
+command: build Sysout AbstractTest Util
+reason: User specified action: run build Sysout AbstractTest Util 
+elapsed time (seconds): 2.587
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/374)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Sysout.java C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\AbstractTest.java C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.585
+----------rerun:(19/3243)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Sysout.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\AbstractTest.java' 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java'
+----------System.out:(0/0)----------
+----------System.err:(4/351)*----------
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers\\Util.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+result: Passed. Compilation successful
+
+#section:build
+----------messages:(3/105)----------
+command: build EventTimeInFuture
+reason: Named class compiled on demand
+elapsed time (seconds): 2.276
+result: Passed. Build successful
+
+#section:compile
+----------messages:(3/241)*----------
+command: compile -XDignore.symbol.file=true C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture\\EventTimeInFuture.java
+reason: .class file out of date or does not exist
+elapsed time (seconds): 2.273
+----------rerun:(19/3128)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\javac' \\
+        -J-Dtest.vm.opts= \\
+        -J-Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -J-Dtest.tool.vm.opts= \\
+        -J-Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -J-Dtest.timeout.factor=1.0 \\
+        -J-Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -J-Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -J-Dtest.java.opts= \\
+        -J-Dtest.compiler.opts= \\
+        -d 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' -classpath 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' -sourcepath 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' -XDignore.symbol.file=true 'C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture\\EventTimeInFuture.java'
+----------System.out:(0/0)----------
+----------System.err:(0/0)----------
+result: Passed. Compilation successful
+
+#section:main
+----------messages:(3/125)----------
+command: main EventTimeInFuture
+reason: User specified action: run main EventTimeInFuture 
+elapsed time (seconds): 17.439
+----------System.out:(260/40406)----------
+start = java.awt.Point[x=591,y=294]
+end = java.awt.Point[x=775,y=434]
+entered diff is 1, event is java.awt.event.MouseEvent[MOUSE_ENTERED,(22,30),absolute(639,344),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 3, event is java.awt.event.MouseEvent[MOUSE_MOVED,(22,30),absolute(639,344),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+exited diff is 4, event is java.awt.event.MouseEvent[MOUSE_EXITED,(32,24),absolute(649,338),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+entered diff is 2, event is java.awt.event.MouseEvent[MOUSE_ENTERED,(40,30),absolute(657,344),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 3, event is java.awt.event.MouseEvent[MOUSE_MOVED,(40,30),absolute(657,344),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(41,30),absolute(658,344),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+exited diff is 0, event is java.awt.event.MouseEvent[MOUSE_EXITED,(41,29),absolute(658,343),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+entered diff is 2, event is java.awt.event.MouseEvent[MOUSE_ENTERED,(41,31),absolute(658,345),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 4, event is java.awt.event.MouseEvent[MOUSE_MOVED,(41,31),absolute(658,345),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(43,30),absolute(660,344),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+exited diff is 1, event is java.awt.event.MouseEvent[MOUSE_EXITED,(44,29),absolute(661,343),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+entered diff is 2, event is java.awt.event.MouseEvent[MOUSE_ENTERED,(42,32),absolute(659,346),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(43,32),absolute(660,346),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 17, event is java.awt.event.MouseEvent[MOUSE_MOVED,(43,31),absolute(660,345),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(45,31),absolute(662,345),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(43,33),absolute(660,347),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(44,33),absolute(661,347),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(45,34),absolute(662,348),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 2, event is java.awt.event.MouseEvent[MOUSE_MOVED,(46,35),absolute(663,349),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(47,36),absolute(664,350),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(48,36),absolute(665,350),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(49,37),absolute(666,351),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 2, event is java.awt.event.MouseEvent[MOUSE_MOVED,(50,38),absolute(667,352),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(51,39),absolute(668,353),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(52,39),absolute(669,353),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 7, event is java.awt.event.MouseEvent[MOUSE_MOVED,(53,40),absolute(670,354),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 17, event is java.awt.event.MouseEvent[MOUSE_MOVED,(54,41),absolute(671,355),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(55,41),absolute(672,355),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(55,42),absolute(672,356),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(57,42),absolute(674,356),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(58,42),absolute(675,356),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(59,42),absolute(676,356),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(59,43),absolute(676,357),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,43),absolute(677,357),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(57,43),absolute(674,357),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(59,44),absolute(676,358),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,45),absolute(677,359),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,47),absolute(679,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(64,48),absolute(681,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(58,44),absolute(675,358),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,47),absolute(677,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(63,48),absolute(680,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(64,50),absolute(681,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,51),absolute(683,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(67,52),absolute(684,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,52),absolute(685,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(59,45),absolute(676,359),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,46),absolute(677,360),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,47),absolute(677,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(61,47),absolute(678,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,47),absolute(679,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,48),absolute(679,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 2, event is java.awt.event.MouseEvent[MOUSE_MOVED,(63,48),absolute(680,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 3, event is java.awt.event.MouseEvent[MOUSE_MOVED,(60,45),absolute(677,359),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,45),absolute(679,359),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,46),absolute(679,360),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(64,47),absolute(681,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,47),absolute(683,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(70,50),absolute(687,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(73,51),absolute(690,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(61,46),absolute(678,360),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(63,47),absolute(680,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,48),absolute(683,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(70,49),absolute(687,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(72,49),absolute(689,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 16, event is java.awt.event.MouseEvent[MOUSE_MOVED,(75,50),absolute(692,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(77,50),absolute(694,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(62,47),absolute(679,361),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 17, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,48),absolute(683,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(71,49),absolute(688,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(77,50),absolute(694,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(84,51),absolute(701,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(89,52),absolute(706,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(97,54),absolute(714,368),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(63,48),absolute(680,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(69,48),absolute(686,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(74,50),absolute(691,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 0, event is java.awt.event.MouseEvent[MOUSE_MOVED,(80,50),absolute(697,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 0, event is java.awt.event.MouseEvent[MOUSE_MOVED,(84,51),absolute(701,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(87,51),absolute(704,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(90,51),absolute(707,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(64,48),absolute(681,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(67,48),absolute(684,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,48),absolute(685,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(69,48),absolute(686,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(70,48),absolute(687,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 0, event is java.awt.event.MouseEvent[MOUSE_MOVED,(71,48),absolute(688,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 0, event is java.awt.event.MouseEvent[MOUSE_MOVED,(73,48),absolute(690,362),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(65,49),absolute(682,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,49),absolute(683,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(67,49),absolute(684,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,49),absolute(685,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(70,49),absolute(687,363),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(72,50),absolute(689,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(74,51),absolute(691,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(77,51),absolute(694,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,50),absolute(683,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(69,51),absolute(686,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(72,51),absolute(689,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(75,51),absolute(692,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(77,52),absolute(694,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(80,52),absolute(697,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(82,53),absolute(699,367),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(67,51),absolute(684,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 16, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,51),absolute(685,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(69,51),absolute(686,365),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,52),absolute(685,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(69,52),absolute(686,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(68,52),absolute(685,366),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(70,53),absolute(687,367),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(71,54),absolute(688,368),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 17, event is java.awt.event.MouseEvent[MOUSE_MOVED,(72,55),absolute(689,369),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(73,55),absolute(690,369),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(74,56),absolute(691,370),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 17, event is java.awt.event.MouseEvent[MOUSE_MOVED,(75,57),absolute(692,371),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(76,58),absolute(693,372),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(77,58),absolute(694,372),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(78,59),absolute(695,373),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(79,60),absolute(696,374),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(80,61),absolute(697,375),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(81,61),absolute(698,375),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(82,62),absolute(699,376),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(83,63),absolute(700,377),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(84,64),absolute(701,378),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(85,64),absolute(702,378),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(86,65),absolute(703,379),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(87,66),absolute(704,380),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(88,67),absolute(705,381),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(89,68),absolute(706,382),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(90,68),absolute(707,382),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(91,69),absolute(708,383),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 18, event is java.awt.event.MouseEvent[MOUSE_MOVED,(92,70),absolute(709,384),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(93,71),absolute(710,385),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(94,71),absolute(711,385),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(95,72),absolute(712,386),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(96,73),absolute(713,387),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(97,74),absolute(714,388),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(98,74),absolute(715,388),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(99,75),absolute(716,389),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(100,76),absolute(717,390),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(101,77),absolute(718,391),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(102,77),absolute(719,391),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(103,78),absolute(720,392),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(104,79),absolute(721,393),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 0, event is java.awt.event.MouseEvent[MOUSE_MOVED,(105,80),absolute(722,394),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(106,80),absolute(723,394),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(107,81),absolute(724,395),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(108,82),absolute(725,396),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(109,83),absolute(726,397),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(110,83),absolute(727,397),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(111,84),absolute(728,398),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 5, event is java.awt.event.MouseEvent[MOUSE_MOVED,(112,85),absolute(729,399),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(113,86),absolute(730,400),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(114,87),absolute(731,401),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(115,87),absolute(732,401),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(116,88),absolute(733,402),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(117,89),absolute(734,403),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(118,90),absolute(735,404),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(119,90),absolute(736,404),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(120,91),absolute(737,405),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+exited diff is 1, event is java.awt.event.MouseEvent[MOUSE_EXITED,(121,92),absolute(738,406),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+entered diff is 0, event is java.awt.event.MouseEvent[MOUSE_ENTERED,(66,50),absolute(683,364),button=0,modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+moved diff is 1, event is java.awt.event.MouseEvent[MOUSE_MOVED,(66,50),absolute(683,364),modifiers=Ctrl,extModifiers=Ctrl,clickCount=0] on frame0
+pressed diff is 1, event is java.awt.event.MouseEvent[MOUSE_PRESSED,(66,50),absolute(683,364),button=1,modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=1] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(67,51),absolute(684,365),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(68,52),absolute(685,366),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(69,52),absolute(686,366),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(70,53),absolute(687,367),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(71,54),absolute(688,368),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(72,55),absolute(689,369),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(73,55),absolute(690,369),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(74,56),absolute(691,370),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(75,57),absolute(692,371),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(76,58),absolute(693,372),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(77,58),absolute(694,372),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(78,59),absolute(695,373),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(79,60),absolute(696,374),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(80,61),absolute(697,375),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(81,61),absolute(698,375),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(82,62),absolute(699,376),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(83,63),absolute(700,377),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(84,64),absolute(701,378),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(85,64),absolute(702,378),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 15, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(86,65),absolute(703,379),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(87,66),absolute(704,380),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(88,67),absolute(705,381),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(89,68),absolute(706,382),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(90,68),absolute(707,382),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(91,69),absolute(708,383),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(92,70),absolute(709,384),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(93,71),absolute(710,385),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(94,71),absolute(711,385),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(95,72),absolute(712,386),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(96,73),absolute(713,387),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(97,74),absolute(714,388),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(98,74),absolute(715,388),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(99,75),absolute(716,389),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(100,76),absolute(717,390),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(101,77),absolute(718,391),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(102,77),absolute(719,391),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(103,78),absolute(720,392),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(104,79),absolute(721,393),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(105,80),absolute(722,394),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(106,80),absolute(723,394),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(107,81),absolute(724,395),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(108,82),absolute(725,396),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(109,83),absolute(726,397),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(110,83),absolute(727,397),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(111,84),absolute(728,398),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(112,85),absolute(729,399),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(113,86),absolute(730,400),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(114,87),absolute(731,401),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(115,87),absolute(732,401),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(116,88),absolute(733,402),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(117,89),absolute(734,403),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(118,90),absolute(735,404),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(119,90),absolute(736,404),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(120,91),absolute(737,405),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+exited diff is 0, event is java.awt.event.MouseEvent[MOUSE_EXITED,(121,92),absolute(738,406),button=0,modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(121,92),absolute(738,406),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 16, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(122,93),absolute(739,407),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(123,93),absolute(740,407),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(124,94),absolute(741,408),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(125,95),absolute(742,409),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(126,96),absolute(743,410),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(127,96),absolute(744,410),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(128,97),absolute(745,411),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(129,98),absolute(746,412),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(130,99),absolute(747,413),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(131,99),absolute(748,413),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(132,100),absolute(749,414),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(133,101),absolute(750,415),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(134,102),absolute(751,416),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(135,103),absolute(752,417),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(136,103),absolute(753,417),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(137,104),absolute(754,418),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(138,105),absolute(755,419),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(139,106),absolute(756,420),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(140,106),absolute(757,420),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(141,107),absolute(758,421),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(142,108),absolute(759,422),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(143,109),absolute(760,423),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(144,109),absolute(761,423),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(145,110),absolute(762,424),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(146,111),absolute(763,425),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(147,112),absolute(764,426),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(148,112),absolute(765,426),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(149,113),absolute(766,427),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(150,114),absolute(767,428),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 1, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(151,115),absolute(768,429),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(152,115),absolute(769,429),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(153,116),absolute(770,430),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(154,117),absolute(771,431),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(155,118),absolute(772,432),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(156,118),absolute(773,432),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(157,119),absolute(774,433),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+dragged diff is 0, event is java.awt.event.MouseEvent[MOUSE_DRAGGED,(158,120),absolute(775,434),modifiers=Ctrl+Button1,extModifiers=Ctrl+Button1,clickCount=0] on frame0
+released diff is 17, event is java.awt.event.MouseEvent[MOUSE_RELEASED,(158,120),absolute(775,434),button=1,modifiers=Ctrl+Button1,extModifiers=Ctrl,clickCount=1] on frame0
+----------System.err:(1/16)----------
+STATUS:Passed.
+----------rerun:(20/2977)*----------
+'PATH=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\VDownloader;C:\\RosBE\\Bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\OpenVPN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;c:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;c:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\' \\
+SystemDrive=C: \\
+'SystemRoot=C:\\Windows' \\
+'TEMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'TMP=C:\\Users\\Victor\\AppData\\Local\\Temp' \\
+'windir=C:\\Windows' \\
+'CLASSPATH=C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\javatest.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\jtreg.jar;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers;C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\lib\\tools.jar' \\
+    'C:\\Program Files (x86)\\Java\\jdk1.7.0_65\\bin\\java' \\
+        -Dtest.vm.opts= \\
+        -Dcompile.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.src.path='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\regtesthelpers' \\
+        -Dtest.src='C:\\Users\\Victor\\Downloads\\Java\\test\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -Dtest.tool.vm.opts= \\
+        -Dtest.class.path='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture;C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\regtesthelpers' \\
+        -Dtest.timeout.factor=1.0 \\
+        -Dtest.classes='C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture' \\
+        -Dtest.jdk='C:\\Program Files (x86)\\Java\\jdk1.7.0_65' \\
+        -Dtest.java.opts= \\
+        -Dtest.compiler.opts= \\
+        com.sun.javatest.regtest.MainWrapper 'C:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\classes\\java\\awt\\event\\MouseEvent\\EventTimeInFuture\\EventTimeInFuture.jta'
+result: Passed. Execution successful
+
+
+test result: Passed. Execution successful

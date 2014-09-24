@@ -1,0 +1,49 @@
+#Test Results (version 2)
+#Fri Sep 05 09:49:49 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\java\\lang\\ThreadGroup\\NullThreadName.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug6576763 ignore
+run=USER_SPECIFIED ignore until hotspot 6776144 bug is resolved\r\n
+source=NullThreadName.java
+title=(thread) Thread constructors throw undocumented NPE for null name
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/java/lang/ThreadGroup/NullThreadName.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:49\:49 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: until hotspot 6776144 bug is resolved
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 09\:49\:49 CEST 2014
+test=java/lang/ThreadGroup/NullThreadName.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\java\\lang\\ThreadGroup
+
+#section:script_messages
+----------messages:(5/191)*----------
+JDK under test: (C:\\Program Files\\Java\\jre6)
+java version "1.6.0_20"
+Java(TM) SE Runtime Environment (build 1.6.0_20-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01, mixed mode)
+
+
+#section:ignore
+----------messages:(3/166)----------
+command: ignore until hotspot 6776144 bug is resolved
+reason: User specified action: run ignore until hotspot 6776144 bug is resolved 
+elapsed time (seconds): 0.0
+----------rerun:(2/58)----------
+# @ignore: until hotspot 6776144 bug is resolved
+exit 1
+result: Error. Test ignored: until hotspot 6776144 bug is resolved
+
+
+test result: Error. Test ignored: until hotspot 6776144 bug is resolved

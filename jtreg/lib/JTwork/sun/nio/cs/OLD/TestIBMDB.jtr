@@ -1,0 +1,35 @@
+#Test Results (version 2)
+#Fri Sep 05 09:51:26 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\sun\\nio\\cs\\OLD\\TestIBMDB.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+error=No action after @build
+keywords=bug6843578
+run=USER_SPECIFIED build IBM930_OLD IBM933_OLD IBM935_OLD IBM937_OLD IBM939_OLD IBM942_OLD IBM943_OLD IBM948_OLD IBM949_OLD IBM950_OLD IBM970_OLD IBM942C_OLD IBM943C_OLD IBM949C_OLD IBM1381_OLD IBM1383_OLD EUC_CN_OLD EUC_KR_OLD GBK_OLD Johab_OLD MS932_OLD MS936_OLD MS949_OLD MS950_OLD\r\n
+source=TestIBMDB.java
+title=Test IBM DB charsets
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/sun/nio/cs/OLD/TestIBMDB.java
+elapsed=0 0\:00\:00.000
+end=Fri Sep 05 09\:51\:26 CEST 2014
+environment=regtest
+execStatus=Error. No action after @build
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages
+start=Fri Sep 05 09\:51\:26 CEST 2014
+test=sun/nio/cs/OLD/TestIBMDB.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\sun\\nio\\cs\\OLD
+
+#section:script_messages
+----------messages:(0/0)----------
+
+
+test result: Error. No action after @build

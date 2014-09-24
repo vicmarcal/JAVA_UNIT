@@ -1,0 +1,49 @@
+#Test Results (version 2)
+#Fri Sep 05 10:31:01 CEST 2014
+#-----testdescription-----
+$file=C\:\\Users\\Victor\\Downloads\\Java\\test\\com\\sun\\security\\auth\\callback\\TextCallbackHandler\\Default.java
+$root=C\:\\Users\\Victor\\Downloads\\Java\\test
+keywords=bug4470717 ignore
+run=USER_SPECIFIED ignore run these by hand\r\n
+source=Default.java
+title=fix default handling and other misc
+
+#-----environment-----
+
+#-----testresult-----
+description=file\:/C\:/Users/Victor/Downloads/Java/test/com/sun/security/auth/callback/TextCallbackHandler/Default.java
+elapsed=6 0\:00\:00.006
+end=Fri Sep 05 10\:31\:01 CEST 2014
+environment=regtest
+execStatus=Error. Test ignored\: run these by hand
+hostname=WINDOWS
+javatestOS=Windows 7 6.1 (amd64)
+javatestVersion=4.4.1
+jtregVersion=jtreg 4.1 dev b09
+script=com.sun.javatest.regtest.RegressionScript 
+sections=script_messages ignore
+start=Fri Sep 05 10\:31\:01 CEST 2014
+test=com/sun/security/auth/callback/TextCallbackHandler/Default.java
+user.name=Victor
+work=C\:\\Users\\Victor\\Downloads\\Java\\jtreg4.1-b09\\jtreg\\lib\\JTwork\\com\\sun\\security\\auth\\callback\\TextCallbackHandler
+
+#section:script_messages
+----------messages:(5/207)*----------
+JDK under test: (C:\\Program Files (x86)\\Java\\jdk1.7.0_65)
+java version "1.7.0_65"
+Java(TM) SE Runtime Environment (build 1.7.0_65-b19)
+Java HotSpot(TM) Client VM (build 24.65-b04, mixed mode, sharing)
+
+
+#section:ignore
+----------messages:(3/126)----------
+command: ignore run these by hand
+reason: User specified action: run ignore run these by hand 
+elapsed time (seconds): 0.0
+----------rerun:(2/38)----------
+# @ignore: run these by hand
+exit 1
+result: Error. Test ignored: run these by hand
+
+
+test result: Error. Test ignored: run these by hand
