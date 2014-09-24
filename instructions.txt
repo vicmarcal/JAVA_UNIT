@@ -1,1 +1,2 @@
-java -jar jtreg.jar -testjdk:"C:\Program Files (x86)\Java\jdk1.7.0_65\bin" -gui "C:\Users\Victor\Downloads\Java\jtreg+tests\test"
+//Install JDK and then issue the following line:
+java -jar path\to\jtreg\lib\jtreg.jar -testjdk:"Path\to\Java\jdk1.7.0_65\bin" -gui "Path\to\folder\called\test"
