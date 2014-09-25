@@ -15,4 +15,5 @@ script:
 - export EXEEXT=.exe
 - export WINEDEBUG=-all
 - chmod +x ./JDK/bin/java.exe
+- chmod +x ./JDK/bin/javac.exe
 - ./JDK/bin/java.exe -jar ./jtreg/lib/jtreg.jar -va -testjdk:"./JDK/bin" -a "./test"
